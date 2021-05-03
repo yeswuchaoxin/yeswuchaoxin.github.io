@@ -59,9 +59,13 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/">主页</a></li>
+				<li><a href="/">home</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/archives">archives</a></li>
+	        
+				<li><a href="/categories">categories</a></li>
+	        
+				<li><a href="/tags">tags</a></li>
 	        
 			</ul>
 		</nav>
@@ -119,6 +123,10 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -136,12 +144,16 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">home</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/archives">archives</a></li>
+		        
+					<li style="width: 25%"><a href="/categories">categories</a></li>
+		        
+					<li style="width: 25%"><a href="/tags">tags</a></li>
 		        
 				</ul>
 			</nav>
@@ -176,35 +188,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>form  method=”post”，数据以键值对<br><b><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/oujizeng/article/details/6260748">如果用get提交一个验证用户名和密码的form，一般认为是不安全的</a><br></b><br><br>存值有几个作用域：page,request,Application,session.<br><img src="https://img-blog.csdnimg.cn/20210502080003847.png" alt="在这里插入图片描述"></p>
+        
+          
+            <p>form  method=”post”，数据以键值对<br><b><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/oujizeng/article/details/6260748">如果用get提交一个验证用户名和密码的form，一般认为是不安全的</a><br></b><br><br>存值有几个作用域：page,request,Application,session.<br><img src="https://img-blog.csdnimg.cn/20210502080003847.png" alt="在这里插入图片描述"></p>
 <p>这里是request<br></p>
 <p>login.jsp==&gt;LoginServlet==&gt;UserService==&gt;UserDao<br>login.jsp<br>form action=”${pageContext.request.contextPath}/login” method=”post”<br>==&gt;\</p>
 <p>LoginServlet:<br>User user = us.login(username, password);<br>==&gt;<br>UserService:<br>  User user = userDao.findUserByUsernameAndPassword(username, password);<br>==&gt;<br>UserDao:<br> public User findUserByUsernameAndPassword(String username , String password) throws SQLException {<br>        QueryRunner qr = new QueryRunner(C3P0Utils . getDataSource());<br>        String sql = “select * from user where username = ? and password = ?”;<br>        return qr . query(sql, new BeanHandler<User> (User .class ),username, password);<br>    }</p>
 
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
+          
+        
     </div>
     <div class="article-info article-info-index">
       
