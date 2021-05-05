@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>的问题 | Hexo</title>
+  <title>微服务 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com 最近在学习 IDEA，由于之前一直使用的是 Eclipse，所以初次接触 IDEA 就接触到了不少的坑，其中最让人头疼的大概就是如何让 IDEA 顺利的启动起来了，这方面我就不细讲了，网上已经有了不少的教程，稍后我也会给大家一个 IDEA 的学习附件，有兴趣的朋友可以看看，今天主要谈的就是如何解决 IDEA 项目在启">
+  <meta name="description" content="微服务与单体架构区别单体架构所有的模块全都耦合在一块，代码量大，维护困难，微服务每个模块就相当于一个单独的项目，代码量明显减少，遇到问题也相对来说比较好解决。 单体架构所有的模块都共用一个数据库，存储方式比较单一，微服务每个模块都可以使用不同的存储方式（比如有的用redis，有的用mysql等），数据库也是单个模块对应自己的数据库。 单体架构所有的模块开发所使用的技术一样，微服务每个模块都可以使用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="的问题">
-<meta property="og:url" content="http://example.com/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:title" content="微服务">
+<meta property="og:url" content="http://example.com/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="本文由 简悦 SimpRead 转码， 原文地址 www.cnblogs.com 最近在学习 IDEA，由于之前一直使用的是 Eclipse，所以初次接触 IDEA 就接触到了不少的坑，其中最让人头疼的大概就是如何让 IDEA 顺利的启动起来了，这方面我就不细讲了，网上已经有了不少的教程，稍后我也会给大家一个 IDEA 的学习附件，有兴趣的朋友可以看看，今天主要谈的就是如何解决 IDEA 项目在启">
+<meta property="og:description" content="微服务与单体架构区别单体架构所有的模块全都耦合在一块，代码量大，维护困难，微服务每个模块就相当于一个单独的项目，代码量明显减少，遇到问题也相对来说比较好解决。 单体架构所有的模块都共用一个数据库，存储方式比较单一，微服务每个模块都可以使用不同的存储方式（比如有的用redis，有的用mysql等），数据库也是单个模块对应自己的数据库。 单体架构所有的模块开发所使用的技术一样，微服务每个模块都可以使用">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-05-01T13:15:34.000Z">
-<meta property="article:modified_time" content="2021-05-04T15:11:21.340Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210505071240604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2021-05-04T23:11:02.000Z">
+<meta property="article:modified_time" content="2021-05-04T23:23:50.455Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20210505071240604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -166,20 +168,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="idea-的问题" class="article article-type-idea " itemscope itemprop="blogPost">
+            <article id="post-微服务" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      的问题
+      微服务
     </h1>
   
 
         
-        <a href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-05-01T13:15:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-01</time>
+        <a href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="archive-article-date">
+  	<time datetime="2021-05-04T23:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-05</time>
 </a>
         
       </header>
@@ -188,57 +190,17 @@
       
         
           
-            <p>本文由 简悦 SimpRead 转码， 原文地址 <a target="_blank" rel="noopener" href="http://www.cnblogs.com/">www.cnblogs.com</a></p>
-<p>最近在学习 IDEA，由于之前一直使用的是 Eclipse，所以初次接触 IDEA 就接触到了不少的坑，其中最让人头疼的大概就是如何让 IDEA 顺利的启动起来了，这方面我就不细讲了，网上已经有了不少的教程，稍后我也会给大家一个 IDEA 的学习附件，有兴趣的朋友可以看看，今天主要谈的就是如何解决 IDEA 项目在启动时报 404 的问题，相信不少像我一样初次接触 IDEA 的朋友都掉进过这个坑，今天就带大家了解一下这个坑，以及如何解决。</p>
-<p>首先，我们来看一下 404 这个页面：</p>
-<p>从这个图片我们其实能看出一点点端倪，注意最后一句话：description The requested resource is not available.</p>
-<p>这句话翻译过来大概意思是，描述：所请求的资源不可用。</p>
-<p>既然是请求资源问题，而 IDEA 又是通过先将项目打包成 war 包，然后创建一个 Tomcat，将 war 进行加载的方式来启动项目，那么我们就可以猜测到，这个请求资源不可用的问题就一定是出现在打包 war 包的过程中，或是在 Tomcat 加载这个 war 包的时候出现的问题。除了这个两个可能，还有一种可能，也是我自己经历的，那就是你的项目是 SVN 项目，而你的 SVN 的路径已经不可用。</p>
-<p>知道了原因，那么接下来就好办了，我们一个个来进行解决。</p>
-<p>第一步：如何将项目打包成 war 包：</p>
-<p>1、首先，右击项目，点击 open module settings</p>
-<p>2、配置 project，主要是本地 jdk 的安装路径，还有项目编译输出的路径</p>
-<p>3、配置 modules ，其中 paths 定位到 web-inf/classes ；dependencies 加入 jdk 和项目 web-inf/lib</p>
-<p>4、配置 libraries ，点击 + 号，选择 java ，然后还是选择你项目的 web-inf/lib</p>
-<p>5、配置 facets ，此步很重要，配置 web resource directories ，路径配错，就会报 404 ，一定要定位到项目根目录，也就是下面有整个项目源码的地方</p>
-<p>6、 配置 artifacts ，此步选择第二个，选择你的项目即可</p>
-<p>注：这有一步很重要，在添加完以后，一定要选中你的项目，然后鼠标左键 Put into Output Root 一下</p>
-<p>到此，将项目打包就已经完成了，然后就是将项目添加到 Tomcat。</p>
-<p>第二步，将项目添加到 Tomcat：</p>
-<ol>
-<li>在 IDEA 的页面右上角，点击此处，打开 Tomcat 添加页面</li>
-</ol>
-<ol start="2">
-<li>在新打开的页面添加 Tomcat</li>
-</ol>
-<ol start="3">
-<li>在新添加的 Tomcat 页面配置好 Tomcat 的名字，默认浏览器，访问地址，JRE，端口等</li>
-</ol>
-<p>在这个页面，我们可以看到，由于没有添加项目 war 包，su9oyouTomcat 还是暴红差的，然后点击 Deploment，去添加项目的 war 包</p>
-<ol start="4">
-<li>给 Tomcat 添加已经打包好的 war 包</li>
-</ol>
-<p>添加后，可以配置路径的后缀名，我为了省事就直接用 / 了，然后点 Apply 和 OK 就可以了。</p>
-<ol start="5">
-<li>然后启动 Tomcat 就可以了，直接访问 localhost 就可以访问项目了。</li>
-</ol>
-<p>第三步，解决 SVN 原因访问 404 的原因</p>
-<p>如果经历了上边的步骤，你的 Tomcat 不报错，但是你访问还是 404，而且是 SVN 项目的话，你就可以试试看是否是你 SVN 配置的问题了</p>
-<ol>
-<li>首先确认是否 SVN 是否能连接上：</li>
-</ol>
-<p>如果，你的 SVN 爆了这个错误，你就可以去看看是否是你的配置出错了</p>
-<ol start="2">
-<li>重新配置 SVN，点击 File,Settings, 找到 Subversion，将里面的勾选的去掉，然后 Apply,OK 就 OK 了。</li>
-</ol>
-<ol start="3">
-<li>可以重新测试一下 SVN 是否能连接上：</li>
-</ol>
-<ol start="4">
-<li>然后重新启动 Tomcat，就 OK 了</li>
-</ol>
-<p>结语：由于回首也是刚刚开始学用 IDEA，所以也只是分享一下回首自己遇到的坑，如有哪些其他原因而这篇文章没有介绍到的，欢迎小伙伴们在下面的评论区中告知一下，大家一起学习，共同进步！</p>
-<p>最后，如果有觉得回首写得不错的朋友，可以点个赞，或是加个关注，回首会一直和你们分享和共同成长~~~</p>
+            <p><strong>微服务与单体架构区别</strong><br>单体架构所有的模块全都耦合在一块，代码量大，维护困难，微服务每个模块就相当于一个单独的项目，代码量明显减少，遇到问题也相对来说比较好解决。</p>
+<p>单体架构所有的模块都共用一个数据库，存储方式比较单一，微服务每个模块都可以使用不同的存储方式（比如有的用redis，有的用mysql等），数据库也是单个模块对应自己的数据库。</p>
+<p>单体架构所有的模块开发所使用的技术一样，微服务每个模块都可以使用不同的开发技术，开发模式更灵活。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210505071240604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>什么样的项目适合微服务</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">微服务可以按照业务功能本身的独立性来划分，如果系统提供的业务是非常底层的，如：操作系统内核、存储系统、网络系统、数据库系统等等，这类系统都偏底层，功能和功能之间有着紧密的配合关系，如果强制拆分为较小的服务单元，会让集成工作量急剧上升，并且这种人为的切割无法带来业务上的真正的隔离，所以无法做到独立部署和运行，也就不适合做成微服务了。</span><br></pre></td></tr></table></figure>
+
+<p><strong>缺点：分布式的复杂性</strong></p>
+<p>对于单体架构来讲，我们可以不使用分布式，但是对于微服务架构来说，分布式几乎是必会用的技术，由于分布式本身的复杂性，导致微服务架构也变得复杂起来。</p>
+<p>   <strong>微服务开发框架</strong><br>   <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">目前微服务的开发框架，最常用的有以下四个：</span><br><span class="line"></span><br><span class="line">Spring Cloud：http:<span class="regexp">//</span>projects.spring.io/spring-cloud（现在非常流行的微服务架构）</span><br><span class="line"></span><br><span class="line">Dubbo：http：<span class="regexp">//</span>dubbo.io</span><br><span class="line"></span><br><span class="line">Dropwizard：http:<span class="regexp">//</span>www.dropwizard.io （关注单个微服务的开发）</span><br><span class="line"></span><br><span class="line">Consul、etcd&amp;etc.（微服务的模块）</span><br></pre></td></tr></table></figure><br><strong>Spring boot与Spring cloud 是什么关系？</strong></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attribute">Spring</span> Boot，看名字就知道是Spring的引导，就是用于启动Spring的，使得Spring的学习和使用变得快速无痛。不仅适合替换原有的工程结构，更适合微服务开发。Spring Cloud基于Spring Boot，为微服务体系开发中的架构问题，提供了一整套的解决方案——服务注册与发现，服务消费，服务保护与熔断，网关，分布式调用追踪，分布式配置管理等。学过Spring的都知道，Spring开发有非常头疼的三点: 以启动一个带Hibernate的Spring MVC为例。<span class="number">1</span>. 依赖太多了，而且要注意版本兼容。这个应用，要添加<span class="number">10</span>-<span class="number">20</span>个依赖，Spring相关的包<span class="number">10</span>多个，然后是Hibernate包，Spring与Hibernate整合包，日志包，json包一堆，而且要注意版本兼容性。<span class="number">2</span>. 配置太多了，要配置注解驱动，要配置数据库连接池，要配置Hibernate，要配置事务管理器，要配置Spring MVC的资源映射，要在web.xml中配置启动Spring和Spring MVC。。等<span class="number">3</span>.部署和运行麻烦。要部署到tomcat里面。不能直接用java命令运行。太多重复和大家都一样的配置了。Spring Boot的哲学就是约定大于配置。既然很多东西都是一样的，为什么还要去配置。<span class="number">1</span>. 通过starter和依赖管理解决依赖问题。<span class="number">2</span>. 通过自动配置，解决配置复杂问题。<span class="number">3</span>. 通过内嵌web容器，由应用启动tomcat，而不是tomcat启动应用，来解决部署运行问题。Spring Cloud体系就比较复杂了。基本可以理解为通过Spring Boot的三大魔法，将各种组件整合在一起，非常简单易用。</span><br></pre></td></tr></table></figure>
 
           
         
@@ -296,7 +258,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -310,18 +272,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/05/02/bookstore%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          bookstore在项目中学习新知识
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">《计算机通信与网络》复习大纲</div>
+    <a href="/2021/05/04/dddd/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">dddd</div>
       <i class="icon-circle-right"></i>
     </a>
   
