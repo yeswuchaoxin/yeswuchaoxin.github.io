@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-微服务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-电影纪念" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+      <a class="article-title" href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/">电影纪念</a>
     </h1>
   
 
         
-        <a href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="archive-article-date">
-  	<time datetime="2021-05-04T23:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-05</time>
+        <a href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/" class="archive-article-date">
+  	<time datetime="2021-05-06T10:49:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-06</time>
 </a>
         
       </header>
@@ -186,17 +186,129 @@
       
         
           
-            <p><strong>微服务与单体架构区别</strong><br>单体架构所有的模块全都耦合在一块，代码量大，维护困难，微服务每个模块就相当于一个单独的项目，代码量明显减少，遇到问题也相对来说比较好解决。</p>
-<p>单体架构所有的模块都共用一个数据库，存储方式比较单一，微服务每个模块都可以使用不同的存储方式（比如有的用redis，有的用mysql等），数据库也是单个模块对应自己的数据库。</p>
-<p>单体架构所有的模块开发所使用的技术一样，微服务每个模块都可以使用不同的开发技术，开发模式更灵活。</p>
-<p><img src="https://img-blog.csdnimg.cn/20210505071240604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><strong>什么样的项目适合微服务</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">微服务可以按照业务功能本身的独立性来划分，如果系统提供的业务是非常底层的，如：操作系统内核、存储系统、网络系统、数据库系统等等，这类系统都偏底层，功能和功能之间有着紧密的配合关系，如果强制拆分为较小的服务单元，会让集成工作量急剧上升，并且这种人为的切割无法带来业务上的真正的隔离，所以无法做到独立部署和运行，也就不适合做成微服务了。</span><br></pre></td></tr></table></figure>
-
-<p><strong>缺点：分布式的复杂性</strong></p>
-<p>对于单体架构来讲，我们可以不使用分布式，但是对于微服务架构来说，分布式几乎是必会用的技术，由于分布式本身的复杂性，导致微服务架构也变得复杂起来。</p>
-<p>   <strong>微服务开发框架</strong><br>   <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">目前微服务的开发框架，最常用的有以下四个：</span><br><span class="line"></span><br><span class="line">Spring Cloud：http:<span class="regexp">//</span>projects.spring.io/spring-cloud（现在非常流行的微服务架构）</span><br><span class="line"></span><br><span class="line">Dubbo：http：<span class="regexp">//</span>dubbo.io</span><br><span class="line"></span><br><span class="line">Dropwizard：http:<span class="regexp">//</span>www.dropwizard.io （关注单个微服务的开发）</span><br><span class="line"></span><br><span class="line">Consul、etcd&amp;etc.（微服务的模块）</span><br></pre></td></tr></table></figure><br><strong>Spring boot与Spring cloud 是什么关系？</strong></p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attribute">Spring</span> Boot，看名字就知道是Spring的引导，就是用于启动Spring的，使得Spring的学习和使用变得快速无痛。不仅适合替换原有的工程结构，更适合微服务开发。Spring Cloud基于Spring Boot，为微服务体系开发中的架构问题，提供了一整套的解决方案——服务注册与发现，服务消费，服务保护与熔断，网关，分布式调用追踪，分布式配置管理等。学过Spring的都知道，Spring开发有非常头疼的三点: 以启动一个带Hibernate的Spring MVC为例。<span class="number">1</span>. 依赖太多了，而且要注意版本兼容。这个应用，要添加<span class="number">10</span>-<span class="number">20</span>个依赖，Spring相关的包<span class="number">10</span>多个，然后是Hibernate包，Spring与Hibernate整合包，日志包，json包一堆，而且要注意版本兼容性。<span class="number">2</span>. 配置太多了，要配置注解驱动，要配置数据库连接池，要配置Hibernate，要配置事务管理器，要配置Spring MVC的资源映射，要在web.xml中配置启动Spring和Spring MVC。。等<span class="number">3</span>.部署和运行麻烦。要部署到tomcat里面。不能直接用java命令运行。太多重复和大家都一样的配置了。Spring Boot的哲学就是约定大于配置。既然很多东西都是一样的，为什么还要去配置。<span class="number">1</span>. 通过starter和依赖管理解决依赖问题。<span class="number">2</span>. 通过自动配置，解决配置复杂问题。<span class="number">3</span>. 通过内嵌web容器，由应用启动tomcat，而不是tomcat启动应用，来解决部署运行问题。Spring Cloud体系就比较复杂了。基本可以理解为通过Spring Boot的三大魔法，将各种组件整合在一起，非常简单易用。</span><br></pre></td></tr></table></figure>
+            <blockquote>
+<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://new.qq.com/omn/20190728/20190728A000TF00.html">new.qq.com</a></p>
+</blockquote>
+<p>1991 年的今天，杨德昌导演的<strong>《牯岭街少年杀人事件》</strong>正式在台北公映。</p>
+<p>如今 28 年已过，它反而像那陈酿，让一代又一代的电影爱好者醉入其中，让一代又一代的观众深受震撼，<strong>俨然成为了中国电影史上一座无法逾越的丰碑。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/d9438e2b7429504cf570dddb8a3a5610.png"></p>
+<p>现在再回看这部影片，那群人还是那么的熟悉，一眨眼，整整 28 年过去，这 28 年里，那群牯岭街的伙伴们都有了什么变化，他们还好吗？</p>
+<p><strong>杨德昌（导演）</strong></p>
+<p>很难想象，杨德昌从 1987 年就已经开始筹备《牯岭街少年杀人事件》，<strong>直到正式公映，它经历了长达五年之久。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/1acd0f18550fca9f115ff7e72b945503.png"></p>
+<p>开机仪式（右二是张震）</p>
+<p>这五年里，摄制过程多次遇到困难，但都被一一化解。影片的细细打磨也为它赢得了应有的荣誉，在那一年的<strong>金马奖上，它拿到了分量最重的最佳影片和最佳原创剧本奖</strong>，之后又在<strong>东京电影节上获得评委会特别奖</strong>。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/faba52011bba314504d17cb77018500d.png"></p>
+<p>主创们在东京电影节</p>
+<p>凭借着这部影片，<strong>“杨德昌”</strong> 成为了一张响亮的名片，后来凡是他的电影，都会被无条件选送进戛纳电影节主竞赛单元。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/7cdb74155db7e5fed400490077563657.png"></p>
+<p>杨德昌的《一一》入围了 53 届戛纳电影节主竞赛单元</p>
+<p>拍完《牯岭街少年杀人事件》后的杨德昌，又拍了三部电影。</p>
+<p>1994 年的<strong>《独立时代》</strong>，这是一部反思个人存在的电影，在当年第 31 届金马奖上斩获最佳原创剧本奖。</p>
+<p>1996 年的<strong>《麻将》</strong>，一部青春黑色喜剧片。获得了第 46 届柏林电影节特别提及奖。</p>
+<p>2000 年的<strong>《一一》</strong>，<strong>这是杨德昌作品的又一个巅峰</strong>，整部影片用平和又柔软的方式，为我们展现了家庭亲情及生命的意义，凭借这部电影，让<strong>杨德昌一举拿下第 53 届戛纳电影节最佳导演奖。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a0d24a0c99a22d80c343c9030611817d.png"></p>
+<p>杨德昌在戛纳</p>
+<p>可能是天妒英才，拍完《一一》后的<strong>杨德昌被查出得了癌症</strong>，<strong>可他依旧没有停下脚步，在 2001 年与妻子彭铠立一起成立了铠甲娱乐，开始创作动画电影。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/823d083b2cc0798bf26b93ab6362c39a.png"></p>
+<p>杨德昌和妻子彭铠立</p>
+<p>不幸的是，在 2007 年 6 月 29 日，杨德昌因结肠癌病逝去，享年 59 岁。<strong>在他人生的最后，仍然在为自己的动画电影手绘分镜。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/cd07d6335e068d3e2bfbc4c536a03126.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a88a5d40874ede3a1b520d91f961abbe.png"></p>
+<p>杨德昌为动画电影《追风》做的场景设定</p>
+<p><strong>张震（小四）</strong></p>
+<p>张震饰演的小四无疑是这部电影的灵魂人物。当年张震 15 岁，正放暑假的他被老爸张国柱临时抓到片场试戏。就这样，张震成为了影片里的小四。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a93c9c8caa4c1bea3271d82bce88d4b6.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/579053c1091799416932eeb81b84e1f7.png"></p>
+<p>凭借着《牯岭街少年杀人事件》，张震被<strong>提名第 28 届台湾电影金马奖最佳男主角，</strong>但那之后的五年却是无所事事。</p>
+<p>直到五年后杨德昌再度召回他拍摄了《麻将》，也就是从<strong>那时开始，张震才确定了自己未来的职业道路。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/c2f103da9fe9d089794e8cb8dda36833.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/0d82745f995f8363ebc1d2a90c30158e.png"></p>
+<p>《麻将》里的张震</p>
+<p>于 1997 年，他正式加入王家卫的<strong>泽东影业</strong>，开启了辉煌的演艺之路。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/0eef6c76672681d15fbbe324722e0927.png"></p>
+<p>凭借着过硬的演技，张震成为了众多大导演至爱的男主角，其中不乏<strong>王家卫、侯孝贤、李安、陈凯歌和吴宇森</strong>等，真名副其实的大导演收割机。</p>
+<p>今年，他也将会和华纳进行合作，拍摄好莱坞大制作科幻影片《沙丘》。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/05df571f029e3047bd8ad5d6030f51e1.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/7954e159f660f368a053b158011c8369.png"></p>
+<p>事业上顺风顺水，生活上也非常幸福。</p>
+<p>在 2013 年的 11 月，张震与交往多年的女友庄雯如在台北<strong>结婚</strong>。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/046e151860c09b4023f28a16948ac496.png"></p>
+<p>2015 年 3 月，女儿出生，取名小源宝，<strong>张震正式成为了一名父亲。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a2f5f2394242facd83e8ee6754340ca6.png"></p>
+<p><strong>杨静怡（小明）</strong></p>
+<p>女主角杨静怡的出现真是恰到好处。一直在美国念高中的她，那年恰巧回台湾过暑假。杨德昌与她在咖啡店偶遇，觉得她形象气质都非常合适，于是便说服她<strong>休学一年</strong>出演小明。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/5c3412a2dff8d6fca6e93f642122a733.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/1f874d58610072269960e1f5bad71199.png"></p>
+<p>和张震一样，杨静怡也凭借这部《牯岭街少年杀人事件》获得了当年<strong>金马影后的提名</strong>，这也是她唯一出演的一部电影。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/657c464701788cc19de5443440fbeb48.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/2fa347b958c3f6cfd299e148683757d5.png"></p>
+<p>左一杨静怡、中间杨德昌、右一张震</p>
+<p>拍完《牯岭街少年杀人事件》后，杨静怡便退出影坛，选择回美国继续读书。后来的她，在美国结婚生子，从事了会计行业。直到 2007 年，她出席杨德昌在洛杉矶的葬礼时，才再次出现在了公众视野中。</p>
+<p>2016 年 9 月，张震在微博 PO 出了他和杨静怡的合照。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/c3bbcbccf13b0eebe3801265d4c7f9f3.png"></p>
+<p>网友们纷纷留言感叹：小四和小明从那条牯岭街里走出来，走到了我们眼前，容颜或许有些改变，但还是当时的少年少女，老友风华正茂，现世岁月静好。</p>
+<p><strong>林鸿铭（Honey）</strong></p>
+<p>很多人看完《牯岭街少年杀人事件》后，可能喜欢上的是那个<strong>带有江湖味道</strong>的小公园首领 Honey，当年他穿着一身海军服帅气出场的样子还历历在目。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/5afcc917160cd49c3e7132a63cec18a1.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/8c57c5a8865e169927bf7586cfb3ea3d.png"></p>
+<p>Honey 这个角色在影片中的镜头少之又少，但却让杨德昌挚爱到愿意亲身上阵为他配音，他希望 honey 的声音带有江湖上混过的口气。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/2aceb3f2eb5af40e8a4802c46d8c9a84.png"></p>
+<p>凭借着这部影片，林鸿铭成为了一颗冉冉升起的新星，当年<strong>同时有 6 个导演</strong>前来找他拍戏。<strong>只可惜，他不幸摔断了腿，自此失去了机会，但也因此结识了他的太太。</strong></p>
+<p>后来在 2000 年，瞿友宁找林鸿铭拍了电视剧《天空之城》，这也是他之后唯一的作品。</p>
+<p>再后来，他结婚生子，在台北信义路的僻静巷尾<strong>开了一家 “喜朵” 咖啡馆</strong>，不少影迷也曾找到那里去寻找回忆里的 Honey。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/f76f1b227975e068918c84cc8812a068.png"></p>
+<p>现在的林鸿铭 (图片来自知乎）</p>
+<p><strong>谭志刚（小马）</strong></p>
+<p>出演《牯岭街少年杀人事件》前，谭志刚就已经是个有些许名气的<strong>童星</strong>，看到杨德昌招演员的广告后，就跑去面试。本来杨德昌是想让他出演小猫王，但最后还是演了小四的 “情敌” 小马。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/afeb4881879a1d23021950b4e9231fcd.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/db1067551c3c82a8901d5ee0a395f3cc.png"></p>
+<p>拍完《牯岭街少年杀人事件》后的谭志刚相当幸运，被导演侯孝贤识中，邀请他担任电影《少年吔，安啦！》的男主角。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/14b7aca5b53f9eb6ccdda696071ea2cb.png"></p>
+<p>其实谭志刚很早就计划去美国学电影，但是因为《牯岭街少年杀人事件》和《少年吔，安啦！》的衍生电影而不得不两度推迟。</p>
+<p>可惜的是，在 1993 年的 9 月，谭志刚不幸在一场车祸中身亡，<strong>那年他才 18 岁，只比张震大一岁。</strong></p>
+<p><strong>王启赞（小猫王）</strong></p>
+<p>小猫王是个头最小的，当年他从《牯岭街》里走出来后，便加入了杨德昌的铠甲公司继续演戏。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/473ab7b05f93f4812f1375990c4b293a.png"></p>
+<p>16 岁的他出演了杨德昌导演的<strong>《麻将》</strong>，凭借着 “牙膏” 一角获得了<strong>第 33 届金马奖最佳男配角奖。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/f41f82994c7a1edf1d148298e9118d04.png"></p>
+<p>《麻将》中的王启赞</p>
+<p>2005 年，他开始转向幕后，做蔡明亮的场务。</p>
+<p>2007 年，在完成《帮帮我，爱神》的场务工作后，他便<strong>转行开起了汽车改装厂</strong>，<strong>彻底离开了电影圈。</strong></p>
+<p><strong>张国柱（小四父亲）</strong></p>
+<p>在拍摄《牯岭街少年杀人事件》之前，张国柱已经是知名演员，演技自然是没得说，这次他和儿子双双进入剧组，这对真父子，在片中也是饰演了一对父子。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/67592dce8084a9b7865e8c89a9183c5d.png"></p>
+<p>在拍完《牯岭街少年杀人事件》后，张国柱又紧接着参演了几部商业片，2000 年后，便将重心转移到了电视剧行业，现如今的他，虽然还活跃在大荧幕前，但也渐渐呈现隐退的状态。</p>
+<p><strong>金燕玲（小四母亲）</strong></p>
+<p>金燕玲，可以称得上是<strong>杨德昌电影里的常客。</strong></p>
+<p>她是《牯岭街少年杀人事件》中的小四母亲，她是《一一》中的敏敏，她是《独立时代》里的 Auntie，她也是《麻将》里的红鱼妈妈。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/15ab313ecd76ceb147e0cc7e672149cc.png"></p>
+<p>在《牯岭街》扮演小四妈妈</p>
+<p>这位传奇的女演员在《牯岭街》之后，事业开始顺风顺水，几乎之后的每部电影，都是和名导合作，现如今也是活跃在大荧幕上。</p>
+<p>最近，她和郝蕾主演的<strong>《春潮》</strong>也入围了 <strong>FIRST 青年影展</strong>，希望能取得佳绩！</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/07d1933a9f94207caaa4843bb42643f1.png"></p>
+<p>右一金燕玲，在剧中也饰演母亲</p>
+<p><strong>张盈真（小明母亲）</strong></p>
+<p>1978 年的张盈真，凭借着和刘文正合作的电影《初恋风暴》正式出道。后来陆陆续续拍摄了多部动作片及古装片，也<strong>曾两次入围金马奖最佳女配角提名。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/cfc12a4155d8074932e3e0372b0b0b66.png"></p>
+<p>和杨德昌合作拍摄完《牯岭街少年杀人事件》后，她就渐渐淡出了影坛。没想到她再次进入观众视野的时候，就到了 2016 年 12 月 27 日，她因哮喘引起心脏病发作<strong>不幸辞世</strong>，享年 63 岁。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/17bde55b7ca1fe4d1177c0556b256b7e.png"></p>
+<p>这 28 年里，有人依旧在大荧幕上发光发热，有人却渐渐息影退圈，也有人永远的离开了我们。</p>
+<p>28 年过去，当年牯岭街的那群少男少女们，都不再是当初的模样，<strong>1991 年的那个夏天，也越来越远，再也回不去了，留下的只有那部永远的《牯岭街少年杀人事件》。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/df8d0a764818cd92a267904fd6d26913.png"></p>
+<p><strong>- THE END**</strong>-**</p>
+<p>更多你也许会喜欢的故事：</p>
+<p><strong>牯岭街少年杀人事件：</strong></p>
+<p><strong>杨德昌入围戛纳电影节主竞赛单元的电影****：</strong></p>
+<p><strong>关注<strong><strong>公</strong></strong>众号****「木鱼水心」，</strong></p>
+<p><strong>让电影丰富生活！</strong></p>
+<p><strong>关注公众号后——</strong></p>
+<p>回复「<strong>温馨</strong>」，查看那些治愈人心的电影专题</p>
+<p>回复「<strong>谎言</strong>」，查看几部跟谎言有关的电影</p>
+<p>回复「<strong>悬疑</strong>」，看看那些令你意想不到的脑洞</p>
+<p>回复「<strong>二战</strong>」，查看几部同属于二战背景下的电影</p>
+<p>回复「<strong>传记</strong>」，查看那些伟大人物的传记故事</p>
+<p>免责声明：本文来自腾讯新闻客户端自媒体，不代表腾讯网的观点和立场。</p>
 
           
         
@@ -208,7 +320,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/">展开全文 >></a>
         </p>
       
 
@@ -240,7 +352,7 @@
   
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
