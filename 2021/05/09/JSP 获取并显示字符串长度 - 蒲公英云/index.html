@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021 | Hexo</title>
+  <title>JSP 获取并显示字符串长度 - 蒲公英云 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2021/page/2/index.html">
+  <meta name="description" content="本文由 简悦 SimpRead 转码， 原文地址 www.dandelioncloud.cn  JSP 获取并显示字符串长度发布于：2020-10-04 00:06 阅读数:282  实训内容和要求编写两个 JSP 页面 inputString.jsp 和 computer.jsp，用户可以使用 inputString.jsp 提供的表单输入一个字符串，并提交给 computer.jsp 页面，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSP 获取并显示字符串长度 - 蒲公英云">
+<meta property="og:url" content="http://example.com/2021/05/09/JSP%20%E8%8E%B7%E5%8F%96%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6%20-%20%E8%92%B2%E5%85%AC%E8%8B%B1%E4%BA%91/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="本文由 简悦 SimpRead 转码， 原文地址 www.dandelioncloud.cn  JSP 获取并显示字符串长度发布于：2020-10-04 00:06 阅读数:282  实训内容和要求编写两个 JSP 页面 inputString.jsp 和 computer.jsp，用户可以使用 inputString.jsp 提供的表单输入一个字符串，并提交给 computer.jsp 页面，">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.dandelioncloud.cn/images/1601741172649.gif">
+<meta property="og:image" content="https://www.dandelioncloud.cn/images/1601741152304.gif">
+<meta property="og:image" content="https://www.dandelioncloud.cn/images/20170410095843.jpeg">
+<meta property="og:image" content="https://www.dandelioncloud.cn/dist/img/99918364713.gif">
+<meta property="article:published_time" content="2021-05-08T16:57:15.000Z">
+<meta property="article:modified_time" content="2021-05-08T16:58:52.169Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.dandelioncloud.cn/images/1601741172649.gif">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -162,214 +171,162 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="jsp-JSP 获取并显示字符串长度 - 蒲公英云" class="article article-type-jsp " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JSP 获取并显示字符串长度 - 蒲公英云
+    </h1>
+  
+
+        
+        <a href="/2021/05/09/JSP%20%E8%8E%B7%E5%8F%96%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6%20-%20%E8%92%B2%E5%85%AC%E8%8B%B1%E4%BA%91/" class="archive-article-date">
+  	<time datetime="2021-05-08T16:57:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-09</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+          
+            <blockquote>
+<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://www.dandelioncloud.cn/article/details/1004120632274428">www.dandelioncloud.cn</a></p>
+</blockquote>
+<h2 id="JSP-获取并显示字符串长度"><a href="#JSP-获取并显示字符串长度" class="headerlink" title="JSP 获取并显示字符串长度"></a>JSP 获取并显示字符串长度</h2><p>发布于：2020-10-04 00:06 阅读数:282</p>
+<hr>
+<h2 id="实训内容和要求"><a href="#实训内容和要求" class="headerlink" title="实训内容和要求"></a>实训内容和要求</h2><p>编写两个 JSP 页面 inputString.jsp 和 computer.jsp，用户可以使用 inputString.jsp 提供的表单输入一个字符串，并提交给 computer.jsp 页面，该页面通过内置对象获取 inputString.jsp 页面提交的字符串，并显示该字符串的长度。</p>
+<h2 id="实训步骤"><a href="#实训步骤" class="headerlink" title="实训步骤"></a>实训步骤</h2><p>(1) inputString.jsp 的代码如下：</p>
+<figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">&lt;%</span><span class="ruby">@ page contentType=<span class="string">&quot;text/html;charset=utf-8&quot;</span> </span><span class="xml">%&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span> <span class="attr">bgcolor</span>=<span class="string">green</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;computer.jsp&quot;</span> <span class="attr">method</span>=<span class="string">post</span> <span class="attr">name</span>=<span class="string">form</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> &gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span> &gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>(2) computer.jsp 的代码如下：</p>
+<figure class="highlight vbscript-html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="vbscript">&lt;%@ page contentType=<span class="string">&quot;text/html;charset=utf-8&quot;</span> %&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="vbscript">&lt;%</span></span><br><span class="line"><span class="vbscript">    String textContent=<span class="built_in">request</span>.getParameter(<span class="string">&quot;str&quot;</span>);</span></span><br><span class="line"><span class="vbscript">    byte  b[]=textContent.getBytes(<span class="string">&quot;utf-8&quot;</span>);</span></span><br><span class="line"><span class="vbscript">    textContent=<span class="keyword">new</span> <span class="built_in">String</span>(b);</span></span><br><span class="line"><span class="vbscript">%&gt;</span></span><br><span class="line"><span class="xml">字符串:</span><span class="vbscript">&lt;%=textContent%&gt;</span><span class="xml">的长度：</span><span class="vbscript">&lt;%=textContent.length()%&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>程序的运行结果如图 1 所示。</p>
+<p><img src="https://www.dandelioncloud.cn/images/1601741172649.gif"></p>
+<p><img src="https://www.dandelioncloud.cn/images/1601741152304.gif"></p>
+<p>图 1 通过内置对象获取并显示字符串</p>
+<p><img src="https://www.dandelioncloud.cn/images/20170410095843.jpeg"></p>
+<p><img src="https://www.dandelioncloud.cn/dist/img/99918364713.gif"> 文章编辑</p>
+<p>编写两个 JSP 页面 inputString.jsp 和 computer.jsp，用户可以使用 inputString.jsp 提供的表单输入一个字符串，并提交给 c…</p>
+<p>在 JavaScript 中，使用字符串的 <strong>length</strong> 属性可以读取字符串的长度。长度以字符为单位，该属性为只读属性。</p>
+<p>字符串的特点： - 字符串的内容永不可变 - 字符串时可以共享使用的，可以达到节省内存的作用，前提是字符串内容不可变 - 字符串效果上相当于是 char[] 字符串数组，但…</p>
+<p>JavaScript 字符串拼接 实际应用中，目标字符串的生成可能需要多个子字符串拼接而成。 由于应用频繁，几乎是所有编程语言都必须掌握的操作，当然每种语言具有各自特点。…</p>
+<p>JavaScript 字符串（String）就是由零个或多个 Unicode 字符组成的字符序列。零个字符表示空字符串。</p>
+<p>using System; using System.Collections.Generic; using System.IO; using System.Linq; u…</p>
+<p>Java 实例 - 获取数组长度本文我们将为大家介绍如何使用数组的属性 length 来获取数组的长度。 以下实例中我们定义了二维数组，并获取数组的长度：</p>
+<p>需求：有一个字符串需要按照指定长度拆分出来，然后在增加一个字符串拼接上。 /// <summary> /// 字符串截取并拼接 /// …</p>
+<p>Python 中的字符串（Strings）是⽤单引号或双引号标记的⼀系列连续字符（characters），换句话说，字符串是由单个字符组成的序列（list）。即便只有⼀个字…</p>
+<p>JavaScript 能够根据字符的 Unicode 编码大小逐位比较字符串大小。</p>
+
+          
+        
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/05/02/bookstore%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2021-05-01T23:37:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/05/02/bookstore%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86/">bookstore在项目中学习新知识</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/09/JSP%20%E8%8E%B7%E5%8F%96%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6%20-%20%E8%92%B2%E5%85%AC%E8%8B%B1%E4%BA%91/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-idea">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-05-01T13:15:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">电影纪念</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">的问题</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/" class="archive-article-date">
-  	<time datetime="2021-04-29T23:48:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/">《计算机通信与网络》复习大纲</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/29/%E9%9D%A2%E7%AD%8B%E6%95%B4%E7%90%86/" class="archive-article-date">
-  	<time datetime="2021-04-29T11:22:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/29/%E9%9D%A2%E7%AD%8B%E6%95%B4%E7%90%86/">面筋整理</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/29/hexo/" class="archive-article-date">
-  	<time datetime="2021-04-29T09:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/29/hexo/">hexo</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/29/text1/" class="archive-article-date">
-  	<time datetime="2021-04-29T08:58:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/29/text1/">text1</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/04/29/hello-world/" class="archive-article-date">
-  	<time datetime="2021-04-29T08:15:22.977Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/04/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2021/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2021/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -393,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

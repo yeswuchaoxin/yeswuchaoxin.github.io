@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-计算机网络大三下" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="idea-的问题" class="article article-type-idea  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/">《计算机通信与网络》复习大纲</a>
+      <a class="article-title" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">的问题</a>
     </h1>
   
 
         
-        <a href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/" class="archive-article-date">
-  	<time datetime="2021-04-29T23:48:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-30</time>
+        <a href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2021-05-01T13:15:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-01</time>
 </a>
         
       </header>
@@ -186,29 +186,57 @@
       
         
           
-            <p>《计算机通信与网络》复习大纲 201412<br>第一章 概论<br>1．计算机网络的定义和组成，几种常见的网络拓扑结构的名称。<br>2．计算机网络的体系结构概念<br>3．协议的概念、协议三要素和服务访问点的概念。<br>4．OSI七层模型名称，以及物理层（传输的基本单位：比特）、数据链路层（传输的基本单位：帧）、网络层（传输的基本单位：分组）、传输层、应用层的基本功能。<br>5．TCP/IP体系结构（知道各个协议在哪一层），OSI和TCP/IP的比较。</p>
-<p>第二章 数据通信技术基础<br>1．常用的传输媒体（7种，3种有线，4种无线）的名称。<br>2．掌握传信速率（比特率）、传码速率（波特率）、传输时延（发送时延）、传播时延的计算。处理时延概念。<br>3．理解异步、同步传输的概念。<br>4．信道容量的计算（有噪声、无噪声），注意：一个是用到香农公式、一个用到奈奎斯特公式。<br>5．掌握四种常用的多路复用技术的名称，了解工作原理。<br>6．掌握常用的数据交换方式名称（电路交换、报文交换、分组交换），了解其特点。<br>7．物理接口的四个特性名称（机械、电气、功能和规程）以及各自规定的内容。</p>
-<p>第三章 数据链路层<br>1．理解数据电路、数据链路的概念。<br>2．掌握数据链路层的功能（7个）。<br>3．理解停止等待协议的工作原理（理解图3-4）<br>4．滑动窗口机制的工作原理和过程（重点关注连续ARQ）。<br>5．HDLC帧类型（三种）、透明传输的概念（0比特插入法）。<br>6．PPP协议的组成（三个部分），协议如何实现数据的透明传输（分两种情况）。<br>7．掌握循环冗余码发送方的编码方法和接收方检测方法，汉明距离和纠检错能力的关系。<br>应重点关注的例题：例3-1、3-3、3-4</p>
-<p>第三章    局域网与广域网</p>
+            <p>本文由 简悦 SimpRead 转码， 原文地址 <a target="_blank" rel="noopener" href="http://www.cnblogs.com/">www.cnblogs.com</a></p>
+<p>最近在学习 IDEA，由于之前一直使用的是 Eclipse，所以初次接触 IDEA 就接触到了不少的坑，其中最让人头疼的大概就是如何让 IDEA 顺利的启动起来了，这方面我就不细讲了，网上已经有了不少的教程，稍后我也会给大家一个 IDEA 的学习附件，有兴趣的朋友可以看看，今天主要谈的就是如何解决 IDEA 项目在启动时报 404 的问题，相信不少像我一样初次接触 IDEA 的朋友都掉进过这个坑，今天就带大家了解一下这个坑，以及如何解决。</p>
+<p>首先，我们来看一下 404 这个页面：</p>
+<p>从这个图片我们其实能看出一点点端倪，注意最后一句话：description The requested resource is not available.</p>
+<p>这句话翻译过来大概意思是，描述：所请求的资源不可用。</p>
+<p>既然是请求资源问题，而 IDEA 又是通过先将项目打包成 war 包，然后创建一个 Tomcat，将 war 进行加载的方式来启动项目，那么我们就可以猜测到，这个请求资源不可用的问题就一定是出现在打包 war 包的过程中，或是在 Tomcat 加载这个 war 包的时候出现的问题。除了这个两个可能，还有一种可能，也是我自己经历的，那就是你的项目是 SVN 项目，而你的 SVN 的路径已经不可用。</p>
+<p>知道了原因，那么接下来就好办了，我们一个个来进行解决。</p>
+<p>第一步：如何将项目打包成 war 包：</p>
+<p>1、首先，右击项目，点击 open module settings</p>
+<p>2、配置 project，主要是本地 jdk 的安装路径，还有项目编译输出的路径</p>
+<p>3、配置 modules ，其中 paths 定位到 web-inf/classes ；dependencies 加入 jdk 和项目 web-inf/lib</p>
+<p>4、配置 libraries ，点击 + 号，选择 java ，然后还是选择你项目的 web-inf/lib</p>
+<p>5、配置 facets ，此步很重要，配置 web resource directories ，路径配错，就会报 404 ，一定要定位到项目根目录，也就是下面有整个项目源码的地方</p>
+<p>6、 配置 artifacts ，此步选择第二个，选择你的项目即可</p>
+<p>注：这有一步很重要，在添加完以后，一定要选中你的项目，然后鼠标左键 Put into Output Root 一下</p>
+<p>到此，将项目打包就已经完成了，然后就是将项目添加到 Tomcat。</p>
+<p>第二步，将项目添加到 Tomcat：</p>
 <ol>
-<li>局域网的四个技术特性名称（传输媒体、传输技术、网络拓扑和媒体访问控制方法）。</li>
-<li>局域网的数据链路层分成的两个子层名称。</li>
-<li>局域网的标准（重点：802.3、802.11所表示的含义）。</li>
-<li>CSMA/CD的原理（介质访问控制方法、争用期、以太网帧结构、最小帧长的计算）。</li>
-<li>10BASE-5,10BASE-2,10BASE-T,10BASE-F的含义。（10、BASE、2、5、T、F的含义）<br>6．集线器、网桥、以太网交换机和路由器工作的层次、带宽的计算（如习题4.5）；理解透明网桥的工作原理，包括网桥转发表的维护和转发原理。<br>7．了解以太网交换机转发帧的三种方式（存储转发、直通、无碎片直通）原理。<br>以太网交换机如何根据帧的目的地址控制转发，实现帧过滤？<br>8．VLAN的概念、无线局域网分类，WiFi常用的协议标准。<br>9．无线局域网中不能采用CSMA/CD的原因，理解CSMA/CA的工作原理（DIFS,SIFS,确认机制,虚侦听,随机退避,信道预约）。</li>
-<li>X.25、帧中继、ATM虚电路分别在哪一层提供虚电路服务；ATM信元的长度，首部长度。<br>应重点关注的例题：例4-1</li>
+<li>在 IDEA 的页面右上角，点击此处，打开 Tomcat 添加页面</li>
 </ol>
-<p>第四章    网络互连<br>1．理解IP地址的分类，掌握IP地址的分配（如例5-1）。<br>2．掌握ARP的作用以及以太网中ARP的工作过程。<br>3．掌握IPv4数据报首部的分析（20字节）（如习题5.20）<br>4．掌握分片的计算。<br>5．子网的划分和计算，网络掩码的表示和计算。(如习题5.16)<br>6．CIDR的原理和地址块的分配，路由聚合计算。<br>7．ICMP 报文类型和作用，ping 和 tracert 两个程序的目的和实现原理。<br>9．外部网关协议和内部网关协议的基本概念。RIP、OSPF是什么类型路由协议，各使用什么算法？ RIP最大跳数是多少？<br>10．了解RIP、OSPF和BGP的要点，掌握书上RIP路由更新的例子。<br>11．路由器的组成（路由选择和分组转发两个部分），直接交付和间接交付的概念。<br>12．掌握NAT的功能和实现VPN的两种技术。<br>13．IPv6中IP地址的长度，基本首部的长度，了解IP地址类型，IPv6地址表达方法，零压缩使用方法。<br>应重点关注的例题：例5-1、5-3、5-6、5-7<br>重点关注的课后习题：5.3、5.7、5.15、5.16、5.17、5.20</p>
-<p>第五章    传输层<br>1．传输层的功能。UDP提供什么服务？UDP格式，端口、套接字的概念。<br>2．TCP的基本概念、报文段的格式，TCP提供的服务类型。伪首部的作用<br>3．掌握TCP的连接建立、释放过程。<br>4．理解TCP中的可变滑动窗口的流量控制方法的工作过程，理解TCP报文段序号和确认号含义。<br>5．掌握TCP的慢启动算法和拥塞避免算法的工作过程。<br>6．掌握TCP报文段的分析。</p>
-<p>应重点关注的例题：例6-10<br>重点关注的课后习题：6.2、6.5</p>
-<p>第六章    应用层<br>1．描述DNS中主机名至IP地址的域名解析过程。<br>2．网络应用模式<br>3．FTP应用的两个连接名称和作用<br>4．一个计算机访问因特网需要配置的项目（4个：主机的IP地址、子网掩码、默认路由器的IP地址、域名服务器的IP地址）。DHCP的基本概念。<br>5．电子邮件的发送和接收过程。<br>6．SMTP的作用是什么？MIME和SMTP的关系。<br>7．WWW和HTTP、URL的基本概念。<br>重点关注的课后习题：7.3、7.9、7.18</p>
-<p>第七章    网络管理和网络安全    </p>
+<ol start="2">
+<li>在新打开的页面添加 Tomcat</li>
+</ol>
+<ol start="3">
+<li>在新添加的 Tomcat 页面配置好 Tomcat 的名字，默认浏览器，访问地址，JRE，端口等</li>
+</ol>
+<p>在这个页面，我们可以看到，由于没有添加项目 war 包，su9oyouTomcat 还是暴红差的，然后点击 Deploment，去添加项目的 war 包</p>
+<ol start="4">
+<li>给 Tomcat 添加已经打包好的 war 包</li>
+</ol>
+<p>添加后，可以配置路径的后缀名，我为了省事就直接用 / 了，然后点 Apply 和 OK 就可以了。</p>
+<ol start="5">
+<li>然后启动 Tomcat 就可以了，直接访问 localhost 就可以访问项目了。</li>
+</ol>
+<p>第三步，解决 SVN 原因访问 404 的原因</p>
+<p>如果经历了上边的步骤，你的 Tomcat 不报错，但是你访问还是 404，而且是 SVN 项目的话，你就可以试试看是否是你 SVN 配置的问题了</p>
 <ol>
-<li>网络攻击形式：主动攻击和被动攻击两大类若干具体形式。</li>
-<li>习题8.13  衡量网络安全的指标主要有网络系统的可靠性、可用性、保密性、完整性、不可抵赖性，在P284</li>
-<li>网络管理5个主要功能 P272</li>
-<li>SNMP的3个基本元素：管理者、代理和MIB。 P278</li>
+<li>首先确认是否 SVN 是否能连接上：</li>
 </ol>
+<p>如果，你的 SVN 爆了这个错误，你就可以去看看是否是你的配置出错了</p>
+<ol start="2">
+<li>重新配置 SVN，点击 File,Settings, 找到 Subversion，将里面的勾选的去掉，然后 Apply,OK 就 OK 了。</li>
+</ol>
+<ol start="3">
+<li>可以重新测试一下 SVN 是否能连接上：</li>
+</ol>
+<ol start="4">
+<li>然后重新启动 Tomcat，就 OK 了</li>
+</ol>
+<p>结语：由于回首也是刚刚开始学用 IDEA，所以也只是分享一下回首自己遇到的坑，如有哪些其他原因而这篇文章没有介绍到的，欢迎小伙伴们在下面的评论区中告知一下，大家一起学习，共同进步！</p>
+<p>最后，如果有觉得回首写得不错的朋友，可以点个赞，或是加个关注，回首会一直和你们分享和共同成长~~~</p>
 
           
         
@@ -220,7 +248,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">展开全文 >></a>
         </p>
       
 
@@ -252,7 +280,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/11/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="extend next" rel="next" href="/page/13/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/11/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/13/">Next &amp;raquo;</a>
     </nav>
   
 
