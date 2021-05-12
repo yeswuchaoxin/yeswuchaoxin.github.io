@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-bookstore在项目中学习新知识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="java-博客" class="article article-type-java  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/02/bookstore%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86/">bookstore在项目中学习新知识</a>
+      <a class="article-title" href="/2021/05/02/%E5%8D%9A%E5%AE%A2/">java 学习路线图_wcxok 的博客 - CSDN 博客</a>
     </h1>
   
 
         
-        <a href="/2021/05/02/bookstore%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2021-05-01T23:37:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-02</time>
+        <a href="/2021/05/02/%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2021-05-02T06:25:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-02</time>
 </a>
         
       </header>
@@ -186,17 +186,16 @@
       
         
           
-            <p>form  method=”post”，数据以键值对<br><b><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/oujizeng/article/details/6260748">如果用get提交一个验证用户名和密码的form，一般认为是不安全的</a><br></b><br><br>存值有几个作用域</p>
+            <p><img src="https://img-blog.csdnimg.cn/2021050214351722.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>60万年薪的简历</p>
 <hr>
-<p>存值有几个作用域：page,request,Application,session.<br><img src="https://img-blog.csdnimg.cn/20210502080003847.png" alt="在这里插入图片描述"></p>
-<p>这里是request<br></p>
-<p>login.jsp==&gt;LoginServlet==&gt;UserService==&gt;UserDao<br>login.jsp<br>form action=”${pageContext.request.contextPath}/login” method=”post”<br>==&gt;</p>
-<p>LoginServlet:<br>User user = us.login(username, password);<br>==&gt;<br>UserService:\</p>
-<p>  User user = userDao.findUserByUsernameAndPassword(username, password);<br>==&gt;<br>UserDao:</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">public</span> <span class="keyword">User</span> findUserByUsernameAndPassword(String username , String <span class="keyword">password</span>) throws SQLException &#123;</span><br><span class="line">       QueryRunner qr = <span class="built_in">new</span> QueryRunner(C3P0Utils . getDataSource());</span><br><span class="line">       String <span class="keyword">sql</span> = &quot;select * from user where username = ? and password = ?&quot;;</span><br><span class="line">       <span class="keyword">return</span> qr . query(<span class="keyword">sql</span>, <span class="built_in">new</span> BeanHandler&lt;<span class="keyword">User</span>&gt; (<span class="keyword">User</span> .<span class="keyword">class</span> ),username, <span class="keyword">password</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">重定向 你请求的URL地址会变</span><br><span class="line">转发 你请求的URL地址不会变</span><br><span class="line">重定向 好比 你跟同事<span class="selector-tag">A</span>借一本书，同事<span class="selector-tag">A</span>没有，但是他告诉你，同事<span class="selector-tag">B</span>有，你就去找同事<span class="selector-tag">B</span>借书。</span><br><span class="line">转发 好比 你跟同事<span class="selector-tag">A</span>借一本书，同事<span class="selector-tag">A</span>没有，但是同事<span class="selector-tag">A</span>自己跑去别地方给你借了一本给你。</span><br></pre></td></tr></table></figure>
-
+<p><img src="https://img-blog.csdnimg.cn/20210502143728447.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20210502143912322.png" alt="在这里插入图片描述"><br><br><br><br><br><br></p>
+<ol>
+<li>项目（不是必须的，但是很好的加分项，基于 Netty 的项目）  </li>
+<li>老师的指导  </li>
+</ol>
+<p><img src="https://img-blog.csdnimg.cn/20200918164333309.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164333374.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164333581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164333597.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164333630.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164334248.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164350539.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164351559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164351948.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164352164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20200918164352971.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center"></p>
+<p><img src="https://img-blog.csdnimg.cn/2020091609580947.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQyOTcyNTcz,size_16,color_FFFFFF,t_70#pic_center">  </p>
 
           
         
@@ -208,7 +207,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/02/bookstore%E5%9C%A8%E9%A1%B9%E7%9B%AE%E4%B8%AD%E5%AD%A6%E4%B9%A0%E6%96%B0%E7%9F%A5%E8%AF%86/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/02/%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
@@ -240,7 +239,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/10/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/12/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/10/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/12/">Next &amp;raquo;</a>
     </nav>
   
 

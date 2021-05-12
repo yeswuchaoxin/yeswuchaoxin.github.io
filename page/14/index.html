@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-面筋整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-计算机网络大三下" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/29/%E9%9D%A2%E7%AD%8B%E6%95%B4%E7%90%86/">面筋整理</a>
+      <a class="article-title" href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/">《计算机通信与网络》复习大纲</a>
     </h1>
   
 
         
-        <a href="/2021/04/29/%E9%9D%A2%E7%AD%8B%E6%95%B4%E7%90%86/" class="archive-article-date">
-  	<time datetime="2021-04-29T11:22:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-29</time>
+        <a href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/" class="archive-article-date">
+  	<time datetime="2021-04-29T23:48:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-30</time>
 </a>
         
       </header>
@@ -186,340 +186,29 @@
       
         
           
-            <p>一、    Java基础</p>
+            <p>《计算机通信与网络》复习大纲 201412<br>第一章 概论<br>1．计算机网络的定义和组成，几种常见的网络拓扑结构的名称。<br>2．计算机网络的体系结构概念<br>3．协议的概念、协议三要素和服务访问点的概念。<br>4．OSI七层模型名称，以及物理层（传输的基本单位：比特）、数据链路层（传输的基本单位：帧）、网络层（传输的基本单位：分组）、传输层、应用层的基本功能。<br>5．TCP/IP体系结构（知道各个协议在哪一层），OSI和TCP/IP的比较。</p>
+<p>第二章 数据通信技术基础<br>1．常用的传输媒体（7种，3种有线，4种无线）的名称。<br>2．掌握传信速率（比特率）、传码速率（波特率）、传输时延（发送时延）、传播时延的计算。处理时延概念。<br>3．理解异步、同步传输的概念。<br>4．信道容量的计算（有噪声、无噪声），注意：一个是用到香农公式、一个用到奈奎斯特公式。<br>5．掌握四种常用的多路复用技术的名称，了解工作原理。<br>6．掌握常用的数据交换方式名称（电路交换、报文交换、分组交换），了解其特点。<br>7．物理接口的四个特性名称（机械、电气、功能和规程）以及各自规定的内容。</p>
+<p>第三章 数据链路层<br>1．理解数据电路、数据链路的概念。<br>2．掌握数据链路层的功能（7个）。<br>3．理解停止等待协议的工作原理（理解图3-4）<br>4．滑动窗口机制的工作原理和过程（重点关注连续ARQ）。<br>5．HDLC帧类型（三种）、透明传输的概念（0比特插入法）。<br>6．PPP协议的组成（三个部分），协议如何实现数据的透明传输（分两种情况）。<br>7．掌握循环冗余码发送方的编码方法和接收方检测方法，汉明距离和纠检错能力的关系。<br>应重点关注的例题：例3-1、3-3、3-4</p>
+<p>第三章    局域网与广域网</p>
 <ol>
-<li><p>   ArrayList, Vector,LinkedList<br>名称    初始大小    扩容方式    其他<br>ArrayList     10    1.5倍<br>Vector    10    如果有扩容因子，则+扩容因子，否则变为原来的两倍<br>LinkedList            双向队列来实现的</p>
-</li>
-<li><p>深入理解String、StringBuffer、StringBuilder<br>（1）StringBuilder和StringBuffer类拥有的成员属性以及成员方法基本相同，区别是StringBuffer类的成员方法前面多了一个关键字：synchronized，不用多说，这个关键字是在多线程访问时起到安全保护作用的,也就是说StringBuffer是线程安全的。<br>(2) 1.StringBuffer的的初始大小为（16+初始字符串长度）即capacity=16+初始字符串长度；一旦length大于capacity时，capacity便在前一次的基础上加1后倍增；</p>
-</li>
-<li><p>   ThreadLocal<br>　首先，在每个线程Thread内部有一个ThreadLocal.ThreadLocalMap类型的成员变量threadLocals，这个threadLocals就是用来存储实际的变量副本的，键值为当前ThreadLocal变量，value为变量副本（即T类型的变量）。</p>
-</li>
-<li><p>JAVA 对象分配过程</p>
-</li>
-<li><p>Java中Set集合是如何实现添加元素保证不重复的？<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wupeixuan/p/8858816.html">https://www.cnblogs.com/wupeixuan/p/8858816.html</a></p>
-</li>
-<li><p>   重写equals()方法就必须重写hashCode()方法的原因<br>（<a target="_blank" rel="noopener" href="https://blog.csdn.net/u013679744/article/details/57074669%EF%BC%89">https://blog.csdn.net/u013679744/article/details/57074669）</a><br>hashCode()和equals()保持一致，如果equals方法返回true，那么两个对象的hasCode()返回值必须一样。如果equals方法返回false，hashcode可以不一样，但是这样不利于哈希表的性能，一般我们也不要这样做。重写equals()方法就必须重写hashCode()方法的原因也就显而易见了。<br>hashCode()返回不相等，则equals（）也一定不相等</p>
-</li>
+<li>局域网的四个技术特性名称（传输媒体、传输技术、网络拓扑和媒体访问控制方法）。</li>
+<li>局域网的数据链路层分成的两个子层名称。</li>
+<li>局域网的标准（重点：802.3、802.11所表示的含义）。</li>
+<li>CSMA/CD的原理（介质访问控制方法、争用期、以太网帧结构、最小帧长的计算）。</li>
+<li>10BASE-5,10BASE-2,10BASE-T,10BASE-F的含义。（10、BASE、2、5、T、F的含义）<br>6．集线器、网桥、以太网交换机和路由器工作的层次、带宽的计算（如习题4.5）；理解透明网桥的工作原理，包括网桥转发表的维护和转发原理。<br>7．了解以太网交换机转发帧的三种方式（存储转发、直通、无碎片直通）原理。<br>以太网交换机如何根据帧的目的地址控制转发，实现帧过滤？<br>8．VLAN的概念、无线局域网分类，WiFi常用的协议标准。<br>9．无线局域网中不能采用CSMA/CD的原因，理解CSMA/CA的工作原理（DIFS,SIFS,确认机制,虚侦听,随机退避,信道预约）。</li>
+<li>X.25、帧中继、ATM虚电路分别在哪一层提供虚电路服务；ATM信元的长度，首部长度。<br>应重点关注的例题：例4-1</li>
 </ol>
-<p>   假设两个对象，重写了其equals方法，其相等条件是属性相等，就返回true。如果不重写hashcode方法，其返回的依然是两个对象的内存地址值，必然不相等。这就出现了equals方法相等，但是hashcode不相等的情况。这不符合hashcode的规则。下边，会介绍在集合框架中，这种情况会导致的严重问题。</p>
-<ol start="7">
-<li><p>JVM参数</p>
-</li>
-<li><p>线程安全的概念<br>当多个线程访问同一个类（方法或对象）时，这个类始终都能表现出正确的行为，那么这个类(方法或对象)就是线程安全的。</p>
-</li>
-</ol>
-<ol start="9">
-<li><p>Java IO中涉及到的哪些类以及哪些设计模式</p>
-</li>
-<li><p>   模板方法与适配器的比较</p>
-</li>
-</ol>
-<p>二、    Mysql</p>
+<p>第四章    网络互连<br>1．理解IP地址的分类，掌握IP地址的分配（如例5-1）。<br>2．掌握ARP的作用以及以太网中ARP的工作过程。<br>3．掌握IPv4数据报首部的分析（20字节）（如习题5.20）<br>4．掌握分片的计算。<br>5．子网的划分和计算，网络掩码的表示和计算。(如习题5.16)<br>6．CIDR的原理和地址块的分配，路由聚合计算。<br>7．ICMP 报文类型和作用，ping 和 tracert 两个程序的目的和实现原理。<br>9．外部网关协议和内部网关协议的基本概念。RIP、OSPF是什么类型路由协议，各使用什么算法？ RIP最大跳数是多少？<br>10．了解RIP、OSPF和BGP的要点，掌握书上RIP路由更新的例子。<br>11．路由器的组成（路由选择和分组转发两个部分），直接交付和间接交付的概念。<br>12．掌握NAT的功能和实现VPN的两种技术。<br>13．IPv6中IP地址的长度，基本首部的长度，了解IP地址类型，IPv6地址表达方法，零压缩使用方法。<br>应重点关注的例题：例5-1、5-3、5-6、5-7<br>重点关注的课后习题：5.3、5.7、5.15、5.16、5.17、5.20</p>
+<p>第五章    传输层<br>1．传输层的功能。UDP提供什么服务？UDP格式，端口、套接字的概念。<br>2．TCP的基本概念、报文段的格式，TCP提供的服务类型。伪首部的作用<br>3．掌握TCP的连接建立、释放过程。<br>4．理解TCP中的可变滑动窗口的流量控制方法的工作过程，理解TCP报文段序号和确认号含义。<br>5．掌握TCP的慢启动算法和拥塞避免算法的工作过程。<br>6．掌握TCP报文段的分析。</p>
+<p>应重点关注的例题：例6-10<br>重点关注的课后习题：6.2、6.5</p>
+<p>第六章    应用层<br>1．描述DNS中主机名至IP地址的域名解析过程。<br>2．网络应用模式<br>3．FTP应用的两个连接名称和作用<br>4．一个计算机访问因特网需要配置的项目（4个：主机的IP地址、子网掩码、默认路由器的IP地址、域名服务器的IP地址）。DHCP的基本概念。<br>5．电子邮件的发送和接收过程。<br>6．SMTP的作用是什么？MIME和SMTP的关系。<br>7．WWW和HTTP、URL的基本概念。<br>重点关注的课后习题：7.3、7.9、7.18</p>
+<p>第七章    网络管理和网络安全    </p>
 <ol>
-<li><p>Innodb与Myisam的区别</p>
-</li>
-<li><p>limit查询的优化方法</p>
-</li>
-<li><p>mvcc<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/whoamiyang/article/details/51901888">https://blog.csdn.net/whoamiyang/article/details/51901888</a></p>
-</li>
-<li><p>   查询前三名<br>select * from tablename a where score in ( select top 3 score from tablename b where a.classid=b.classid order by score desc);</p>
-</li>
-<li><p>最左前缀</p>
-</li>
-<li><p>内连接、外连接、左连接</p>
-</li>
-<li><p>索引失效</p>
-</li>
+<li>网络攻击形式：主动攻击和被动攻击两大类若干具体形式。</li>
+<li>习题8.13  衡量网络安全的指标主要有网络系统的可靠性、可用性、保密性、完整性、不可抵赖性，在P284</li>
+<li>网络管理5个主要功能 P272</li>
+<li>SNMP的3个基本元素：管理者、代理和MIB。 P278</li>
 </ol>
-<ol start="8">
-<li><p>主键索引和唯一索引的区别</p>
-</li>
-<li><p>Mysql优化</p>
-</li>
-<li><p>Explain<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/xuanzhi201111/p/4175635.html">https://www.cnblogs.com/xuanzhi201111/p/4175635.html</a></p>
-</li>
-<li><p>慢查询日志<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/luyucheng/p/6265594.html">https://www.cnblogs.com/luyucheng/p/6265594.html</a></p>
-</li>
-<li><p>Profile<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sj349781478/article/details/78224713">https://blog.csdn.net/sj349781478/article/details/78224713</a></p>
-</li>
-</ol>
-<p>三、    Redis</p>
-<ol>
-<li>   为什么使用redis</li>
-</ol>
-<p>（1）性能<br>我们在碰到需要执行耗时特别久，且结果不频繁变动的SQL，就特别适合将运行结果放入缓存。这样，后面的请求就去缓存中读取，使得请求能够迅速响应。<br>（2）并发<br>在大并发的情况下，所有的请求直接访问数据库，数据库会出现连接异常。这个时候，就需要使用redis做一个缓冲操作，让请求先访问到redis，而不是直接访问数据库。</p>
-<ol start="2">
-<li><p>   使用redis有什么缺点<br>(一)缓存和数据库双写一致性问题<br>(二)缓存雪崩问题<br>(三)缓存击穿问题<br>(四)缓存的并发竞争问题</p>
-</li>
-<li><p>   单线程的redis为什么这么快<br>(一)纯内存操作<br>(二)单线程操作，避免了频繁的上下文切换<br>(三)采用了非阻塞I/O多路复用机制</p>
-</li>
-<li><p>   redis的数据类型，以及每种数据类型的使用场景</p>
-</li>
-</ol>
-<p>(1)String<br>这个其实没啥好说的，最常规的set/get操作，value可以是String也可以是数字。一般做一些复杂的计数功能的缓存，</p>
-<p>锁，</p>
-<p>(2)hash<br>这里value存放的是结构化的对象，比较方便的就是操作其中的某个字段。博主在做单点登录的时候，就是用这种数据结构存储用户信息，以cookieId作为key，设置30分钟为缓存过期时间，能很好的模拟出类似session的效果。</p>
-<p>(3)list<br>使用List的数据结构，可以做简单的消息队列的功能。另外还有一个就是，可以利用lrange命令，做基于redis的分页功能，性能极佳，用户体验好。本人还用一个场景，很合适—取行情信息。就也是个生产者和消费者的场景。LIST可以很好的完成排队，先进先出的原则。</p>
-<p>(4)set<br>因为set堆放的是一堆不重复值的集合。所以可以做全局去重的功能。为什么不用JVM自带的Set进行去重？因为我们的系统一般都是集群部署，使用JVM自带的Set，比较麻烦，难道为了一个做一个全局去重，再起一个公共服务，太麻烦了。<br>另外，就是利用交集、并集、差集等操作，可以计算共同喜好，全部的喜好，自己独有的喜好等功能。</p>
-<p>(5)sorted set<br>sorted set多了一个权重参数score,集合中的元素能够按score进行排列。可以做排行榜应用，取TOP N操作。</p>
-<ol start="5">
-<li>   redis的过期策略以及内存淘汰机制<br>(1)redis采用的是定期删除+惰性删除策略。<br>为什么不用定时删除策略?<br>定时删除,用一个定时器来负责监视key,过期则自动删除。虽然内存及时释放，但是十分消耗CPU资源。在大并发请求下，CPU要将时间应用在处理请求，而不是删除key,因此没有采用这一策略.</li>
-</ol>
-<p>(2) 定期删除+惰性删除是如何工作的呢?<br>定期删除，redis默认每个100ms检查，是否有过期的key,有过期key则删除。需要说明的是，redis不是每个100ms将所有的key检查一次，而是随机抽取进行检查(如果每隔100ms,全部key进行检查，redis岂不是卡死)。因此，如果只采用定期删除策略，会导致很多key到时间没有删除。<br>于是，惰性删除派上用场。也就是说在你获取某个key的时候，redis会检查一下，这个key如果设置了过期时间那么是否过期了？如果过期了此时就会删除。</p>
-<p>(3) 内存淘汰机制<br>采用定期删除+惰性删除就没其他问题了么?<br>不是的，如果定期删除没删除key。然后你也没即时去请求key，也就是说惰性删除也没生效。这样，redis的内存会越来越高。那么就应该采用内存淘汰机制。<br>在redis.conf中有一行配置。</p>
-<h1 id="maxmemory-policy-volatile-lru"><a href="#maxmemory-policy-volatile-lru" class="headerlink" title="maxmemory-policy volatile-lru"></a>maxmemory-policy volatile-lru</h1><p>该配置就是配内存淘汰策略的(什么，你没配过？好好反省一下自己)<br>1）noeviction：当内存不足以容纳新写入数据时，新写入操作会报错。应该没人用吧。<br>2）allkeys-lru：当内存不足以容纳新写入数据时，在键空间中，移除最近最少使用的key。推荐使用，目前项目在用这种。<br>3）allkeys-random：当内存不足以容纳新写入数据时，在键空间中，随机移除某个key。应该也没人用吧，你不删最少使用Key,去随机删。<br>4）volatile-lru：当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，移除最近最少使用的key。这种情况一般是把redis既当缓存，又做持久化存储的时候才用。不推荐<br>5）volatile-random：当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，随机移除某个key。依然不推荐<br>6）volatile-ttl：当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，有更早过期时间的key优先移除。不推荐<br>ps：如果没有设置 expire 的key, 不满足先决条件(prerequisites); 那么 volatile-lru, volatile-random 和 volatile-ttl 策略的行为, 和 noeviction(不删除) 基本上一致。</p>
-<p>volatile和allkeys规定了是对已设置过期时间的数据集淘汰数据还是从全部数据集淘汰数据，后面的lru、ttl以及random是三种不同的淘汰策略，再加上一种no-enviction永不回收的策略。</p>
-<p>(4) 最大缓存配置</p>
-<p>在 redis 中，允许用户设置最大使用内存大小<br>server.maxmemory<br>默认为0，没有指定最大缓存，如果有新的数据添加，超过最大内存，则会使redis崩溃，所以一定要设置。redis 内存数据集大小上升到一定大小的时候，就会实行数据淘汰策略</p>
-<p>(5)使用策略</p>
-<p>1、如果数据呈现幂律分布，也就是一部分数据访问频率高，一部分数据访问频率低，则使用allkeys-lru<br>2、如果数据呈现平等分布，也就是所有的数据访问频率都相同，则使用allkeys-random<br>三种数据淘汰策略：<br>ttl和random比较容易理解，实现也会比较简单。主要是Lru最近最少使用淘汰策略，设计上会对key 按失效时间排序，然后取最先失效的key进行淘汰</p>
-<ol start="6">
-<li>   redis和数据库双写一致性问题<br>分析:一致性问题是分布式常见问题，还可以再分为最终一致性和强一致性。数据库和缓存双写，就必然会存在不一致的问题。答这个问题，先明白一个前提。就是如果对数据有强一致性要求，不能放缓存。我们所做的一切，只能保证最终一致性。另外，我们所做的方案其实从根本上来说，只能说降低不一致发生的概率，无法完全避免。因此，有强一致性要求的数据，不能放缓存。</li>
-</ol>
-<p>首先，采取正确更新策略，先更新数据库，再更新缓存。其次，因为可能存在更新缓存失败的问题，提供一个补偿措施即可，例如利用消息队列。</p>
-<ol start="7">
-<li>   如何应对缓存穿透和缓存雪崩问题<br>（1）缓存穿透，即黑客故意去请求缓存中不存在的数据，导致所有的请求都怼到数据库上，从而数据库连接异常。<br>解决方案:<br>(a)利用互斥锁，缓存失效的时候，先去获得锁，得到锁了，再去请求数据库。没得到锁，则休眠一段时间重试<br>(b) 返回空，另外也有一个更为简单粗暴的方法（我们采用的就是这种），如果一个查询返回的数据为空（不管是数 据不存在，还是系统故障），我们仍然把这个空结果进行缓存，但它的过期时间会很短，最长不超过五分钟。<br>(c)提供一个能迅速判断请求是否有效的拦截机制，比如，利用布隆过滤器，内部维护一系列合法有效的key。迅速判断出，请求所携带的Key是否合法有效。如果不合法，则直接返回。</li>
-</ol>
-<p>（2）缓存雪崩，即缓存同一时间大面积的失效，这个时候又来了一波请求，结果请求都怼到数据库上，从而导致数据库连接异常。<br>(a)给缓存的失效时间，加上一个随机值，避免集体失效。<br>(b)使用互斥锁，但是该方案吞吐量明显下降了。<br>(c)双缓存。我们有两个缓存，缓存A和缓存B。缓存A的失效时间为20分钟，缓存B不设失效时间。自己做缓存预热操作。然后细分以下几个小点<br>I 从缓存A读数据库，有则直接返回<br>II A没有数据，直接从B读数据，直接返回，并且异步启动一个更新线程。<br>III 更新线程同时更新缓存A和缓存B。<br>8.    如何解决redis的并发竞争key问题</p>
-<p>分析:这个问题大致就是，同时有多个子系统去set一个key。这个时候要注意什么呢？大家思考过么。需要说明一下，博主提前百度了一下，发现答案基本都是推荐用redis事务机制。博主不推荐使用redis的事务机制。因为我们的生产环境，基本都是redis集群环境，做了数据分片操作。你一个事务中有涉及到多个key操作的时候，这多个key不一定都存储在同一个redis-server上。因此，redis的事务机制，十分鸡肋。</p>
-<p>回答:如下所示<br>(1)如果对这个key操作，不要求顺序<br>这种情况下，准备一个分布式锁，大家去抢锁，抢到锁就做set操作即可，比较简单。</p>
-<p>(2)如果对这个key操作，要求顺序<br>假设有一个key1,系统A需要将key1设置为valueA,系统B需要将key1设置为valueB,系统C需要将key1设置为valueC.<br>期望按照key1的value值按照 valueA–&gt;valueB–&gt;valueC的顺序变化。这种时候我们在数据写入数据库的时候，需要保存一个时间戳。假设时间戳如下<br>系统A key 1 {valueA  3:00}<br>系统B key 1 {valueB  3:05}<br>系统C key 1 {valueC  3:10}<br>那么，假设这会系统B先抢到锁，将key1设置为{valueB 3:05}。接下来系统A抢到锁，发现自己的valueA的时间戳早于缓存中的时间戳，那就不做set操作了。以此类推。<br>其他方法，比如利用队列，将set方法变成串行访问也可以。总之，灵活变通。</p>
-<ol start="9">
-<li>   redis常见性能问题和解决方案</li>
-</ol>
-<p>1).Master写内存快照，save命令调度rdbSave函数，会阻塞主线程的工作，当快照比较大时对性能影响是非常大的，会间断性暂停服务，所以Master最好不要写内存快照。<br>2).Master AOF持久化，如果不重写AOF文件，这个持久化方式对性能的影响是最小的，但是AOF文件会不断增大，AOF文件过大会影响Master重启的恢复速度。Master最好不要做任何持久化工作，包括内存快照和AOF日志文件，特别是不要启用内存快照做持久化,如果数据比较关键，某个Slave开启AOF备份数据，策略为每秒同步一次。<br>3).Master调用BGREWRITEAOF重写AOF文件，AOF在重写的时候会占大量的CPU和内存资源，导致服务load过高，出现短暂服务暂停现象。<br>4). Redis主从复制的性能问题，为了主从复制的速度和连接的稳定性，Slave和Master最好在同一个局域网内</p>
-<ol start="10">
-<li>Redis之AOF重写及其实现原理<br>（<a target="_blank" rel="noopener" href="https://blog.csdn.net/hezhiqiang1314/article/details/69396887%EF%BC%89">https://blog.csdn.net/hezhiqiang1314/article/details/69396887）</a></li>
-</ol>
-<ol start="11">
-<li>   Redis的特点<br>Redis本质上是一个Key-Value类型的内存数据库，很像memcached，整个数据库统统加载在内存当中进行操作，定期通过异步操作把数据库数据flush到硬盘上进行保存。因为是纯内存操作，Redis的性能非常出色，每秒可以处理超过 10万次读写操作，是已知性能最快的Key-Value DB。<br>Redis的出色之处不仅仅是性能，Redis最大的魅力是支持保存多种数据结构，此外单个value的最大限制是1GB，不像 memcached只能保存1MB的数据，因此Redis可以用来实现很多有用的功能，比方说用他的List来做FIFO双向链表，实现一个轻量级的高性 能消息队列服务，用他的Set可以做高性能的tag系统等等。另外Redis也可以对存入的Key-Value设置expire时间，因此也可以被当作一 个功能加强版的memcached来用。<br>Redis的主要缺点是数据库容量受到物理内存的限制，不能用作海量数据的高性能读写，因此Redis适合的场景主要局限在较小数据量的高性能操作和运算上。</li>
-</ol>
-<ol start="12">
-<li><p>使用redis有哪些好处？<br>(1) 速度快，因为数据存在内存中，类似于HashMap，HashMap的优势就是查找和操作的时间复杂度都是O(1)<br>(2) 支持丰富数据类型，支持string，list，set，sorted set，hash<br>(3) 支持事务，操作都是原子性，所谓的原子性就是对数据的更改要么全部执行，要么全部不执行<br>(4) 丰富的特性：可用于缓存，消息，按key设置过期时间，过期后将会自动删除</p>
-</li>
-<li><p>   Redis事务为什么不支持回滚<br>在事务运行期间，虽然Redis命令可能会执行失败，但是Redis仍然会执行事务中余下的其他命令，而不会执行回滚操作，你可能会觉得这种行为很奇怪。然而，这种行为也有其合理之处：只有当被调用的Redis命令有语法错误时，这条命令才会执行失败（在将这个命令放入事务队列期间，Redis能够发现此类问题），或者对某个键执行不符合其数据类型的操作：实际上，这就意味着只有程序错误才会导致Redis命令执行失败，这种错误很有可能在程序开发期间发现，一般很少在生产环境发现。 Redis已经在系统内部进行功能简化，这样可以确保更快的运行速度，因为Redis不需要事务回滚的能力。对于Redis事务的这种行为，有一个普遍的反对观点，那就是程序有可能会有缺陷（bug）。但是，你应当注意到：事务回滚并不能解决任何程序错误。例如，如果某个查询会将一个键的值递增2，而不是1，或者递增错误的键，那么事务回滚机制是没有办法解决这些程序问题的。请注意，没有人能解决程序员自己的错误，这种错误可能会导致Redis命令执行失败。正因为这些程序错误不大可能会进入生产环境，所以我们在开发Redis时选用更加简单和快速的方法，没有实现错误回滚的功能。</p>
-</li>
-</ol>
-<ol start="14">
-<li>   mySQL里有2000w数据，redis中只存20w的数据，如何保证redis中的数据都是热点数据</li>
-</ol>
-<p>相关知识：redis 内存数据集大小上升到一定大小的时候，就会施行数据淘汰策略（回收策略）。redis 提供 6种数据淘汰策略：<br>volatile-lru：从已设置过期时间的数据集（server.db[i].expires）中挑选最近最少使用的数据淘汰<br>volatile-ttl：从已设置过期时间的数据集（server.db[i].expires）中挑选将要过期的数据淘汰<br>volatile-random：从已设置过期时间的数据集（server.db[i].expires）中任意选择数据淘汰<br>allkeys-lru：从数据集（server.db[i].dict）中挑选最近最少使用的数据淘汰<br>allkeys-random：从数据集（server.db[i].dict）中任意选择数据淘汰<br>no-enviction（驱逐）：禁止驱逐数据</p>
-<ol start="15">
-<li>   redis事物的了解CAS(check-and-set 操作实现乐观锁 )?<br>事务的实现特征：</li>
-</ol>
-<p>1). 在事务中的所有命令都将会被串行化的顺序执行，事务执行期间，Redis不会再为其它客户端的请求提供任何服务，从而保证了事物中的所有命令被原子的执行。<br>2). 和关系型数据库中的事务相比，在Redis事务中如果有某一条命令执行失败，其后的命令仍然会被继续执行。<br>3). 我们可以通过MULTI命令开启一个事务，有关系型数据库开发经验的人可以将其理解为”BEGIN TRANSACTION”语句。在该语句之后执行的命令都将被视为事务之内的操作，最后我们可以通过执行EXEC/DISCARD命令来提交/回滚该事务内的所有操作。这两个Redis命令可被视为等同于关系型数据库中的COMMIT/ROLLBACK语句。<br>4). 在事务开启之前，如果客户端与服务器之间出现通讯故障并导致网络断开，其后所有待执行的语句都将不会被服务器执行。然而如果网络中断事件是发生在客户端执行EXEC命令之后，那么该事务中的所有命令都会被服务器执行。<br>5). 当使用Append-Only模式时，Redis会通过调用系统函数write将该事务内的所有写操作在本次调用中全部写入磁盘。然而如果在写入的过程中出现系统崩溃，如电源故障导致的宕机，那么此时也许只有部分数据被写入到磁盘，而另外一部分数据却已经丢失。Redis服务器会在重新启动时执行一系列必要的一致性检测，一旦发现类似问题，就会立即退出并给出相应的错误提示。此时，我们就要充分利用Redis工具包中提供的redis-check-aof工具，该工具可以帮助我们定位到数据不一致的错误，并将已经写入的部分数据进行回滚。修复之后我们就可以再次重新启动Redis服务器了。</p>
-<ol start="16">
-<li>   WATCH命令和基于CAS的乐观锁</li>
-</ol>
-<p>在Redis的事务中，WATCH命令可用于提供CAS(check-and-set)功能。假设我们通过WATCH命令在事务执行之前监控了多个Keys，倘若在WATCH之后有任何Key的值发生了变化，EXEC命令执行的事务都将被放弃，同时返回Null multi-bulk应答以通知调用者事务执行失败。<br>例如，我们再次假设Redis中并未提供incr命令来完成键值的原子性递增，如果要实现该功能，我们只能自行编写相应的代码。其伪码如下：<br>val = GET mykey<br>val = val + 1<br>SET mykey $val<br>以上代码只有在单连接的情况下才可以保证执行结果是正确的，因为如果在同一时刻有多个客户端在同时执行该段代码，那么就会出现多线程程序中经常出现的一种错误场景–竞态争用(race condition)。比如，客户端A和B都在同一时刻读取了mykey的原有值，假设该值为10，此后两个客户端又均将该值加一后set回Redis服务器，这样就会导致mykey的结果为11，而不是我们认为的12。为了解决类似的问题，我们需要借助WATCH命令的帮助，见如下代码：<br>WATCH mykey<br>val = GET mykey<br>val = val + 1<br>MULTI<br>SET mykey $val<br>EXEC<br>和此前代码不同的是，新代码在获取mykey的值之前先通过WATCH命令监控了该键，此后又将set命令包围在事务中，这样就可以有效的保证每个连接在执行EXEC之前，如果当前连接获取的mykey的值被其它连接的客户端修改，那么当前连接的EXEC命令将执行失败。这样调用者在判断返回值后就可以获悉val是否被重新设置成功。</p>
-<ol start="17">
-<li>   redis持久化的几种方式<br>1、快照（snapshots）<br>缺省情况情况下，Redis把数据快照存放在磁盘上的二进制文件中，文件名为dump.rdb。你可以配置Redis的持久化策略，例如数据集中每N秒钟有超过M次更新，就将数据写入磁盘；或者你可以手工调用命令SAVE或BGSAVE。<br>工作原理<br>． Redis forks.<br>． 子进程开始将数据写到临时RDB文件中。<br>． 当子进程完成写RDB文件，用新文件替换老文件。<br>． 这种方式可以使Redis使用copy-on-write技术。<br>2、AOF<br>快照模式并不十分健壮，当系统停止，或者无意中Redis被kill掉，最后写入Redis的数据就会丢失。这对某些应用也许不是大问题，但对于要求高可靠性的应用来说，<br>Redis就不是一个合适的选择。<br>Append-only文件模式是另一种选择。<br>你可以在配置文件中打开AOF模式</li>
-</ol>
-<p>3、虚拟内存方式<br>当你的key很小而value很大时,使用VM的效果会比较好.因为这样节约的内存比较大.<br>当你的key不小时,可以考虑使用一些非常方法将很大的key变成很大的value,比如你可以考虑将key,value组合成一个新的value.<br>vm-max-threads这个参数,可以设置访问swap文件的线程数,设置最好不要超过机器的核数,如果设置为0,那么所有对swap文件的操作都是串行的.可能会造成比较长时间的延迟,但是对数据完整性有很好的保证.<br>自己测试的时候发现用虚拟内存性能也不错。如果数据量很大，可以考虑分布式或者其他数据库</p>
-<ol start="18">
-<li>   Redis生存时间</li>
-</ol>
-<p>1、影响生存时间的一些操作<br>生存时间可以通过使用 DEL 命令来删除整个 key 来移除，或者被 SET 和 GETSET 命令覆盖原来的数据，也就是说，修改key对应的value和使用另外相同的key和value来覆盖以后，当前数据的生存时间不同。<br>比如说，对一个 key 执行INCR命令，对一个列表进行LPUSH命令，或者对一个哈希表执行HSET命令，这类操作都不会修改 key 本身的生存时间。另一方面，如果使用RENAME对一个 key 进行改名，那么改名后的 key的生存时间和改名前一样。</p>
-<p>RENAME命令的另一种可能是，尝试将一个带生存时间的 key 改名成另一个带生存时间的 another_key ，这时旧的 another_key (以及它的生存时间)会被删除，然后旧的 key 会改名为 another_key ，因此，新的 another_key 的生存时间也和原本的 key 一样。使用PERSIST命令可以在不删除 key 的情况下，移除 key 的生存时间，让 key 重新成为一个persistent key 。</p>
-<p>2、如何更新生存时间<br>可以对一个已经带有生存时间的 key 执行EXPIRE命令，新指定的生存时间会取代旧的生存时间。过期时间的精度已经被控制在1ms之内，主键失效的时间复杂度是O（1），<br>EXPIRE和TTL命令搭配使用，TTL可以查看key的当前生存时间。设置成功返回 1；当 key 不存在或者不能为 key 设置生存时间时，返回 0 。</p>
-<ol start="19">
-<li>   redis 最适合的场景 </li>
-</ol>
-<p>（1）会话缓存（Session Cache）<br>最常用的一种使用Redis的情景是会话缓存（session cache）。用Redis缓存会话比其他存储（如Memcached）的优势在于：Redis提供持久化。当维护一个不是严格要求一致性的缓存时，如果用户的购物车信息全部丢失，大部分人都会不高兴的，现在，他们还会这样吗？<br>幸运的是，随着 Redis 这些年的改进，很容易找到怎么恰当的使用Redis来缓存会话的文档。甚至广为人知的商业平台Magento也提供Redis的插件。</p>
-<p>（2）作者：构造函数</p>
-<p>除基本的会话token之外，Redis还提供很简便的FPC平台。回到一致性问题，即使重启了Redis实例，因为有磁盘的持久化，用户也不会看到页面加载速度的下降，这是一个极大改进，类似PHP本地FPC。</p>
-<ol start="20">
-<li>   如果这个redis正在给线上的业务提供服务，那使用keys指令会有什么问题？</li>
-</ol>
-<p>这个时候你要回答redis关键的一个特性：redis的单线程的。keys指令会导致线程阻塞一段时间，线上服务会停顿，直到指令执行完毕，服务才能恢复。这个时候可以使用scan指令，scan指令可以无阻塞的提取出指定模式的key列表，但是会有一定的重复概率，在客户端做一次去重就可以了，但是整体所花费的时间会比直接用keys指令长。</p>
-<ol start="21">
-<li>   使用过Redis做异步队列么，你是怎么用的？<br>一般使用list结构作为队列，rpush生产消息，lpop消费消息。当lpop没有消息的时候，要适当sleep一会再重试。</li>
-</ol>
-<p>如果对方追问可不可以不用sleep呢？list还有个指令叫blpop，在没有消息的时候，它会阻塞住直到消息到来。</p>
-<p>如果对方追问能不能生产一次消费多次呢？使用pub/sub主题订阅者模式，可以实现1:N的消息队列。</p>
-<p>如果对方追问redis如何实现延时队列？使用sortedset，拿时间戳作为score，消息内容作为key调用zadd来生产消息，消费者用zrangebyscore指令获取N秒之前的数据轮询进行处理。</p>
-<ol start="22">
-<li><p>   如果有大量的key需要设置同一时间过期，一般需要注意什么？<br>如果大量的key过期时间设置的过于集中，到过期的那个时间点，redis可能会出现短暂的卡顿现象。一般需要在时间上加一个随机值，使得过期时间分散一些。</p>
-</li>
-<li><p>   Redis如何做持久化的？</p>
-</li>
-</ol>
-<p>bgsave做镜像全量持久化，aof做增量持久化。因为bgsave会耗费较长时间，不够实时，在停机的时候会导致大量丢失数据，所以需要aof来配合使用。在redis实例重启时，会使用bgsave持久化文件重新构建内存，再使用aof重放近期的操作指令来实现完整恢复重启之前的状态。</p>
-<p>对方追问如果突然机器掉电会怎样？取决于aof日志sync属性的配置，如果不要求性能，在每条写指令时都sync一下磁盘，就不会丢失数据。但是在高性能的要求下每次都sync是不现实的，一般都使用定时sync，比如1s1次，这个时候最多就会丢失1s的数据。</p>
-<p>对方追问bgsave的原理是什么？你给出两个词汇就可以了，fork和cow。fork是指redis通过创建子进程来进行bgsave操作，cow指的是copy on write，子进程创建后，父子进程共享数据段，父进程继续提供读写服务，写脏的页面数据会逐渐和子进程分离开来。</p>
-<ol start="24">
-<li><p>Pipeline有什么好处，为什么要用pipeline？<br>（<a target="_blank" rel="noopener" href="https://blog.csdn.net/u011489043/article/details/78769428%EF%BC%89">https://blog.csdn.net/u011489043/article/details/78769428）</a></p>
-</li>
-<li><p>Redis的同步机制了解么？<br>Redis可以使用主从同步，从从同步。第一次同步时，主节点做一次bgsave，并同时将后续修改操作记录到内存buffer，待完成后将rdb文件全量同步到复制节点，复制节点接受完成后将rdb镜像加载到内存。加载完成后，再通知主节点将期间修改的操作记录同步到复制节点进行重放就完成了同步过程。</p>
-</li>
-<li><p>   是否使用过Redis集群，集群的原理是什么？</p>
-</li>
-</ol>
-<p>Redis Sentinal着眼于高可用，在master宕机时会自动将slave提升为master，继续提供服务。</p>
-<p>Redis Cluster着眼于扩展性，在单个redis内存不足时，使用Cluster进行分片存储。</p>
-<ol start="27">
-<li>对于大量的请求怎么样处理<br>redis是一个单线程程序，也就说同一时刻它只能处理一个客户端请求；<br>redis是通过IO多路复用（select，epoll, kqueue，依据不同的平台，采取不同的实现）来处理多个客户端请求的，伪代码：</li>
-</ol>
-<ol start="28">
-<li>   redis、zk实现锁区别</li>
-</ol>
-<p>四、    数据结构</p>
-<ol>
-<li>逆波兰式<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/wcybrain/article/details/56676287">https://blog.csdn.net/wcybrain/article/details/56676287</a></li>
-</ol>
-<p>五、    Spring</p>
-<ol>
-<li>AOP是怎么实现的，有几种方式</li>
-</ol>
-<ol start="2">
-<li><p>spingIOC如何保存对象的<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/jiangyu1013/article/details/72654373">https://blog.csdn.net/jiangyu1013/article/details/72654373</a></p>
-</li>
-<li><p>springIoc体系结构<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34173549/article/details/79929071">https://blog.csdn.net/qq_34173549/article/details/79929071</a></p>
-</li>
-<li><p>@Autowired 与@Resource的区别</p>
-</li>
-<li><p>Bean初始化方法</p>
-</li>
-<li><p>   手写springIOC<br><a target="_blank" rel="noopener" href="http://www.cnblogs.com/1016882435AIDA/p/5970280.html">http://www.cnblogs.com/1016882435AIDA/p/5970280.html</a></p>
-</li>
-</ol>
-<ol start="7">
-<li>   手写springAOP<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/1016882435AIDA/p/5980770.html">https://www.cnblogs.com/1016882435AIDA/p/5980770.html</a></li>
-<li>bean的加载流程<br><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000012887776#articleHeader3">https://segmentfault.com/a/1190000012887776#articleHeader3</a></li>
-</ol>
-<p>六、    SpringMVC<br>七、    Mybatis<br>八、    操作系统</p>
-<ol>
-<li>   进程与线程</li>
-</ol>
-<p>1、进程的目的就是担当分配系统资源（CPU时间、内存等）的基本单位。<br>2、线程是进程的一个执行流，是CPU调度和分派的基本单位，它是比进程更小的能独立运行的基本单位<br>3、进程有独立的地址空间，一个进程崩溃后，在保护模式下不会对其它进程产生影响，而线程只是一个进程中的不同执行路径。线程有自己的堆栈和局部变量，但线程没有单独的地址空间，一个线程死掉就等于整个进程死掉，所以多进程的程序要比多线程的程序健壮，但在进程切换时，耗费资源较大，效率要差一些。但对于一些要求同时进行并且又要共享某些变量的并发操作，只能用线程，不能用进程。</p>
-<ol start="2">
-<li><p>   操作系统基本概念</p>
-</li>
-<li><p>进程管理<br>进程控制（进程与线程、进程状态的切换、进程调度算法）、<br>进程同步（临界区、同步与互斥、信号量）、<br>进程通信（管道、共享存储、消息队列、套接字）、<br>死锁处理（死锁必要条件、死锁检测与恢复、死锁预防、死锁避免）、<br>处理机调度等。</p>
-</li>
-<li><p>内存管理<br>内存分配、地址映射、内存保护与共享、虚拟内存等。</p>
-</li>
-<li><p>文件管理<br>文件存储空间的管理、目录管理、文件读写管理和保护等。</p>
-</li>
-<li><p>设备管理<br>完成用户的 I/O 请求，方便用户使用各种设备，并提高设备的利用率。<br>主要包括缓冲管理、设备分配、设备处理、虛拟设备等。</p>
-</li>
-<li><p>进程状态的切换</p>
-</li>
-<li><p>进程调度算法</p>
-</li>
-<li><p>   进程同步<br>1、临界区</p>
-</li>
-</ol>
-<p>2、同步与互斥</p>
-<p>3、信号量</p>
-<ol start="6">
-<li>操作系统作业调度</li>
-<li>进程通信</li>
-<li>   死锁<br>1、死锁的必要条件</li>
-</ol>
-<p> 1)互斥条件。在一段时间内，某资源只能被一个进程占用，如果此时还有其他进程请求资源，则请求进程只能等待，直至占有该资源的进程用完释放。<br>2）请求和等待。进程已经保持了至少一个资源，但又提出了新的资源请求，而改资源已被其他进程占有，此时请求进程被阻塞 但对自己已获得的资源保持不放。<br>3）不可抢占条件。进程已获得的资源在未使用完之前不能被抢占，只能在进程使用完时自己释放。<br>4）循环等待条件。存在一个进程资源的循环链</p>
-<p>2、死锁的处理方法<br>  1）鸵鸟策略</p>
-<p>  2）死锁检测与死锁恢复<br>     A、每种类型一个资源的死锁检测</p>
-<pre><code> B、每种类型多个资源的死锁检测
-    C、死锁恢复
-  
-</code></pre>
-<p>  3、死锁预防<br>非互斥条件是非共享设备所必须的，不仅不能改变，还应加以保证。<br>A、    破坏“请求和保持”<br>    一种实现方式是规定所有进程在开始执行前请求所需要的全部资源；二是允许一个进程只获取运行初期所需的资源后，便开始运行。<br>B、       破坏“不可抢占”<br>当一个已经保持了某些不可被抢占资源的进程，提出新的资源请求而不能得到满足时，它必须释放已经保持的所有资源，待以后需要时再重新申请。<br>C、    破环“循环等待”<br>给资源统一编号，进程只能按编号顺序来请求资源。<br>  4、死锁避免<br>    银行家算法<br>9.    页面置换算法</p>
-<p>1）    最佳置换算法</p>
-<p>2）    先进先出页面置换算法</p>
-<p>3）    最近最久未使用</p>
-<p>4）    最少使用置换算法</p>
-<ol start="10">
-<li>磁盘调度算法</li>
-<li>用户态和内核态</li>
-<li>IO,BIO,NIO,同步,异步</li>
-</ol>
-<p>五种IO模型：</p>
-<ol start="13">
-<li>   信号与信号量的区别</li>
-<li>信号：（signal）是一种处理异步事件的方式。信号是比较复杂的通信方式，用于通知接受进程有某种事件发生，除了用于进程外，还可以发送信号给进程本身。</li>
-<li>信号量：（Semaphore）进程间通信处理同步互斥的机制。是在多线程环境下使用的一种设施, 它负责协调各个线程, 以保证它们能够正确、合理的使用公共资源。</li>
-</ol>
-<p>九、    Linux</p>
-<ol>
-<li>文件属性</li>
-<li>   Linux命令<br>Locate</li>
-</ol>
-<p>WhereIs</p>
-<p>Find</p>
-<p>Awk<br>awk是行处理器:相比较屏幕处理的优点，在处理庞大文件时不会出现内存溢出或是处理缓慢的问题，通常用来格式化文本信息<br>awk处理过程: 依次对每一行进行处理，然后输出</p>
-<p> print $0 就是打印整行内容（$0前面不需要反斜杠），print $1表示只打印每行第一个字段</p>
-<p>Sed</p>
-<p>十、    网络I/O模型</p>
-<p>十一、    计算机网络</p>
-<ol>
-<li>   tcp和udp的区别<br>UDP特点：<br>1）    无连接的<br>2）    最大努力交付<br>3）    面向报文的，UDP对应用层交下来的报文，既不合并也不拆分，而是保留这些报文的边界。<br>4）    支持一对一，一对多<br>5）    udp没有拥塞控制。网络中出现的拥塞不会使源主机发送速率降低.</li>
-</ol>
-<p>TCP特点：</p>
-<ol>
-<li>   面向连接的运输层协议；</li>
-<li>   每一条tcp连接只能是点对点</li>
-<li>   TCP提供可靠交付的服务</li>
-<li>   面向字节流</li>
-</ol>
-<ol start="2">
-<li>   可靠传输的工作原理<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/scu_cindy/article/details/74529287">https://blog.csdn.net/scu_cindy/article/details/74529287</a></li>
-</ol>
-<p>1）    以字节为单位的滑动窗口<br>发送窗口：在没有收到B的确认的情况下,A可以连续把窗口内的数据都发送出去。凡是已经发送过的数据，在未收到确认之前都必须暂时保存，以便在超时重传时使用。</p>
-<p>强调：<br>1、A的发送窗口是根据B的接收窗口设置的。但在同一时刻，A的发送窗口并不是和B的接受窗口一样大，需要考虑拥塞控制；<br>2、对于不按序到达的数据应如何处理，TCP标准并没规定。一般是临时缓存。<br>3、TCP要求接收方必须有累计确认的功能，这样可以减少传输开销。接收方可以在合适的时候发送确认，也可以在自己有数据要发送的时候把确认消息捎上</p>
-<p>2）    超时重传时间选择<br>TCP采用自适应算法，记录报文段的发出时间和相应的确认的时间。两个只差就是报文段的往返时间RTT</p>
-<p>3）    选择确认SACK<br>只传送缺少的数据而不重传已经正确到达接收方的数据</p>
-<ol start="3">
-<li>   TCP的拥塞控制<br>1、拥塞控制与流量控制<br>拥塞控制：防止过多的数据注入到网络中，这样可以使网络中的路由器或链路不致过载。拥塞控制所要做的都有一个前提：网络能够承受现有的网络负荷。拥塞控制是一个全局性的过程，涉及到所有的主机、路由器，以及与降低网络传输性能有关的所有因素。<br>流量控制：指点对点通信量的控制，是端到端正的问题。流量控制所要做的就是抑制发送端发送数据的速率，以便使接收端来得及接收</li>
-</ol>
-<p>2、几种拥塞控制的方法</p>
-<ol start="4">
-<li>三次握手</li>
-<li>   四次挥手</li>
-</ol>
-<p> MSL：最长报文段寿命</p>
-<ol start="6">
-<li><p>计算机网络体系结构</p>
-</li>
-<li><p>CSMA/CD 协议</p>
-</li>
-<li><p>网络层</p>
-</li>
-<li><p>   HTTP请求过程</p>
-</li>
-</ol>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lingzhm/article/details/44977563">https://blog.csdn.net/lingzhm/article/details/44977563</a></p>
-<ol start="10">
-<li>HTTP特点及1.0、1.1、2.0的区别</li>
-</ol>
-<p>HTTP2.0</p>
-<ol start="11">
-<li>HTTP请求</li>
-<li>get和post的区别</li>
-<li>DNS</li>
-<li>HTTP VS HTTPs</li>
-<li>怎样实现UDP可靠传输</li>
-</ol>
-<p>十二、    分布式理论</p>
-<ol>
-<li>   CAP理论和BASE理论<br>（1）    CAP理论：一个分布式系统不可能同时满足一致性（C：Consistency）、可用性（A：Availability）和分区容错性（P：Partition tolerance）这三个基本需求，最多只能同时满足其中两项。</li>
-</ol>
-<ol>
-<li>   一致性：在分布式环境下，一致性是指数据在多个副本之间能否保持一致的特性</li>
-<li>   可用性：系统提供的服务必须一直处于可用的状态，对于用户的每一个操作请求总是能够在有限的时间内返回结果。</li>
-<li>   分区容错性：分布式系统在遇到任何网络分区故障的时候，仍然需要能够保证对外提供满足一致性和可用性的服务。除非是整个网络环境都发生了故障。网络分区是指各个子网络出现不连通的状态，但是各个子网的内部网络是正常的</li>
-</ol>
-<p>（2）    为什么CAP只能三选二？<br>如果发生网络分区故障，那么在操作的步骤(2)将发生错误：G1发送的消息不能传送到G2上。这样数据就处于不一致的状态，B读取到的就不是最新的数据，如图2-3所示。如果我们采用一些技术如阻塞、加锁、集中控制等来保证数据的一致，那么必然会影响到系统的可用性和分区容错性。</p>
-<p>在C（一致性）和A（可用性）之间寻求平衡。</p>
-<p>（3）    Base理论：<br>基本可用（Basically Available），软状态（soft state）, 最终一致性（Eventually consistent）</p>
-<ol>
-<li>   基本可用：指分布式系统在出现不可预知故障的时候，允许损失部分可用性<br>响应时间上的损失；系统功能上的损失</li>
-<li>   软状态：允许系统在不同节点的数据副本之间进行数据同步的过程存在延迟 </li>
-<li>   最终一致性：所有数据副本，在经过一段时间的同步之后，最终能达到一个一致的状态。</li>
-</ol>
-<p>（<a target="_blank" rel="noopener" href="https://blog.csdn.net/bntX2jSQfEHy7/article/details/79623628%EF%BC%89">https://blog.csdn.net/bntX2jSQfEHy7/article/details/79623628）</a></p>
-<p>十三、    大数据处理<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yangjiannr/p/da-shu-ju-chu-libitmap.html">https://www.cnblogs.com/yangjiannr/p/da-shu-ju-chu-libitmap.html</a></p>
-<p>十四、    面经<br>16.    1、2018.08.27 快手面经<br>作者：H2PL<br>链接：<a target="_blank" rel="noopener" href="https://www.nowcoder.com/discuss/99283">https://www.nowcoder.com/discuss/99283</a><br>来源：牛客网<br>一面：<br>1 写一个选择排序或者插入排序<br>2 写一个生产者消费者<br>3 Java多线程了解么，什么时候一个int类型的操作是不安全的，自加呢，赋值呢。 如果使用volatile修饰的话有什么作用。<br>4 MySQL和redis的区别是什么<br>5 为什么MySQL和Redis都要使用独立进程来部署，开放端口来提供服务，为什么不写在内核中。<br>6 有一个场景，多线程并发，为每个线程安排一个随机的睡眠时间，设想一种数据结构去唤醒睡眠时间结束的线程，应该用哪种结构，答应该用优先级队列，也就是小顶堆，顶部是剩余睡眠时间最短的那个线程。<br>二面：<br>1 项目<br>2 多线程<br>3 一道算法题，一个二维矩阵进行逆置操作，也就是行变列列变行。刚开始我理解错了，直接用一维数组转储再重新填入新数组。<br>面试官说可以不用一维数组么<br>然后解答的过程中才发现我理解错了。改了一会才搞定。<br>4 扩展一下，二维数组存在500g的文件中，怎么做才能完成上面算法的操作，我就说先按行拆分，最后再拼接。<br>5 扩展两下，一行数据就会超出内存，应该怎么做，那就按列拆分，最后合并。<br>6 知道服务的横向扩展和纵向扩展么，刚开始理解错了，后来就说是提高单机性能，以及扩展成集群。<br>7 cap介绍一下吧，为什么只能3选2<br>8 线程与进程<br>9 tcp和udp的区别<br>10 get和post的区别<br>11 并发量大概多少，做过优化吗 </p>
 
           
         
@@ -531,7 +220,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/29/%E9%9D%A2%E7%AD%8B%E6%95%B4%E7%90%86/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/04/30/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%A4%A7%E4%B8%89%E4%B8%8B/">展开全文 >></a>
         </p>
       
 
@@ -563,7 +252,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/13/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><a class="extend next" rel="next" href="/page/15/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/13/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/15/">Next &amp;raquo;</a>
     </nav>
   
 
