@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="idea-的问题" class="article article-type-idea  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/29/hexo/">hexo</a>
+      <a class="article-title" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">的问题</a>
     </h1>
   
 
         
-        <a href="/2021/04/29/hexo/" class="archive-article-date">
-  	<time datetime="2021-04-29T09:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-29</time>
+        <a href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2021-05-01T13:15:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-01</time>
 </a>
         
       </header>
@@ -186,85 +186,57 @@
       
         
           
-            <blockquote>
-<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a2d298e26dcd">www.jianshu.com</a></p>
-</blockquote>
-<blockquote>
-<p>Hexo 约有二十个命令，但普通用户经常使用的大概只有下列几个:</p>
-</blockquote>
-<h2 id="hexo-s"><a href="#hexo-s" class="headerlink" title="hexo s"></a>hexo s</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo s</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>启动本地服务器，用于预览主题。默认地址： <a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=http://localhost:4000/">http://localhost:4000/</a></p>
-<ul>
-<li>  <code>hexo s</code> 是 <code>hexo server</code> 的缩写，命令效果一致；</li>
-<li>  预览的同时可以修改文章内容或主题代码，保存后刷新页面即可；</li>
-<li>  对 Hexo 根目录 <code>_config.yml</code> 的修改，需要重启本地服务器后才能预览效果。</li>
-</ul>
-<h2 id="hexo-n"><a href="#hexo-n" class="headerlink" title="hexo n"></a>hexo n</h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="built_in">n</span> <span class="string">&quot;学习笔记  六&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>新建一篇标题为 <code>学习笔记 六</code> 的文章，因为标题里有空格，所以加上了引号。</p>
-<ul>
-<li>  文章标题可以在对应 md 文件里改，新建时标题可以写的简单些；</li>
-<li>  <code>hexo n</code> 是 <code>hexo new</code> 的缩写，命令效果一致。</li>
-</ul>
-<h3 id="文章可以拥有如下属性："><a href="#文章可以拥有如下属性：" class="headerlink" title="文章可以拥有如下属性："></a>文章可以拥有如下属性：</h3><table><thead><tr><th>-</th><th>Setting</th><th>Description</th><th>Default</th></tr></thead><tbody><tr><td>1</td><td>layout</td><td>Layout</td><td>post 或 page</td></tr><tr><td>2</td><td>title</td><td>文章的标题</td></tr><tr><td>3</td><td>date</td><td>创建日期</td><td>文件的创建日期</td></tr><tr><td>4</td><td>updated</td><td>修改日期</td><td>文件的修改日期</td></tr><tr><td>5</td><td>comments</td><td>是否开启评论</td><td>true</td></tr><tr><td>6</td><td>tags</td><td>标签</td></tr><tr><td>7</td><td>categories</td><td>分类</td></tr><tr><td>8</td><td>permalink</td><td>url 中的名字</td><td>文件名</td></tr></tbody></table>
-
-<p>动态博客中通过发布文章页面设置的各种属性，在 hexo 里要这样设置。</p>
-<h2 id="hexo-d"><a href="#hexo-d" class="headerlink" title="hexo d"></a>hexo d</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo d</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>自动生成网站静态文件，并部署到设定的仓库。</p>
-<ul>
-<li>  <code>hexo d</code> 是 <code>hexo deploy</code> 的缩写，命令效果一致。</li>
-</ul>
-<h2 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="hexo clean"></a>hexo clean</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo clean</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>清除缓存文件 <code>db.json</code> 和已生成的静态文件 <code>public</code>。</p>
-<ul>
-<li>  网站显示异常时可以执行这条命令试试。</li>
-</ul>
-<h2 id="hexo-g"><a href="#hexo-g" class="headerlink" title="hexo g"></a>hexo g</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>生成网站静态文件到默认设置的 <code>public</code> 文件夹。</p>
-<ul>
-<li>  便于查看网站生成的静态文件或者手动部署网站；</li>
-<li>  如果使用自动部署，不需要先执行该命令；</li>
-<li>  <code>hexo g</code> 是 <code>hexo generate</code> 的缩写，命令效果一致。</li>
-</ul>
-<h2 id="hexo-n-page"><a href="#hexo-n-page" class="headerlink" title="hexo n page"></a>hexo n page</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo n page aboutme</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>新建一个标题为 <code>aboutme</code> 的页面，默认链接地址为 <code>主页地址/aboutme/</code></p>
-<ul>
-<li>  标题可以为中文，但一般习惯用英文；</li>
-<li>  页面标题和文章一样可以随意修改；</li>
-<li>  页面不会出现在首页文章列表和归档中，也不支持设置分类和标签。</li>
-</ul>
-<h2 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo s</span></span><br><span class="line">hexo clean <span class="meta">&amp;&amp; hexo d</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>可以用输入法等软件为这些命令设置快捷键，方便调用。</p>
-<h2 id="草稿"><a href="#草稿" class="headerlink" title="草稿"></a>草稿</h2><p>草稿相当于很多博客都有的 “私密文章” 功能。</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> <span class="type">draft</span> <span class="string">&quot;new draft&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>会在 source/_drafts 目录下生成一个 new-draft.md 文件。但是这个文件不被显示在页面上，链接也访问不到。也就是说如果你想把某一篇文章移除显示，又不舍得删除，可以把它移动到_drafts 目录之中。</p>
-<ul>
-<li>  如果你希望强行预览草稿，更改配置文件：</li>
-</ul>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">render_drafts:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>  或者，如下方式启动 server：</li>
-</ul>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">server</span> <span class="comment">--drafts</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>  下面这条命令可以把草稿变成文章，或者页面：</li>
-</ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="相关说明"><a href="#相关说明" class="headerlink" title="相关说明"></a>相关说明</h2><ul>
-<li>  以上命令使用基于 Hexo 3.1.1 版本；</li>
-<li>  需要删掉用命令新建的文章或页面时，只需要进入 Hexo 根目录下的 <code>source</code> 文件夹，删除对应文件或文件夹即可；</li>
-<li>  更多命令用法请查询 <a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://hexo.io/zh-cn/docs/commands.html">官方文档</a>。</li>
-</ul>
+            <p>本文由 简悦 SimpRead 转码， 原文地址 <a target="_blank" rel="noopener" href="http://www.cnblogs.com/">www.cnblogs.com</a></p>
+<p>最近在学习 IDEA，由于之前一直使用的是 Eclipse，所以初次接触 IDEA 就接触到了不少的坑，其中最让人头疼的大概就是如何让 IDEA 顺利的启动起来了，这方面我就不细讲了，网上已经有了不少的教程，稍后我也会给大家一个 IDEA 的学习附件，有兴趣的朋友可以看看，今天主要谈的就是如何解决 IDEA 项目在启动时报 404 的问题，相信不少像我一样初次接触 IDEA 的朋友都掉进过这个坑，今天就带大家了解一下这个坑，以及如何解决。</p>
+<p>首先，我们来看一下 404 这个页面：</p>
+<p>从这个图片我们其实能看出一点点端倪，注意最后一句话：description The requested resource is not available.</p>
+<p>这句话翻译过来大概意思是，描述：所请求的资源不可用。</p>
+<p>既然是请求资源问题，而 IDEA 又是通过先将项目打包成 war 包，然后创建一个 Tomcat，将 war 进行加载的方式来启动项目，那么我们就可以猜测到，这个请求资源不可用的问题就一定是出现在打包 war 包的过程中，或是在 Tomcat 加载这个 war 包的时候出现的问题。除了这个两个可能，还有一种可能，也是我自己经历的，那就是你的项目是 SVN 项目，而你的 SVN 的路径已经不可用。</p>
+<p>知道了原因，那么接下来就好办了，我们一个个来进行解决。</p>
+<p>第一步：如何将项目打包成 war 包：</p>
+<p>1、首先，右击项目，点击 open module settings</p>
+<p>2、配置 project，主要是本地 jdk 的安装路径，还有项目编译输出的路径</p>
+<p>3、配置 modules ，其中 paths 定位到 web-inf/classes ；dependencies 加入 jdk 和项目 web-inf/lib</p>
+<p>4、配置 libraries ，点击 + 号，选择 java ，然后还是选择你项目的 web-inf/lib</p>
+<p>5、配置 facets ，此步很重要，配置 web resource directories ，路径配错，就会报 404 ，一定要定位到项目根目录，也就是下面有整个项目源码的地方</p>
+<p>6、 配置 artifacts ，此步选择第二个，选择你的项目即可</p>
+<p>注：这有一步很重要，在添加完以后，一定要选中你的项目，然后鼠标左键 Put into Output Root 一下</p>
+<p>到此，将项目打包就已经完成了，然后就是将项目添加到 Tomcat。</p>
+<p>第二步，将项目添加到 Tomcat：</p>
+<ol>
+<li>在 IDEA 的页面右上角，点击此处，打开 Tomcat 添加页面</li>
+</ol>
+<ol start="2">
+<li>在新打开的页面添加 Tomcat</li>
+</ol>
+<ol start="3">
+<li>在新添加的 Tomcat 页面配置好 Tomcat 的名字，默认浏览器，访问地址，JRE，端口等</li>
+</ol>
+<p>在这个页面，我们可以看到，由于没有添加项目 war 包，su9oyouTomcat 还是暴红差的，然后点击 Deploment，去添加项目的 war 包</p>
+<ol start="4">
+<li>给 Tomcat 添加已经打包好的 war 包</li>
+</ol>
+<p>添加后，可以配置路径的后缀名，我为了省事就直接用 / 了，然后点 Apply 和 OK 就可以了。</p>
+<ol start="5">
+<li>然后启动 Tomcat 就可以了，直接访问 localhost 就可以访问项目了。</li>
+</ol>
+<p>第三步，解决 SVN 原因访问 404 的原因</p>
+<p>如果经历了上边的步骤，你的 Tomcat 不报错，但是你访问还是 404，而且是 SVN 项目的话，你就可以试试看是否是你 SVN 配置的问题了</p>
+<ol>
+<li>首先确认是否 SVN 是否能连接上：</li>
+</ol>
+<p>如果，你的 SVN 爆了这个错误，你就可以去看看是否是你的配置出错了</p>
+<ol start="2">
+<li>重新配置 SVN，点击 File,Settings, 找到 Subversion，将里面的勾选的去掉，然后 Apply,OK 就 OK 了。</li>
+</ol>
+<ol start="3">
+<li>可以重新测试一下 SVN 是否能连接上：</li>
+</ol>
+<ol start="4">
+<li>然后重新启动 Tomcat，就 OK 了</li>
+</ol>
+<p>结语：由于回首也是刚刚开始学用 IDEA，所以也只是分享一下回首自己遇到的坑，如有哪些其他原因而这篇文章没有介绍到的，欢迎小伙伴们在下面的评论区中告知一下，大家一起学习，共同进步！</p>
+<p>最后，如果有觉得回首写得不错的朋友，可以点个赞，或是加个关注，回首会一直和你们分享和共同成长~~~</p>
 
           
         
@@ -276,7 +248,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/29/hexo/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">展开全文 >></a>
         </p>
       
 
@@ -308,7 +280,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/15/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/17/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/15/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/17/">Next &amp;raquo;</a>
     </nav>
   
 

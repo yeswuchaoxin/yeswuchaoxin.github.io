@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-javaee考试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-微服务" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/03/javaee%E8%80%83%E8%AF%95/">javaee考试</a>
+      <a class="article-title" href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
     </h1>
   
 
         
-        <a href="/2021/05/03/javaee%E8%80%83%E8%AF%95/" class="archive-article-date">
-  	<time datetime="2021-05-03T08:33:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-03</time>
+        <a href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="archive-article-date">
+  	<time datetime="2021-05-04T23:11:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-05</time>
 </a>
         
       </header>
@@ -186,22 +186,17 @@
       
         
           
-            <h2 id="第一章-概念为主"><a href="#第一章-概念为主" class="headerlink" title="第一章,概念为主"></a>第一章,概念为主</h2><p><strong>soa是一种抽象的软件架构，web服务是一种具体的技术，我们可以使用web服务实现soa</strong></p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，SOA（架构）有几类实体entity。<span class="number">1</span>，<span class="number">2</span>，<span class="number">3</span></span><br><span class="line">提供方，消费方，注册方</span><br><span class="line"><span class="comment">--提供方是干嘛的，消费方是干嘛的，注册方是干嘛的。</span></span><br><span class="line">提供方，向消费方提供服务。消费方访问提供方发布的网页，注册方可以在因特网上发布和定位服务</span><br><span class="line"><span class="comment">--SOA的特性（feature），理解为主，可发性？，动态绑定的时候，到底是什么含义，</span></span><br><span class="line">SOA的特性：<span class="number">1</span>可发现和动态绑定，<span class="number">2</span>支持互操作，<span class="number">3</span>松散耦合 <span class="number">4</span>位置透明</span><br><span class="line"><span class="comment">--SOA绑定：可以分为动态绑定和静态绑定。在动态绑定中，服务请求者通过服务注册中心查找服务描述，并动态地与服务交互；在静态绑定中，服务请求者已经与服务提供者达成默契，通过本地文件或其他方式直接与服务进行绑定。</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span>，web服务和SOA架构的关系</span><br><span class="line"><span class="comment">---soa是一种抽象的软件架构，web服务是一种具体的技术，我们可以使用web服务实现soa(很重要，一定会考到)</span></span><br><span class="line"><span class="comment">--web服务的特性，优点，理解为主</span></span><br><span class="line">特点：支持数据交换，支持文档交换，支持同步和异步的客户端</span><br><span class="line">优点：节约成本，提高代码的重用，支持应用程序和数据集成，通用性。</span><br><span class="line"><span class="number">3</span>，java平台里面web开发相关的api，我给你一个api，要知道在web开发中起到什么作用，</span><br><span class="line">比如第六单元的JASP这个api,是用来处理<span class="type">xml</span>数据的。或者反过来，我想开发REST风格的web，使用哪一种api，JAX-RS这个，</span><br><span class="line"><span class="number">4</span>，两种类型的web服务，哪两种类型，<span class="number">1</span><span class="number">-5</span>单元，都在讲这两种web服务。两种web服务的特点是什么，区别是什么。</span><br><span class="line"><span class="comment">--使用的协议标准是不一样的，</span></span><br><span class="line"><span class="comment">--第一种XML的web服务，协议标准使用的WSDL，SOAP，UDDI。以服务为中心的。</span></span><br><span class="line"><span class="comment">--REST风格，协议标准使用的是HTTP，MIME。资源为中心的。</span></span><br></pre></td></tr></table></figure>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span>，<span class="number">3</span>单元涉及基于<span class="built_in">xml</span>的web服务，</span><br><span class="line">-<span class="number">-1</span>，WSDL文档，作用是描述基于<span class="built_in">xml</span>的web服务，不要求会写WSDL文档，能看懂这个文档，知道在描述什么样的web服务，到底有几个服务端点，服务是由服务端点组成的。</span><br><span class="line">每个服务端点定义几个服务操作，根据交互的消息序列看，书上给出了四种交互模式，你能不能分辨出是哪一种交互模式，</span><br></pre></td></tr></table></figure>
-<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">one-way,单程,只有一个&lt;<span class="built_in">input</span>&gt;请求request，</span><br><span class="line">request-response,请求-响应一个<span class="built_in">input</span>（请求）+<span class="built_in">output</span>，</span><br><span class="line">solicit-response,征求-响应,<span class="built_in">output</span>（请求）+<span class="built_in">input</span>，</span><br><span class="line">notification,通知,只有<span class="built_in">output</span>返回</span><br></pre></td></tr></table></figure>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.2，每个完整的WSDL应该由两部分组成，抽象和具体定义，抽象定义要定义哪些内容，具体定义要定义哪些内容。</span><br><span class="line">抽象模型：包含<span class="tag">&lt;<span class="name">type</span>&gt;</span><span class="tag">&lt;<span class="name">message</span>&gt;</span>元素，提供关于web服务支持的操作，没有提供通信协议和位置信息的描述。</span><br><span class="line">具体模型：包含<span class="tag">&lt;<span class="name">binding</span>&gt;</span><span class="tag">&lt;<span class="name">service</span>&gt;</span>元素，提供通信协议和位置信息的描述。</span><br></pre></td></tr></table></figure>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span>,SOAP是通信协议，提供方，消费方，用的都是soa协议，双方交互的是消息，消息的基本结构，hanle,<span class="keyword">body</span>，基本结构，</span><br></pre></td></tr></table></figure>
-<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p><strong>介绍了JAX-WS接口</strong><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34845394/article/details/86478208">WebService介绍及使用(Java)</a><br><a target="_blank" rel="noopener" href="https://my.oschina.net/zhanghaiyang/blog/725780">WebService学习总结（1）——WebService相关概念</a></p>
-<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">关系到你能不能看懂程序代码，基于<span class="built_in">xml</span>的web服务的基本流程，把第一个activity实验做完就掌握到位了。</span><br><span class="line">怎么去访问web服务不做要求，只要求开发web服务。</span><br></pre></td></tr></table></figure>
-<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><p><strong>概念，资源，URI，设计原则</strong></p>
-<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，<span class="built_in">Rest</span>风格架构到底使用了哪些规范，<span class="variable">XML</span><span class="operator">,</span><span class="variable">URI</span><span class="operator">,</span><span class="variable">MIME</span>这些规范，这些规范起到什么作用，</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>，<span class="built_in">Rest</span>风格的资源的概念，怎么标识资源（用<span class="variable">URI</span>），每个资源都有唯一的标识，</span><br><span class="line"></span><br><span class="line">组件不做要求，</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>，设计原则，怎么使用<span class="variable">http</span>的方法，目录结构，<span class="variable">URI</span>的<span class="operator">,</span>资源的目录结构，还有数据交互格式怎么去设计，设计原则尽量理解。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p><strong>JAX-RS API做完Activity</strong></p>
-<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">xml的处理规范，<span class="keyword">JAXP,JAXB,SAAJ，</span></span><br><span class="line"><span class="keyword">JAXP,JAXB：处理xm数据格式的。JAXP三种解析器，哪些是只读的，哪些是读写解析器。知道什么事JAXB就可以了。</span></span><br><span class="line"><span class="keyword">--JAXP</span></span><br><span class="line"><span class="keyword">--JAXB是将XML-&gt;对象树</span></span><br><span class="line"><span class="keyword">SAAJ:处理SOAP消息附件的，</span></span><br></pre></td></tr></table></figure>
-<h2 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h2><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Metro,stack，</span><br><span class="line">那个栈，那张图看看就可以了。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20210503190106905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>第八章</p>
-<hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">设计模式</span><br><span class="line">部署模式，</span><br><span class="line">当我们提到哪种模式，知道解决的是什么问题，比如性能问题，还是安全问题，兼容问题。</span><br></pre></td></tr></table></figure>
+            <p><strong>微服务与单体架构区别</strong><br>单体架构所有的模块全都耦合在一块，代码量大，维护困难，微服务每个模块就相当于一个单独的项目，代码量明显减少，遇到问题也相对来说比较好解决。</p>
+<p>单体架构所有的模块都共用一个数据库，存储方式比较单一，微服务每个模块都可以使用不同的存储方式（比如有的用redis，有的用mysql等），数据库也是单个模块对应自己的数据库。</p>
+<p>单体架构所有的模块开发所使用的技术一样，微服务每个模块都可以使用不同的开发技术，开发模式更灵活。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210505071240604.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>什么样的项目适合微服务</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">微服务可以按照业务功能本身的独立性来划分，如果系统提供的业务是非常底层的，如：操作系统内核、存储系统、网络系统、数据库系统等等，这类系统都偏底层，功能和功能之间有着紧密的配合关系，如果强制拆分为较小的服务单元，会让集成工作量急剧上升，并且这种人为的切割无法带来业务上的真正的隔离，所以无法做到独立部署和运行，也就不适合做成微服务了。</span><br></pre></td></tr></table></figure>
+
+<p><strong>缺点：分布式的复杂性</strong></p>
+<p>对于单体架构来讲，我们可以不使用分布式，但是对于微服务架构来说，分布式几乎是必会用的技术，由于分布式本身的复杂性，导致微服务架构也变得复杂起来。</p>
+<p>   <strong>微服务开发框架</strong><br>   <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">目前微服务的开发框架，最常用的有以下四个：</span><br><span class="line"></span><br><span class="line">Spring Cloud：http:<span class="regexp">//</span>projects.spring.io/spring-cloud（现在非常流行的微服务架构）</span><br><span class="line"></span><br><span class="line">Dubbo：http：<span class="regexp">//</span>dubbo.io</span><br><span class="line"></span><br><span class="line">Dropwizard：http:<span class="regexp">//</span>www.dropwizard.io （关注单个微服务的开发）</span><br><span class="line"></span><br><span class="line">Consul、etcd&amp;etc.（微服务的模块）</span><br></pre></td></tr></table></figure><br><strong>Spring boot与Spring cloud 是什么关系？</strong></p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attribute">Spring</span> Boot，看名字就知道是Spring的引导，就是用于启动Spring的，使得Spring的学习和使用变得快速无痛。不仅适合替换原有的工程结构，更适合微服务开发。Spring Cloud基于Spring Boot，为微服务体系开发中的架构问题，提供了一整套的解决方案——服务注册与发现，服务消费，服务保护与熔断，网关，分布式调用追踪，分布式配置管理等。学过Spring的都知道，Spring开发有非常头疼的三点: 以启动一个带Hibernate的Spring MVC为例。<span class="number">1</span>. 依赖太多了，而且要注意版本兼容。这个应用，要添加<span class="number">10</span>-<span class="number">20</span>个依赖，Spring相关的包<span class="number">10</span>多个，然后是Hibernate包，Spring与Hibernate整合包，日志包，json包一堆，而且要注意版本兼容性。<span class="number">2</span>. 配置太多了，要配置注解驱动，要配置数据库连接池，要配置Hibernate，要配置事务管理器，要配置Spring MVC的资源映射，要在web.xml中配置启动Spring和Spring MVC。。等<span class="number">3</span>.部署和运行麻烦。要部署到tomcat里面。不能直接用java命令运行。太多重复和大家都一样的配置了。Spring Boot的哲学就是约定大于配置。既然很多东西都是一样的，为什么还要去配置。<span class="number">1</span>. 通过starter和依赖管理解决依赖问题。<span class="number">2</span>. 通过自动配置，解决配置复杂问题。<span class="number">3</span>. 通过内嵌web容器，由应用启动tomcat，而不是tomcat启动应用，来解决部署运行问题。Spring Cloud体系就比较复杂了。基本可以理解为通过Spring Boot的三大魔法，将各种组件整合在一起，非常简单易用。</span><br></pre></td></tr></table></figure>
 
           
         
@@ -213,7 +208,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/03/javaee%E8%80%83%E8%AF%95/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/05/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">展开全文 >></a>
         </p>
       
 
@@ -245,7 +240,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/5/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/7/">Next &amp;raquo;</a>
     </nav>
   
 

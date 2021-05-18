@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-springboot框架目录结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-电影纪念" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/springboot%E6%A1%86%E6%9E%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">springboot 框架-目录结构</a>
+      <a class="article-title" href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/">电影纪念</a>
     </h1>
   
 
         
-        <a href="/2021/05/04/springboot%E6%A1%86%E6%9E%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  	<time datetime="2021-05-03T17:08:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-04</time>
+        <a href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/" class="archive-article-date">
+  	<time datetime="2021-05-06T10:49:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-06</time>
 </a>
         
       </header>
@@ -187,64 +187,128 @@
         
           
             <blockquote>
-<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39593985/article/details/88851320">blog.csdn.net</a></p>
+<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://new.qq.com/omn/20190728/20190728A000TF00.html">new.qq.com</a></p>
 </blockquote>
-<p>目录结构</p>
-<p><img src="https://img-blog.csdn.net/20180529215240885?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z4YmluMTIz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"><img src="https://img-blog.csdn.net/20180609140628681?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1bnlpc2hhbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
-<p>src/main/java：主程序入口 Application，可以通过直接运行该类来 启动 Spring Boot 应用<br>src/main/resources：配置目录，该目录用来存放应用的一些配置信息，比如应用名、服务端口、数据库配置等。由于我们应用了 Web 模块，因此产生了 static 目录与 templates 目录，前者用于存放静态资源，如图片、CSS、JavaScript 等；后者用于存放 Web 页面的模板文件。<br>src/test：单元测试目录，生成的 ApplicationTests 通过 JUnit4 实现，可以直接用运行 Spring Boot 应用的测试。<br>application.properties/application.yml 用于存放程序的各种依赖模块的配置信息，比如 服务端口，数据库连接配置等。。。<br>——————— </p>
-<p>1）代码层的结构</p>
-<p>　　根目录：com.springboot</p>
-<p>　　　　1. 工程启动类 (ApplicationServer.java) 置于 com.springboot.build 包下</p>
-<p>　　　　2. 实体类 (domain) 置于 com.springboot.domain</p>
-<p>　　　　3. 数据访问层 (Dao) 置于 com.springboot.repository</p>
-<p>　　　　4. 数据服务层 (Service) 置于 com,springboot.service, 数据服务的实现接口 (serviceImpl) 至于 com.springboot.service.impl</p>
-<p>　　　　5. 前端控制器 (Controller) 置于 com.springboot.controller</p>
-<p>　　　　6. 工具类 (utils) 置于 com.springboot.utils</p>
-<p>　　　　7. 常量接口类 (constant) 置于 com.springboot.constant</p>
-<p>　　　　8. 配置信息类 (config) 置于 com.springboot.config</p>
-<p>　　　　9. 数据传输类 (vo) 置于 com.springboot.vo</p>
-<p>（2）资源文件的结构</p>
-<p>　　根目录: src/main/resources</p>
-<p>　　　　1. 配置文件 (.properties/.json 等) 置于 config 文件夹下</p>
-<p>　　　　2. 国际化 (i18n)) 置于 i18n 文件夹下</p>
-<p>　　　　3.spring.xml 置于 META-INF/spring 文件夹下</p>
-<p>　　　　4. 页面以及 js/css/image 等置于 static 文件夹下的各自文件下</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/yunyishang123/article/details/80632644">https://blog.csdn.net/yunyishang123/article/details/80632644</a></p>
-<p>根目录：src.main.java  </p>
-<ol>
-<li><p>工程启动类 (Application.java)：置于 com.cy.project 包下或者 com.cy.project.app 包下</p>
-</li>
-<li><p>实体类 (domain)：置于 com.cy.project.domain</p>
-</li>
-<li><p>数据访问层 (Dao)：置于 com.cy.project.repository（dao）</p>
-</li>
-<li><p>数据服务层 (Service)：置于 com.cy.project.service   </p>
-</li>
-<li><p>数据服务接口的实现 (serviceImpl)：同样置于 com.cy.project.service 或者置于 com.cy.project.service.impl</p>
-</li>
-<li><p>前端控制器 (Controller)：置于 com.cy.project.controller</p>
-</li>
-<li><p>工具类 (utils)：置于 com.cy.project.utils</p>
-</li>
-<li><p>常量接口类 (constant)：置于 com.cy.project.constant</p>
-</li>
-<li><p>配置信息类 (config)：置于 com.cy.project.config</p>
-</li>
-</ol>
-<p>资源文件：src.main.resources  </p>
-<ol>
-<li><p>页面以及 js/css/image 等置于 static 文件夹下的各自文件下</p>
-</li>
-<li><p>使用模版相关页面等置于 templates 文件夹下的各自文件下  </p>
-</li>
-</ol>
-<p>——————— <br>命名包名目录的方式 :com. 公司名的简写. 项目的名字. 业务模块名</p>
-<p>springboot 提供了一个解决方案吧，可以先不关心如何配置，可以快速的启动开发，进行业务逻辑编写，各种需要的技术，加入 starter 就配置好了，直接使用，可以说追求开箱即用的效果吧</p>
-<p>AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。</p>
-<p>Node.js <a target="_blank" rel="noopener" href="http://www.runoob.com/nodejs/node-js-get-post.html">http://www.runoob.com/nodejs/node-js-get-post.html</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20190619212112836.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTU5Mzk4NQ==,size_16,color_FFFFFF,t_70"></p>
-<p>参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/linabc123000/article/details/68954236">https://blog.csdn.net/linabc123000/article/details/68954236</a>  eclipse 下创建第一个 spring boot 项目</p>
-<p>参考 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/HTUNwizViOqNc1YInO7otQ">https://mp.weixin.qq.com/s/HTUNwizViOqNc1YInO7otQ</a> Spring Boot 配置文件中的花样，看这一篇足矣！</p>
+<p>1991 年的今天，杨德昌导演的<strong>《牯岭街少年杀人事件》</strong>正式在台北公映。</p>
+<p>如今 28 年已过，它反而像那陈酿，让一代又一代的电影爱好者醉入其中，让一代又一代的观众深受震撼，<strong>俨然成为了中国电影史上一座无法逾越的丰碑。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/d9438e2b7429504cf570dddb8a3a5610.png"></p>
+<p>现在再回看这部影片，那群人还是那么的熟悉，一眨眼，整整 28 年过去，这 28 年里，那群牯岭街的伙伴们都有了什么变化，他们还好吗？</p>
+<p><strong>杨德昌（导演）</strong></p>
+<p>很难想象，杨德昌从 1987 年就已经开始筹备《牯岭街少年杀人事件》，<strong>直到正式公映，它经历了长达五年之久。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/1acd0f18550fca9f115ff7e72b945503.png"></p>
+<p>开机仪式（右二是张震）</p>
+<p>这五年里，摄制过程多次遇到困难，但都被一一化解。影片的细细打磨也为它赢得了应有的荣誉，在那一年的<strong>金马奖上，它拿到了分量最重的最佳影片和最佳原创剧本奖</strong>，之后又在<strong>东京电影节上获得评委会特别奖</strong>。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/faba52011bba314504d17cb77018500d.png"></p>
+<p>主创们在东京电影节</p>
+<p>凭借着这部影片，<strong>“杨德昌”</strong> 成为了一张响亮的名片，后来凡是他的电影，都会被无条件选送进戛纳电影节主竞赛单元。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/7cdb74155db7e5fed400490077563657.png"></p>
+<p>杨德昌的《一一》入围了 53 届戛纳电影节主竞赛单元</p>
+<p>拍完《牯岭街少年杀人事件》后的杨德昌，又拍了三部电影。</p>
+<p>1994 年的<strong>《独立时代》</strong>，这是一部反思个人存在的电影，在当年第 31 届金马奖上斩获最佳原创剧本奖。</p>
+<p>1996 年的<strong>《麻将》</strong>，一部青春黑色喜剧片。获得了第 46 届柏林电影节特别提及奖。</p>
+<p>2000 年的<strong>《一一》</strong>，<strong>这是杨德昌作品的又一个巅峰</strong>，整部影片用平和又柔软的方式，为我们展现了家庭亲情及生命的意义，凭借这部电影，让<strong>杨德昌一举拿下第 53 届戛纳电影节最佳导演奖。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a0d24a0c99a22d80c343c9030611817d.png"></p>
+<p>杨德昌在戛纳</p>
+<p>可能是天妒英才，拍完《一一》后的<strong>杨德昌被查出得了癌症</strong>，<strong>可他依旧没有停下脚步，在 2001 年与妻子彭铠立一起成立了铠甲娱乐，开始创作动画电影。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/823d083b2cc0798bf26b93ab6362c39a.png"></p>
+<p>杨德昌和妻子彭铠立</p>
+<p>不幸的是，在 2007 年 6 月 29 日，杨德昌因结肠癌病逝去，享年 59 岁。<strong>在他人生的最后，仍然在为自己的动画电影手绘分镜。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/cd07d6335e068d3e2bfbc4c536a03126.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a88a5d40874ede3a1b520d91f961abbe.png"></p>
+<p>杨德昌为动画电影《追风》做的场景设定</p>
+<p><strong>张震（小四）</strong></p>
+<p>张震饰演的小四无疑是这部电影的灵魂人物。当年张震 15 岁，正放暑假的他被老爸张国柱临时抓到片场试戏。就这样，张震成为了影片里的小四。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a93c9c8caa4c1bea3271d82bce88d4b6.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/579053c1091799416932eeb81b84e1f7.png"></p>
+<p>凭借着《牯岭街少年杀人事件》，张震被<strong>提名第 28 届台湾电影金马奖最佳男主角，</strong>但那之后的五年却是无所事事。</p>
+<p>直到五年后杨德昌再度召回他拍摄了《麻将》，也就是从<strong>那时开始，张震才确定了自己未来的职业道路。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/c2f103da9fe9d089794e8cb8dda36833.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/0d82745f995f8363ebc1d2a90c30158e.png"></p>
+<p>《麻将》里的张震</p>
+<p>于 1997 年，他正式加入王家卫的<strong>泽东影业</strong>，开启了辉煌的演艺之路。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/0eef6c76672681d15fbbe324722e0927.png"></p>
+<p>凭借着过硬的演技，张震成为了众多大导演至爱的男主角，其中不乏<strong>王家卫、侯孝贤、李安、陈凯歌和吴宇森</strong>等，真名副其实的大导演收割机。</p>
+<p>今年，他也将会和华纳进行合作，拍摄好莱坞大制作科幻影片《沙丘》。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/05df571f029e3047bd8ad5d6030f51e1.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/7954e159f660f368a053b158011c8369.png"></p>
+<p>事业上顺风顺水，生活上也非常幸福。</p>
+<p>在 2013 年的 11 月，张震与交往多年的女友庄雯如在台北<strong>结婚</strong>。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/046e151860c09b4023f28a16948ac496.png"></p>
+<p>2015 年 3 月，女儿出生，取名小源宝，<strong>张震正式成为了一名父亲。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/a2f5f2394242facd83e8ee6754340ca6.png"></p>
+<p><strong>杨静怡（小明）</strong></p>
+<p>女主角杨静怡的出现真是恰到好处。一直在美国念高中的她，那年恰巧回台湾过暑假。杨德昌与她在咖啡店偶遇，觉得她形象气质都非常合适，于是便说服她<strong>休学一年</strong>出演小明。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/5c3412a2dff8d6fca6e93f642122a733.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/1f874d58610072269960e1f5bad71199.png"></p>
+<p>和张震一样，杨静怡也凭借这部《牯岭街少年杀人事件》获得了当年<strong>金马影后的提名</strong>，这也是她唯一出演的一部电影。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/657c464701788cc19de5443440fbeb48.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/2fa347b958c3f6cfd299e148683757d5.png"></p>
+<p>左一杨静怡、中间杨德昌、右一张震</p>
+<p>拍完《牯岭街少年杀人事件》后，杨静怡便退出影坛，选择回美国继续读书。后来的她，在美国结婚生子，从事了会计行业。直到 2007 年，她出席杨德昌在洛杉矶的葬礼时，才再次出现在了公众视野中。</p>
+<p>2016 年 9 月，张震在微博 PO 出了他和杨静怡的合照。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/c3bbcbccf13b0eebe3801265d4c7f9f3.png"></p>
+<p>网友们纷纷留言感叹：小四和小明从那条牯岭街里走出来，走到了我们眼前，容颜或许有些改变，但还是当时的少年少女，老友风华正茂，现世岁月静好。</p>
+<p><strong>林鸿铭（Honey）</strong></p>
+<p>很多人看完《牯岭街少年杀人事件》后，可能喜欢上的是那个<strong>带有江湖味道</strong>的小公园首领 Honey，当年他穿着一身海军服帅气出场的样子还历历在目。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/5afcc917160cd49c3e7132a63cec18a1.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/8c57c5a8865e169927bf7586cfb3ea3d.png"></p>
+<p>Honey 这个角色在影片中的镜头少之又少，但却让杨德昌挚爱到愿意亲身上阵为他配音，他希望 honey 的声音带有江湖上混过的口气。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/2aceb3f2eb5af40e8a4802c46d8c9a84.png"></p>
+<p>凭借着这部影片，林鸿铭成为了一颗冉冉升起的新星，当年<strong>同时有 6 个导演</strong>前来找他拍戏。<strong>只可惜，他不幸摔断了腿，自此失去了机会，但也因此结识了他的太太。</strong></p>
+<p>后来在 2000 年，瞿友宁找林鸿铭拍了电视剧《天空之城》，这也是他之后唯一的作品。</p>
+<p>再后来，他结婚生子，在台北信义路的僻静巷尾<strong>开了一家 “喜朵” 咖啡馆</strong>，不少影迷也曾找到那里去寻找回忆里的 Honey。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/f76f1b227975e068918c84cc8812a068.png"></p>
+<p>现在的林鸿铭 (图片来自知乎）</p>
+<p><strong>谭志刚（小马）</strong></p>
+<p>出演《牯岭街少年杀人事件》前，谭志刚就已经是个有些许名气的<strong>童星</strong>，看到杨德昌招演员的广告后，就跑去面试。本来杨德昌是想让他出演小猫王，但最后还是演了小四的 “情敌” 小马。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/afeb4881879a1d23021950b4e9231fcd.png"></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/db1067551c3c82a8901d5ee0a395f3cc.png"></p>
+<p>拍完《牯岭街少年杀人事件》后的谭志刚相当幸运，被导演侯孝贤识中，邀请他担任电影《少年吔，安啦！》的男主角。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/14b7aca5b53f9eb6ccdda696071ea2cb.png"></p>
+<p>其实谭志刚很早就计划去美国学电影，但是因为《牯岭街少年杀人事件》和《少年吔，安啦！》的衍生电影而不得不两度推迟。</p>
+<p>可惜的是，在 1993 年的 9 月，谭志刚不幸在一场车祸中身亡，<strong>那年他才 18 岁，只比张震大一岁。</strong></p>
+<p><strong>王启赞（小猫王）</strong></p>
+<p>小猫王是个头最小的，当年他从《牯岭街》里走出来后，便加入了杨德昌的铠甲公司继续演戏。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/473ab7b05f93f4812f1375990c4b293a.png"></p>
+<p>16 岁的他出演了杨德昌导演的<strong>《麻将》</strong>，凭借着 “牙膏” 一角获得了<strong>第 33 届金马奖最佳男配角奖。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/f41f82994c7a1edf1d148298e9118d04.png"></p>
+<p>《麻将》中的王启赞</p>
+<p>2005 年，他开始转向幕后，做蔡明亮的场务。</p>
+<p>2007 年，在完成《帮帮我，爱神》的场务工作后，他便<strong>转行开起了汽车改装厂</strong>，<strong>彻底离开了电影圈。</strong></p>
+<p><strong>张国柱（小四父亲）</strong></p>
+<p>在拍摄《牯岭街少年杀人事件》之前，张国柱已经是知名演员，演技自然是没得说，这次他和儿子双双进入剧组，这对真父子，在片中也是饰演了一对父子。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/67592dce8084a9b7865e8c89a9183c5d.png"></p>
+<p>在拍完《牯岭街少年杀人事件》后，张国柱又紧接着参演了几部商业片，2000 年后，便将重心转移到了电视剧行业，现如今的他，虽然还活跃在大荧幕前，但也渐渐呈现隐退的状态。</p>
+<p><strong>金燕玲（小四母亲）</strong></p>
+<p>金燕玲，可以称得上是<strong>杨德昌电影里的常客。</strong></p>
+<p>她是《牯岭街少年杀人事件》中的小四母亲，她是《一一》中的敏敏，她是《独立时代》里的 Auntie，她也是《麻将》里的红鱼妈妈。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/15ab313ecd76ceb147e0cc7e672149cc.png"></p>
+<p>在《牯岭街》扮演小四妈妈</p>
+<p>这位传奇的女演员在《牯岭街》之后，事业开始顺风顺水，几乎之后的每部电影，都是和名导合作，现如今也是活跃在大荧幕上。</p>
+<p>最近，她和郝蕾主演的<strong>《春潮》</strong>也入围了 <strong>FIRST 青年影展</strong>，希望能取得佳绩！</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/07d1933a9f94207caaa4843bb42643f1.png"></p>
+<p>右一金燕玲，在剧中也饰演母亲</p>
+<p><strong>张盈真（小明母亲）</strong></p>
+<p>1978 年的张盈真，凭借着和刘文正合作的电影《初恋风暴》正式出道。后来陆陆续续拍摄了多部动作片及古装片，也<strong>曾两次入围金马奖最佳女配角提名。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/cfc12a4155d8074932e3e0372b0b0b66.png"></p>
+<p>和杨德昌合作拍摄完《牯岭街少年杀人事件》后，她就渐渐淡出了影坛。没想到她再次进入观众视野的时候，就到了 2016 年 12 月 27 日，她因哮喘引起心脏病发作<strong>不幸辞世</strong>，享年 63 岁。</p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/17bde55b7ca1fe4d1177c0556b256b7e.png"></p>
+<p>这 28 年里，有人依旧在大荧幕上发光发热，有人却渐渐息影退圈，也有人永远的离开了我们。</p>
+<p>28 年过去，当年牯岭街的那群少男少女们，都不再是当初的模样，<strong>1991 年的那个夏天，也越来越远，再也回不去了，留下的只有那部永远的《牯岭街少年杀人事件》。</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/img_convert/df8d0a764818cd92a267904fd6d26913.png"></p>
+<p><strong>- THE END**</strong>-**</p>
+<p>更多你也许会喜欢的故事：</p>
+<p><strong>牯岭街少年杀人事件：</strong></p>
+<p><strong>杨德昌入围戛纳电影节主竞赛单元的电影****：</strong></p>
+<p><strong>关注<strong><strong>公</strong></strong>众号****「木鱼水心」，</strong></p>
+<p><strong>让电影丰富生活！</strong></p>
+<p><strong>关注公众号后——</strong></p>
+<p>回复「<strong>温馨</strong>」，查看那些治愈人心的电影专题</p>
+<p>回复「<strong>谎言</strong>」，查看几部跟谎言有关的电影</p>
+<p>回复「<strong>悬疑</strong>」，看看那些令你意想不到的脑洞</p>
+<p>回复「<strong>二战</strong>」，查看几部同属于二战背景下的电影</p>
+<p>回复「<strong>传记</strong>」，查看那些伟大人物的传记故事</p>
+<p>免责声明：本文来自腾讯新闻客户端自媒体，不代表腾讯网的观点和立场。</p>
 
           
         
@@ -256,7 +320,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/04/springboot%E6%A1%86%E6%9E%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/06/%E7%94%B5%E5%BD%B1%E7%BA%AA%E5%BF%B5/">展开全文 >></a>
         </p>
       
 
@@ -288,7 +352,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/4/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/6/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/4/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/6/">Next &amp;raquo;</a>
     </nav>
   
 

@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-dddd" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="jsp-JSP 获取并显示字符串长度 - 蒲公英云" class="article article-type-jsp  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/dddd/">dddd</a>
+      <a class="article-title" href="/2021/05/09/JSP%20%E8%8E%B7%E5%8F%96%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6%20-%20%E8%92%B2%E5%85%AC%E8%8B%B1%E4%BA%91/">JSP 获取并显示字符串长度 - 蒲公英云</a>
     </h1>
   
 
         
-        <a href="/2021/05/04/dddd/" class="archive-article-date">
-  	<time datetime="2021-05-03T17:08:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-04</time>
+        <a href="/2021/05/09/JSP%20%E8%8E%B7%E5%8F%96%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6%20-%20%E8%92%B2%E5%85%AC%E8%8B%B1%E4%BA%91/" class="archive-article-date">
+  	<time datetime="2021-05-08T16:57:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-09</time>
 </a>
         
       </header>
@@ -186,7 +186,35 @@
       
         
           
-            
+            <blockquote>
+<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://www.dandelioncloud.cn/article/details/1004120632274428">www.dandelioncloud.cn</a></p>
+</blockquote>
+<h2 id="JSP-获取并显示字符串长度"><a href="#JSP-获取并显示字符串长度" class="headerlink" title="JSP 获取并显示字符串长度"></a>JSP 获取并显示字符串长度</h2><p>发布于：2020-10-04 00:06 阅读数:282</p>
+<hr>
+<h2 id="实训内容和要求"><a href="#实训内容和要求" class="headerlink" title="实训内容和要求"></a>实训内容和要求</h2><p>编写两个 JSP 页面 inputString.jsp 和 computer.jsp，用户可以使用 inputString.jsp 提供的表单输入一个字符串，并提交给 computer.jsp 页面，该页面通过内置对象获取 inputString.jsp 页面提交的字符串，并显示该字符串的长度。</p>
+<h2 id="实训步骤"><a href="#实训步骤" class="headerlink" title="实训步骤"></a>实训步骤</h2><p>(1) inputString.jsp 的代码如下：</p>
+<figure class="highlight erb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml">&lt;%</span><span class="ruby">@ page contentType=<span class="string">&quot;text/html;charset=utf-8&quot;</span> </span><span class="xml">%&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span> <span class="attr">bgcolor</span>=<span class="string">green</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;computer.jsp&quot;</span> <span class="attr">method</span>=<span class="string">post</span> <span class="attr">name</span>=<span class="string">form</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> &gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;提交&quot;</span> &gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>(2) computer.jsp 的代码如下：</p>
+<figure class="highlight vbscript-html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="vbscript">&lt;%@ page contentType=<span class="string">&quot;text/html;charset=utf-8&quot;</span> %&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="vbscript">&lt;%</span></span><br><span class="line"><span class="vbscript">    String textContent=<span class="built_in">request</span>.getParameter(<span class="string">&quot;str&quot;</span>);</span></span><br><span class="line"><span class="vbscript">    byte  b[]=textContent.getBytes(<span class="string">&quot;utf-8&quot;</span>);</span></span><br><span class="line"><span class="vbscript">    textContent=<span class="keyword">new</span> <span class="built_in">String</span>(b);</span></span><br><span class="line"><span class="vbscript">%&gt;</span></span><br><span class="line"><span class="xml">字符串:</span><span class="vbscript">&lt;%=textContent%&gt;</span><span class="xml">的长度：</span><span class="vbscript">&lt;%=textContent.length()%&gt;</span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>程序的运行结果如图 1 所示。</p>
+<p><img src="https://www.dandelioncloud.cn/images/1601741172649.gif"></p>
+<p><img src="https://www.dandelioncloud.cn/images/1601741152304.gif"></p>
+<p>图 1 通过内置对象获取并显示字符串</p>
+<p><img src="https://www.dandelioncloud.cn/images/20170410095843.jpeg"></p>
+<p><img src="https://www.dandelioncloud.cn/dist/img/99918364713.gif"> 文章编辑</p>
+<p>编写两个 JSP 页面 inputString.jsp 和 computer.jsp，用户可以使用 inputString.jsp 提供的表单输入一个字符串，并提交给 c…</p>
+<p>在 JavaScript 中，使用字符串的 <strong>length</strong> 属性可以读取字符串的长度。长度以字符为单位，该属性为只读属性。</p>
+<p>字符串的特点： - 字符串的内容永不可变 - 字符串时可以共享使用的，可以达到节省内存的作用，前提是字符串内容不可变 - 字符串效果上相当于是 char[] 字符串数组，但…</p>
+<p>JavaScript 字符串拼接 实际应用中，目标字符串的生成可能需要多个子字符串拼接而成。 由于应用频繁，几乎是所有编程语言都必须掌握的操作，当然每种语言具有各自特点。…</p>
+<p>JavaScript 字符串（String）就是由零个或多个 Unicode 字符组成的字符序列。零个字符表示空字符串。</p>
+<p>using System; using System.Collections.Generic; using System.IO; using System.Linq; u…</p>
+<p>Java 实例 - 获取数组长度本文我们将为大家介绍如何使用数组的属性 length 来获取数组的长度。 以下实例中我们定义了二维数组，并获取数组的长度：</p>
+<p>需求：有一个字符串需要按照指定长度拆分出来，然后在增加一个字符串拼接上。 /// <summary> /// 字符串截取并拼接 /// …</p>
+<p>Python 中的字符串（Strings）是⽤单引号或双引号标记的⼀系列连续字符（characters），换句话说，字符串是由单个字符组成的序列（list）。即便只有⼀个字…</p>
+<p>JavaScript 能够根据字符的 Unicode 编码大小逐位比较字符串大小。</p>
+
           
         
     </div>
@@ -197,7 +225,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/04/dddd/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/09/JSP%20%E8%8E%B7%E5%8F%96%E5%B9%B6%E6%98%BE%E7%A4%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6%20-%20%E8%92%B2%E5%85%AC%E8%8B%B1%E4%BA%91/">展开全文 >></a>
         </p>
       
 
@@ -229,7 +257,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/5/">Next &amp;raquo;</a>
     </nav>
   
 

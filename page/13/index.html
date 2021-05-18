@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="idea-的问题" class="article article-type-idea  article-index" itemscope itemprop="blogPost">
+    <article id="post-区块链" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">的问题</a>
+      <a class="article-title" href="/2021/05/02/%E5%8C%BA%E5%9D%97%E9%93%BE/">区块链</a>
     </h1>
   
 
         
-        <a href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2021-05-01T13:15:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-01</time>
+        <a href="/2021/05/02/%E5%8C%BA%E5%9D%97%E9%93%BE/" class="archive-article-date">
+  	<time datetime="2021-05-02T08:18:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-02</time>
 </a>
         
       </header>
@@ -186,57 +186,8 @@
       
         
           
-            <p>本文由 简悦 SimpRead 转码， 原文地址 <a target="_blank" rel="noopener" href="http://www.cnblogs.com/">www.cnblogs.com</a></p>
-<p>最近在学习 IDEA，由于之前一直使用的是 Eclipse，所以初次接触 IDEA 就接触到了不少的坑，其中最让人头疼的大概就是如何让 IDEA 顺利的启动起来了，这方面我就不细讲了，网上已经有了不少的教程，稍后我也会给大家一个 IDEA 的学习附件，有兴趣的朋友可以看看，今天主要谈的就是如何解决 IDEA 项目在启动时报 404 的问题，相信不少像我一样初次接触 IDEA 的朋友都掉进过这个坑，今天就带大家了解一下这个坑，以及如何解决。</p>
-<p>首先，我们来看一下 404 这个页面：</p>
-<p>从这个图片我们其实能看出一点点端倪，注意最后一句话：description The requested resource is not available.</p>
-<p>这句话翻译过来大概意思是，描述：所请求的资源不可用。</p>
-<p>既然是请求资源问题，而 IDEA 又是通过先将项目打包成 war 包，然后创建一个 Tomcat，将 war 进行加载的方式来启动项目，那么我们就可以猜测到，这个请求资源不可用的问题就一定是出现在打包 war 包的过程中，或是在 Tomcat 加载这个 war 包的时候出现的问题。除了这个两个可能，还有一种可能，也是我自己经历的，那就是你的项目是 SVN 项目，而你的 SVN 的路径已经不可用。</p>
-<p>知道了原因，那么接下来就好办了，我们一个个来进行解决。</p>
-<p>第一步：如何将项目打包成 war 包：</p>
-<p>1、首先，右击项目，点击 open module settings</p>
-<p>2、配置 project，主要是本地 jdk 的安装路径，还有项目编译输出的路径</p>
-<p>3、配置 modules ，其中 paths 定位到 web-inf/classes ；dependencies 加入 jdk 和项目 web-inf/lib</p>
-<p>4、配置 libraries ，点击 + 号，选择 java ，然后还是选择你项目的 web-inf/lib</p>
-<p>5、配置 facets ，此步很重要，配置 web resource directories ，路径配错，就会报 404 ，一定要定位到项目根目录，也就是下面有整个项目源码的地方</p>
-<p>6、 配置 artifacts ，此步选择第二个，选择你的项目即可</p>
-<p>注：这有一步很重要，在添加完以后，一定要选中你的项目，然后鼠标左键 Put into Output Root 一下</p>
-<p>到此，将项目打包就已经完成了，然后就是将项目添加到 Tomcat。</p>
-<p>第二步，将项目添加到 Tomcat：</p>
-<ol>
-<li>在 IDEA 的页面右上角，点击此处，打开 Tomcat 添加页面</li>
-</ol>
-<ol start="2">
-<li>在新打开的页面添加 Tomcat</li>
-</ol>
-<ol start="3">
-<li>在新添加的 Tomcat 页面配置好 Tomcat 的名字，默认浏览器，访问地址，JRE，端口等</li>
-</ol>
-<p>在这个页面，我们可以看到，由于没有添加项目 war 包，su9oyouTomcat 还是暴红差的，然后点击 Deploment，去添加项目的 war 包</p>
-<ol start="4">
-<li>给 Tomcat 添加已经打包好的 war 包</li>
-</ol>
-<p>添加后，可以配置路径的后缀名，我为了省事就直接用 / 了，然后点 Apply 和 OK 就可以了。</p>
-<ol start="5">
-<li>然后启动 Tomcat 就可以了，直接访问 localhost 就可以访问项目了。</li>
-</ol>
-<p>第三步，解决 SVN 原因访问 404 的原因</p>
-<p>如果经历了上边的步骤，你的 Tomcat 不报错，但是你访问还是 404，而且是 SVN 项目的话，你就可以试试看是否是你 SVN 配置的问题了</p>
-<ol>
-<li>首先确认是否 SVN 是否能连接上：</li>
-</ol>
-<p>如果，你的 SVN 爆了这个错误，你就可以去看看是否是你的配置出错了</p>
-<ol start="2">
-<li>重新配置 SVN，点击 File,Settings, 找到 Subversion，将里面的勾选的去掉，然后 Apply,OK 就 OK 了。</li>
-</ol>
-<ol start="3">
-<li>可以重新测试一下 SVN 是否能连接上：</li>
-</ol>
-<ol start="4">
-<li>然后重新启动 Tomcat，就 OK 了</li>
-</ol>
-<p>结语：由于回首也是刚刚开始学用 IDEA，所以也只是分享一下回首自己遇到的坑，如有哪些其他原因而这篇文章没有介绍到的，欢迎小伙伴们在下面的评论区中告知一下，大家一起学习，共同进步！</p>
-<p>最后，如果有觉得回首写得不错的朋友，可以点个赞，或是加个关注，回首会一直和你们分享和共同成长~~~</p>
+            <p>作者：陈浩<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/52203328/answer/129444273">https://www.zhihu.com/question/52203328/answer/129444273</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>最近有不少人问我这个问题，所以更新一下回答。我们把IT领域人才分为四个类别：A类别=&gt;架构师、技术决策者，这类主要指技术总监、技术专家、CTO等。B类别=&gt;主要的代码生产者和维护者，高级软件工程师、如Java/C++/Go/Node等工程师。C类别=&gt;需求产生和归纳者，如BA、产品经理等 强沟通和表达能力的人才；D类别=&gt;表示层，前端架构师、Javascript工程师、h5工程师、视觉设计等；目前区块链领域的工作内容大致可以分为以下几种：1类：为企业搭建私链或者联盟链，并根据业务需求实现联盟链业务逻辑=&gt; AC暂时性稀缺；这类目前Go/C++/Java为主；2类：在既存的公链平台上开发属于自己的应用，例如dAPP类、币乎内容社区类；=&gt; CD稀缺（智能合约多以类js语言开发）,B基本需求；这类编程语言没有限制，主流的编程语言依然是首选项；3类：自己研发公链 =&gt; AB稀缺；目前主流的是静态编译型语言 Go/C++ 为主，也有Rust/Java/C#实现的公链，SPV轻钱包Java、Python、Javascript实现比较常见。目前区块链的业务领域有：———————————F类：金融类tokenization为主，也就是资产数字化，例如ERC20、MST、迅雷链客等，目前商业潜力最大的部分：=&gt; 对AC类人才有稀缺性需求，BD有基本需求=&gt; 2、3类工作内容为主，1可能会有；———————————T1类：区块链技术改进类，旨在改进现有的区块链技术栈而创建的项目，1C0为主，技术发展空间大=&gt; 对AB类人才有稀缺性需求、对CD类有基本需求。=&gt; 3类工作内容为主；———————————T2类：与现有技术结合类，例如结合人工智能，结合IPFS技术等，属于商业合作2B。=&gt; 对ABCD均有稀缺性需求，AB尤为突出；=&gt; 1、3类工作内容为主；———————————G类：游戏与社交类，以太养猫、LeBlock等，属于顶层应用，直接与普通用户接触2C；=&gt; 对CD类人才有稀缺性需求，对AB有基本需求；=&gt; 2类为主，3有涉及———————————E类：区块链生态服务类，例如数字资产交易平台、资产存托、硬件钱包等，目前商业利润最高的产业。=&gt; 存量市场，BCD的需求更为稀缺；=&gt; 可能涉及到2类或3类；——————————–BaaS类：这类是我自己提出的，我在《从区块链即服务（BaaS）到价值互联网》一文中提到了区块链即服务的概念，用区块链服务中心化应用可能是主流，为了降低区块链的开发和应用门槛，云服务的SaaS概念可以延伸到区块链上，2类的开发门槛可以降低到传统IT项目的开发模式，围绕着云计算或雾计算打造应用。总结：以上无论哪个区块链应用种类，都必须熟知主流的区块链项目，了解基本的区块链原理，小广告：可以通过的我极客时间专栏系统性学习区块链知识，获得较为完整的知识结构：极客时间_极客邦科技以下是推荐技能要求，其实无论什么样的工程师想入门区块链，扎实的编程语言知识、扎实的计算机和网络知识是必需的，放到任何行业都是一样的。专业：计算机或数学相关领域专业，经济领域相关专业，双修为佳工作背景：第一，技术有经验者：币圈链圈程序猿（含海外），区块链技术创业者；第二，需求部分，原BA、区块链咨询、互联网金融的产品经理学习区块链，或金融咨询领域深度理解区块链；技术部分，金融（交易）领域程序猿，分布式领域程序猿学习区块链，中等程度理解区块链第三，基本功扎实、勤劳肯学、有悟性的员工自己培养；注意：本回答不构成任何求职或招聘建议，请求职者和招聘单位自行斟酌。转载必需注明出处，并标明：元界CTO陈浩。</p>
 
           
         
@@ -248,7 +199,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/01/%E7%9A%84%E9%97%AE%E9%A2%98/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/02/%E5%8C%BA%E5%9D%97%E9%93%BE/">展开全文 >></a>
         </p>
       
 
@@ -280,7 +231,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/12/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/14/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/12/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/14/">Next &amp;raquo;</a>
     </nav>
   
 

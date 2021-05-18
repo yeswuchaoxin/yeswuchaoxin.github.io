@@ -164,20 +164,20 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-怎么找暑假实习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-javaee考试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/02/%E6%80%8E%E4%B9%88%E6%89%BE%E6%9A%91%E5%81%87%E5%AE%9E%E4%B9%A0/">怎么找暑假实习</a>
+      <a class="article-title" href="/2021/05/03/javaee%E8%80%83%E8%AF%95/">javaee考试</a>
     </h1>
   
 
         
-        <a href="/2021/05/02/%E6%80%8E%E4%B9%88%E6%89%BE%E6%9A%91%E5%81%87%E5%AE%9E%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2021-05-02T08:28:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-02</time>
+        <a href="/2021/05/03/javaee%E8%80%83%E8%AF%95/" class="archive-article-date">
+  	<time datetime="2021-05-03T08:33:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-03</time>
 </a>
         
       </header>
@@ -186,151 +186,22 @@
       
         
           
-            <blockquote>
-<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/447640468/answer/1782279895">www.zhihu.com</a> <img src="https://pic2.zhimg.com/v2-1f41c8dbe560bed294b4ad99cbd48e0e_xs.jpg?source=1940ef5c">风口浪尖上的猪​</p>
-</blockquote>
-<p>字节的老学长来直接给你关键性的建议吧， 接下里的几个月可以说将会是你人生中最重要的阶段。</p>
-<p>把这回答下面的内容看完，真的有可能会改变你的命运。</p>
+            <h2 id="第一章-概念为主"><a href="#第一章-概念为主" class="headerlink" title="第一章,概念为主"></a>第一章,概念为主</h2><p><strong>soa是一种抽象的软件架构，web服务是一种具体的技术，我们可以使用web服务实现soa</strong></p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，SOA（架构）有几类实体entity。<span class="number">1</span>，<span class="number">2</span>，<span class="number">3</span></span><br><span class="line">提供方，消费方，注册方</span><br><span class="line"><span class="comment">--提供方是干嘛的，消费方是干嘛的，注册方是干嘛的。</span></span><br><span class="line">提供方，向消费方提供服务。消费方访问提供方发布的网页，注册方可以在因特网上发布和定位服务</span><br><span class="line"><span class="comment">--SOA的特性（feature），理解为主，可发性？，动态绑定的时候，到底是什么含义，</span></span><br><span class="line">SOA的特性：<span class="number">1</span>可发现和动态绑定，<span class="number">2</span>支持互操作，<span class="number">3</span>松散耦合 <span class="number">4</span>位置透明</span><br><span class="line"><span class="comment">--SOA绑定：可以分为动态绑定和静态绑定。在动态绑定中，服务请求者通过服务注册中心查找服务描述，并动态地与服务交互；在静态绑定中，服务请求者已经与服务提供者达成默契，通过本地文件或其他方式直接与服务进行绑定。</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span>，web服务和SOA架构的关系</span><br><span class="line"><span class="comment">---soa是一种抽象的软件架构，web服务是一种具体的技术，我们可以使用web服务实现soa(很重要，一定会考到)</span></span><br><span class="line"><span class="comment">--web服务的特性，优点，理解为主</span></span><br><span class="line">特点：支持数据交换，支持文档交换，支持同步和异步的客户端</span><br><span class="line">优点：节约成本，提高代码的重用，支持应用程序和数据集成，通用性。</span><br><span class="line"><span class="number">3</span>，java平台里面web开发相关的api，我给你一个api，要知道在web开发中起到什么作用，</span><br><span class="line">比如第六单元的JASP这个api,是用来处理<span class="type">xml</span>数据的。或者反过来，我想开发REST风格的web，使用哪一种api，JAX-RS这个，</span><br><span class="line"><span class="number">4</span>，两种类型的web服务，哪两种类型，<span class="number">1</span><span class="number">-5</span>单元，都在讲这两种web服务。两种web服务的特点是什么，区别是什么。</span><br><span class="line"><span class="comment">--使用的协议标准是不一样的，</span></span><br><span class="line"><span class="comment">--第一种XML的web服务，协议标准使用的WSDL，SOAP，UDDI。以服务为中心的。</span></span><br><span class="line"><span class="comment">--REST风格，协议标准使用的是HTTP，MIME。资源为中心的。</span></span><br></pre></td></tr></table></figure>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span>，<span class="number">3</span>单元涉及基于<span class="built_in">xml</span>的web服务，</span><br><span class="line">-<span class="number">-1</span>，WSDL文档，作用是描述基于<span class="built_in">xml</span>的web服务，不要求会写WSDL文档，能看懂这个文档，知道在描述什么样的web服务，到底有几个服务端点，服务是由服务端点组成的。</span><br><span class="line">每个服务端点定义几个服务操作，根据交互的消息序列看，书上给出了四种交互模式，你能不能分辨出是哪一种交互模式，</span><br></pre></td></tr></table></figure>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">one-way,单程,只有一个&lt;<span class="built_in">input</span>&gt;请求request，</span><br><span class="line">request-response,请求-响应一个<span class="built_in">input</span>（请求）+<span class="built_in">output</span>，</span><br><span class="line">solicit-response,征求-响应,<span class="built_in">output</span>（请求）+<span class="built_in">input</span>，</span><br><span class="line">notification,通知,只有<span class="built_in">output</span>返回</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.2，每个完整的WSDL应该由两部分组成，抽象和具体定义，抽象定义要定义哪些内容，具体定义要定义哪些内容。</span><br><span class="line">抽象模型：包含<span class="tag">&lt;<span class="name">type</span>&gt;</span><span class="tag">&lt;<span class="name">message</span>&gt;</span>元素，提供关于web服务支持的操作，没有提供通信协议和位置信息的描述。</span><br><span class="line">具体模型：包含<span class="tag">&lt;<span class="name">binding</span>&gt;</span><span class="tag">&lt;<span class="name">service</span>&gt;</span>元素，提供通信协议和位置信息的描述。</span><br></pre></td></tr></table></figure>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span>,SOAP是通信协议，提供方，消费方，用的都是soa协议，双方交互的是消息，消息的基本结构，hanle,<span class="keyword">body</span>，基本结构，</span><br></pre></td></tr></table></figure>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p><strong>介绍了JAX-WS接口</strong><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_34845394/article/details/86478208">WebService介绍及使用(Java)</a><br><a target="_blank" rel="noopener" href="https://my.oschina.net/zhanghaiyang/blog/725780">WebService学习总结（1）——WebService相关概念</a></p>
+<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">关系到你能不能看懂程序代码，基于<span class="built_in">xml</span>的web服务的基本流程，把第一个activity实验做完就掌握到位了。</span><br><span class="line">怎么去访问web服务不做要求，只要求开发web服务。</span><br></pre></td></tr></table></figure>
+<h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><p><strong>概念，资源，URI，设计原则</strong></p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>，<span class="built_in">Rest</span>风格架构到底使用了哪些规范，<span class="variable">XML</span><span class="operator">,</span><span class="variable">URI</span><span class="operator">,</span><span class="variable">MIME</span>这些规范，这些规范起到什么作用，</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>，<span class="built_in">Rest</span>风格的资源的概念，怎么标识资源（用<span class="variable">URI</span>），每个资源都有唯一的标识，</span><br><span class="line"></span><br><span class="line">组件不做要求，</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>，设计原则，怎么使用<span class="variable">http</span>的方法，目录结构，<span class="variable">URI</span>的<span class="operator">,</span>资源的目录结构，还有数据交互格式怎么去设计，设计原则尽量理解。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="第五章"><a href="#第五章" class="headerlink" title="第五章"></a>第五章</h2><p><strong>JAX-RS API做完Activity</strong></p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">xml的处理规范，<span class="keyword">JAXP,JAXB,SAAJ，</span></span><br><span class="line"><span class="keyword">JAXP,JAXB：处理xm数据格式的。JAXP三种解析器，哪些是只读的，哪些是读写解析器。知道什么事JAXB就可以了。</span></span><br><span class="line"><span class="keyword">--JAXP</span></span><br><span class="line"><span class="keyword">--JAXB是将XML-&gt;对象树</span></span><br><span class="line"><span class="keyword">SAAJ:处理SOAP消息附件的，</span></span><br></pre></td></tr></table></figure>
+<h2 id="第七章"><a href="#第七章" class="headerlink" title="第七章"></a>第七章</h2><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Metro,stack，</span><br><span class="line">那个栈，那张图看看就可以了。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20210503190106905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzUxNjM0NTQx,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>第八章</p>
 <hr>
-<h2 id="一、沉住气，不要慌"><a href="#一、沉住气，不要慌" class="headerlink" title="一、沉住气，不要慌"></a>一、沉住气，不要慌</h2><p>看了你的问题描述，大概能猜出来你应该是一直没有准确的掌握互联网校招相关的信息，等到现在已经大三下学期开学了，3 月份各大厂暑期实习都开始招聘了，你身边很多厉害的同学有的都已经拿到 offer 了，你才发现自己还没有准备好。</p>
-<p>不过没关系，现在还好是 3 月份，还好你在知乎提问，看到了我的回答。</p>
-<p>老学长跟你吃一个定心丸，每年在现在暑期实习照片刚刚开始的时候，</p>
-<p>没有准备好的同学有很多很多，但是最后在秋招，秋招补录，</p>
-<p>甚至大四的时候找到机会成功冲进大厂的同学都有很多很多。</p>
-<p>你现在首先最关键的是要: <strong>制定好计划，调整好心态。</strong></p>
-<p>眼前没竞赛项目经历都没什么关系的，<strong>校招基础最重要！</strong></p>
-<hr>
-<h2 id="二、现在要立刻确定好求职的具体技术岗位"><a href="#二、现在要立刻确定好求职的具体技术岗位" class="headerlink" title="二、现在要立刻确定好求职的具体技术岗位"></a>二、现在要立刻确定好求职的具体技术岗位</h2><p>鉴于你现在的情况，虽然是 985 本科，但是几乎没什么某种具体技术方向上的积累。</p>
-<p><strong>关于岗位老学长直接给出你最干货的建议:</strong></p>
-<p>1、果断放弃任何 AI 方向，算法相关岗，不用去做炮灰了。直接就考虑开发岗位吧。</p>
-<p>2、根据我个人对大厂校园招聘掌握的信息来看，开发岗位的比较好拿到 offer 的岗位是:</p>
-<ul>
-<li>  web 前端工程师</li>
-<li>  Android 客户端工程师</li>
-<li>  java 后端开发工程师</li>
-</ul>
-<p>3、个人不太建议你在现在这个阶段再学习冲击 c++ 等相关岗位了，老学长 java，go，c++，py 等技术方向均做过。c++ 后端方向更多偏向技术底层技术组件研发，基础架构等相关，往往对候选者要求比较高。同时 c++ 技术栈相对于 java 技术栈入门难度要高很多很多。</p>
-<hr>
-<h2 id="二、现在要立刻以-8-月份的秋季招聘为目标学习冲刺"><a href="#二、现在要立刻以-8-月份的秋季招聘为目标学习冲刺" class="headerlink" title="二、现在要立刻以 8 月份的秋季招聘为目标学习冲刺"></a><strong>二、现在要立刻以 8 月份的秋季招聘为目标学习冲刺</strong></h2><h3 id="1、算法题目-LeetCode-现在必须刷起来"><a href="#1、算法题目-LeetCode-现在必须刷起来" class="headerlink" title="1、算法题目 LeetCode 现在必须刷起来"></a><strong>1、算法题目 LeetCode 现在必须刷起来</strong></h3><p>无论互联网秋招还是秋招，编程功底不行神仙都救不了你。如果你算法与数据结构功底还比较扎实:</p>
-<p>二话不说就直接上 LeetCode，先从 top 热门题目开始做，这里分享一个刷题手册。</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/353670540">https://zhuanlan.zhihu.com/p/353670540​zhuanlan.zhihu.com<img src="https://pic1.zhimg.com/v2-83f2e5d4a448d74ea092801c86a879fc_ipico.jpg"></a></p>
-<p>如果你编程功底不行，可以参考我之前的回答:</p>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/444269929/answer/1777521746">我现在是计算机大一学生，怎样掌握更强的编程能力、算法等，脱颖而出？​www.zhihu.com<img src="https://pic4.zhimg.com/v2-a9dd086a0a8d318f8f48ce80a706e22b_120x160.jpg"></a></p>
-<h3 id="2、针对具体岗位赶紧制定学习路线"><a href="#2、针对具体岗位赶紧制定学习路线" class="headerlink" title="2、针对具体岗位赶紧制定学习路线"></a>2、针对具体岗位赶紧制定学习路线</h3><p>我之前采访了我们部门一个双非的本科生去年夏天校招拿到后端岗位的，</p>
-<p>关于全部的学习路线，书籍，尤其是项目该如何准备，在这个回答里我都详细的写过了:</p>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/339135205/answer/1767635959">字节跳动面试难吗，应该如何应对？​www.zhihu.com<img src="https://pic1.zhimg.com/v2-d5e87f2bdb7e4fe977d01738f4a6d250_ipico.jpg"></a></p>
-<p>其他岗位的干货学习路线我已经在拖同事帮忙分享了，很快几天之内就会更新。</p>
-<h3 id="3、大量看大厂优质校招面经"><a href="#3、大量看大厂优质校招面经" class="headerlink" title="3、大量看大厂优质校招面经"></a>3、大量看大厂优质校招面经</h3><p>可以自己去牛客网上搜:</p>
-<p><a href="https://link.zhihu.com/?target=https://www.nowcoder.com/">牛客网 - 找工作神器 | 笔试题库 | 面试经验 | 实习招聘内推，求职就业一站解决_牛客网​www.nowcoder.com</a></p>
-<p>也可以看我之前整理好的:</p>
-<p><a href="https://link.zhihu.com/?target=http://mp.weixin.qq.com/s?__biz=Mzg3NjU5NDM5NQ==&mid=100007877&idx=1&sn=9252312865325181d8eb0c81d139a4fa&chksm=4f2e8a7178590367d01fb0dc5f884590a1a3788dc85ae8c6c2753c1ef618748bbebcb34cbbef%23rd">互联网校招面经精心整理优质面经合集​mp.weixin.qq.com<img src="https://pic3.zhimg.com/v2-8caf79e48099a82955663410515cdc72_180x120.jpg"></a></p>
-<h3 id="4、上面这部分内容你最慢最慢也要在-7-月之前都要搞定"><a href="#4、上面这部分内容你最慢最慢也要在-7-月之前都要搞定" class="headerlink" title="4、上面这部分内容你最慢最慢也要在 7 月之前都要搞定"></a>4、上面这部分内容你最慢最慢也要在 7 月之前都要搞定</h3><h3 id="搞不定你就挤时间！！！"><a href="#搞不定你就挤时间！！！" class="headerlink" title="搞不定你就挤时间！！！"></a>搞不定你就挤时间！！！</h3><h3 id="挤不出来时间你就少睡觉！！！"><a href="#挤不出来时间你就少睡觉！！！" class="headerlink" title="挤不出来时间你就少睡觉！！！"></a>挤不出来时间你就少睡觉！！！</h3><h3 id="时间还不够你就拼命！！！"><a href="#时间还不够你就拼命！！！" class="headerlink" title="时间还不够你就拼命！！！"></a>时间还不够你就拼命！！！</h3><hr>
-<h2 id="三、关于岗位投递最靠谱的建议"><a href="#三、关于岗位投递最靠谱的建议" class="headerlink" title="三、关于岗位投递最靠谱的建议"></a>三、关于岗位投递最靠谱的建议</h2><h3 id="a、实习准备部分"><a href="#a、实习准备部分" class="headerlink" title="a、实习准备部分"></a>a、实习准备部分</h3><p>1、不要等自己觉得全部都准备好了再出来面试，放心你是永远准备不好的。</p>
-<p>2、在你复习的过程中，当你觉得自己复习的进度达到 60% 了，就要在网上开始投递简历，准备面试。</p>
-<p>3、要从中小型互联网公司开始面试，一是积累面试经验，二是可以为复习查缺补漏，三是小公司如果面试通过了可以很大的鼓舞自己的信心。</p>
-<p>4、最后在开始面试大厂的实习岗位，如果最后没机会上岸大厂，就在秋招之前先去小公司实习。</p>
-<p><strong>b、实习岗位投递部分</strong></p>
-<p>1、首先不要尽量不要在公司官网投递，防止简历没被看到就直接垃圾箱。要找靠谱的内推人投递。</p>
-<p>2、如果觉得自己实力不够，不要投递基础架构，中间件等相关技术部门技术部门往往要求很高。</p>
-<p>3、如果觉得自己实力不够，不要投递大厂核心业务，比如核心广告部门，明星产品部门，竞争往往很激烈。</p>
-<p>4、要选择比较普通的部门，然后比较通用型的岗位来投递。</p>
-<hr>
-<h2 id="四、关于秋招"><a href="#四、关于秋招" class="headerlink" title="四、关于秋招"></a>四、关于秋招</h2><p>1、秋招一定要参加大厂提前批。</p>
-<p>2、秋招一定要尽量早投递，越早机会越大。无数同学都觉得自己准备的不够充分，晚一些投递。</p>
-<p>你晚了一个月，几乎 hc 都已经被先面试的同学给抢没了，而且有可能他们实力也不一定有多强。</p>
-<p>3、秋招一定要海投，就是海投。</p>
-<hr>
-<h2 id="五、如果秋招失败，别放弃，真的有机会"><a href="#五、如果秋招失败，别放弃，真的有机会" class="headerlink" title="五、如果秋招失败，别放弃，真的有机会"></a>五、如果秋招失败，别放弃，真的有机会</h2><p>1、如果秋招没有机会拿到自己心仪公司的 offer 真的别放弃，后面还有机会。老学长分享两个案例:</p>
-<blockquote>
-<p>我认识的 A 同学特别想去猿辅导，然后秋招的时候没有如愿拿到 offer。秋招之后他并没有放弃，隔了几个月一直在联系猿辅导其他部门的员工是否有 hc，然后最后在第二年的三月份成功通过面试补录进入猿辅导。<br>我认识的 B 同学秋招大厂全挂，但是一直没有放弃。在小公司实习的时候还是在刷题，学习技术知识，同时观察着大厂招聘的动向。在 11 月底秋招结束，腾讯的秋招补录中成功拿到机会进入腾讯。</p>
-</blockquote>
-<p>2、具体原因是因为秋招中，有很多非常优秀的同学在提前批或者秋招正式批次的时候，会拿到非常多的大厂的 offer，但是这些收割机们只能最后去一个公司。所以有很多部门秋招发的 hc 有可能是来的同学不够的，就会出现剩余的情况，这时候只要坚持参加后续的秋招补录或者第二年的春招，都是有机会逆袭的。</p>
-<hr>
-<h2 id="六、后记"><a href="#六、后记" class="headerlink" title="六、后记"></a><strong>六、后记</strong></h2><p>其实人生往往也是这样，错过的时间与机会已经无法追回，</p>
-<p>但是只要从现在立刻开始行动，一切都来得及。</p>
-<p>这里还有一些校招书单分享给你:</p>
-<p><a href="https://link.zhihu.com/?target=http://mp.weixin.qq.com/s?__biz=Mzg3NjU5NDM5NQ==&mid=100006173&idx=1&sn=ec3fda47a65f9d731bda3875ff42dad8&chksm=4f2e8ca9785905bf290465b94c3baa7679672b371c598e4750316f89b9da2dd930be9fceff73%23rd">精心整理，计算机书籍推荐​mp.weixin.qq.com<img src="https://pic4.zhimg.com/v2-7af1128363cf24a9fe858657d2146167_180x120.jpg"></a></p>
-<p>如果感兴趣也可以看一下我其他的一些高赞回答:</p>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/444269929/answer/1777521746">我现在是计算机大一学生，怎样掌握更强的编程能力、算法等，脱颖而出？​www.zhihu.com<img src="https://pic4.zhimg.com/v2-a9dd086a0a8d318f8f48ce80a706e22b_120x160.jpg"></a> <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/440930907/answer/1771764663">能给一个计算机本科生的规划提点建议吗？​www.zhihu.com<img src="https://pic2.zhimg.com/v2-7144ab5947b18e775b90c2a0fa4013e5_120x160.jpg"></a> <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/339135205/answer/1767635959">字节跳动面试难吗，应该如何应对？​www.zhihu.com<img src="https://pic1.zhimg.com/v2-d5e87f2bdb7e4fe977d01738f4a6d250_ipico.jpg"></a> <a target="_blank" rel="noopener" href="https://www.zhihu.com/question/446056062/answer/1766982611">本人某 985 计算机专业，感觉学校教的东西很死，很难提高。请问其他 985 计算机类本科生都在自学编程吗？​www.zhihu.com<img src="https://pic2.zhimg.com/v2-7a1859a85c5b60045cb5343ea94f67c5_ipico.jpg"></a></p>
-<p><strong>最后留给你我最喜欢的一句话 ，希望你可以在几个月之后，成功逆袭:</strong></p>
-<p><img src="https://pic1.zhimg.com/50/v2-a9925c32887d66c4cddb9e4ade90ed9c_hd.jpg?source=1940ef5c"></p>
-<p>如果对字节跳动感兴趣的话，可以找我内推。在我的知乎主页里有我的联系方式</p>
-<p>@风口浪尖上的猪</p>
-<p>如觉得这篇回答觉得真的有收获的话，不要只偷偷收藏<strong>白嫖</strong>猪学长，给猪学长点个<strong>赞</strong>吧，你们动动手指也能把这个回答顶起来，让更多同学们看到，帮助跟多的同学。</p>
-<p><img src="https://pic1.zhimg.com/50/v2-e348b9df35eba8ec21e285903bab2628_hd.jpg?source=1940ef5c"></p>
-<blockquote>
-<p>真心希望可以帮助到你。</p>
-</blockquote>
-<p><img src="https://pic4.zhimg.com/v2-15334b2c7f073565a22dc3bc5d70b129_xs.jpg?source=1940ef5c">程序员库森</p>
-<p>阿里的学长给你几点实用的建议，按照这个去做，暑期实习不仅能找到，最终秋招也能成为大厂 offer 收割机！</p>
-<h2 id="首先，稳住心态，选好岗位！"><a href="#首先，稳住心态，选好岗位！" class="headerlink" title="首先，稳住心态，选好岗位！"></a><strong>首先，稳住心态，选好岗位！</strong></h2><p>要知道对于大三的学生来说，没有实习和竞赛经验，是很正常的事情，所以稳住心态，不要过于慌张。</p>
-<p>在开始准备找实习前，先要选好岗位。</p>
-<p>以技术来说吧，建议选开发，舍去算法，这一点不用说，开发岗位多，竞争小，上岸机会大，我们没必要去卷算法。</p>
-<p>开发中，选有后端开发，前端开发，以及移动端开发。如果没有特别的喜好，前端开发更推荐，竞争小，好学，而且大前端趋势很好，薪资也不输后端。</p>
-<p>如果想做后端，首选 java，因为 java 岗位是真滴多，以阿里为首的互联网大厂都用 java，其次还有美团，滴滴，百度，京东，快手，携程等等一票互联网大厂，小厂不用说了，基本都是 java 技术栈。</p>
-<p>有同学可能问了，java 好多知识点，学完 javase，还有一堆框架，spring，mybatis 等等看，甚至还有分布式，dubbo 等，我学不完啊。</p>
-<p>是有这么多技术，学长跟你说，但是面试造火箭啊，按照学长说的方法，有重点的学，不用这么担心。</p>
-<h2 id="其次，开始规划，学起来"><a href="#其次，开始规划，学起来" class="headerlink" title="其次，开始规划，学起来"></a><strong>其次，开始规划，学起来</strong></h2><p>大厂暑期实习，一般 3-4 月开始招人，入职 7-8 月，当然提前去也 ok。认识到这一点非常关键，不要等到暑期才去找实习，那时候别人的都是实习了。</p>
-<p>当然，如果没有找到暑期实习呢？</p>
-<p>别担心，没有找到暑期实习，那么可以试试日常实习啊，日常实习也 ok，很多日常实习也有转正机会。暑期和日常没那么大区别，对我们学生来说，只要能有转正机会，待遇没啥差别，能学到东西就 ok。</p>
-<p>暑期实习如何找呢？牛客网首推，以及关注各个大厂的招聘公众号等信息。</p>
-<p>关键是日常实习，日常实习都是散招，没有统一的招聘，这时候就要拼眼力（资源），推荐几个，boss 直聘、拉勾网、实习僧、牛客网等等。日常实习，有的公司要求会低一些，对于没有找到暑期实习的同学来讲，也是一个不错的选择。</p>
-<p>退一万步说，即使没有找到实习也没有关系，我们可以准备项目，只要有亮点就好，因为最终目的是秋招。</p>
-<p>实习也是为了秋招，秋招现在开始的越来越早，7 月份已经开始了提前批，以前的金九银十，现在已经变成金八银九了，甚至要更早了。所以认清这个很重要，要开始规划了。</p>
-<p>那么如何准备呢，实习和秋招难度没有太大差别，准备实习和秋招都一样，所以现在开始面试的干货。</p>
-<p>我这篇文章说过，大厂面试的公式，</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/349912761">库森：能拿 BAT 大厂 offer 的学习路径​zhuanlan.zhihu.com<img src="https://pic2.zhimg.com/v2-a41a64089d4441fea89850b60583a1c1_180x120.jpg"></a></p>
-<p>，这里在简单说下。</p>
-<p>进大厂有个公式：<strong>技术栈知识 + 计算机基础 + 算法 + 项目 + 实习 + 加分项（竞赛 / 开源项目 / 博客）</strong>。</p>
-<p>其中，技术栈知识、计算机基础和算法题是必备项，如果项目或者实习很亮眼，面试基本没问题。竞赛、开源项目、博客这些都属于加分项，有了更好，拿 sp 的机会更大。</p>
-<h2 id="技术栈知识"><a href="#技术栈知识" class="headerlink" title="技术栈知识"></a><strong>技术栈知识</strong></h2><p>技术栈知识就是，你要找的岗位的知识，比如找 Java 开发，那就是 Java 开发的一系列知识。</p>
-<p>以 Java 开发为例，有这么多知识，见下图：</p>
-<p><img src="https://pic2.zhimg.com/v2-eb413a95aefc02ade5a3efa45bbdf223_r.jpg?source=1940ef5c"></p>
-<p>但是，我们准备面试，不用准备这么多，因为准备不过来！</p>
-<p>那准备哪些？我都给大家汇总好了，就要看高频面试题，我也在不断收集，会同步在 github 仓库：</p>
-<p><a href="https://link.zhihu.com/?target=https://github.com/cosen1024/Java-Interview">cosen1024/Java-Interview​github.com<img src="https://pic2.zhimg.com/v2-9d12a0970711b6699600a0ae85eb9bc9_ipico.jpg"></a></p>
-<p>目前已经汇总了这么多：</p>
-<p><img src="https://pic3.zhimg.com/50/v2-1d1d409694d7429e266f163cdda85c98_hd.jpg?source=1940ef5c"></p>
-<p>专栏上也有：</p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/360914855">库森：《大厂面试》之 JVM 篇 21 问与答​zhuanlan.zhihu.com<img src="https://zhstatic.zhihu.com/assets/zhihu/editor/zhihu-card-default.svg"></a> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/351672504">库森：《面试小抄》之 Java 基础篇 36 问与答 （2021 最新版）​zhuanlan.zhihu.com<img src="https://pic4.zhimg.com/v2-8acf4def802219bf44ee250dd7d95117_180x120.jpg"></a> <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/362214327">库森：HashMap 精选面试题（2021 版）​zhuanlan.zhihu.com<img src="https://pic1.zhimg.com/v2-fd5f0abc41ddcafef2a3312661e22940_180x120.jpg"></a></p>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a><strong>算法</strong></h2><p>算法题，在笔试和面试中都会遇到，近年来，大厂的笔试题越来越难，因此提升算法更加重要。</p>
-<p>算法复习，要重点掌握</p>
-<ul>
-<li>  10 个数据结构：数组、链表、栈、队列、散列表、二叉树、堆、跳表、图、Trie 树；</li>
-<li>  10 个算法：递归、排序、二分查找、搜索、哈希算法、贪心算法、分治算法、回溯算法、动态规划、字符串匹配算法。</li>
-</ul>
-<p>如何学习呢？可以看书，可以看视频，学长建议《算法 (第 4 版)》比较经典的书籍，了解基本数据结构和算法。至于《算法导论》，看个人情况，有时间和实力就复习，毕竟里面充斥各种算法的正确性、复杂度的证明，看起来头晕，对面试帮助作用较小。</p>
-<p>重点在于刷题，一定要刷题！一定要刷题！一定要刷题！</p>
-<p>重要的事情说三遍！刷题首选 Leetcode，至少要刷 200 道，尤其是 hot100，一定要刷。可以按照类别刷，如索、哈希算法、贪心算法、分治算法、回溯算法这样刷，也可以按照顺序刷，因人而异，个人喜欢按照 tag 刷，刷起来效果好，能够举一反三。刷完这些，大厂面试基本没问题了。</p>
-<p>其次，如果有精力，想拿高分，尤其是笔试的高分，可以刷起_codeforces_：这是一个国外著名的编程竞赛平台，它在竞赛圈名气比较大。刷起这个，字节、阿里笔试不在是问题！</p>
-<h2 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a><strong>计算机基础</strong></h2><p>计算机基础包括计算机网络和操作系统</p>
-<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a><strong>计算机网络</strong></h3><p>重点掌握：</p>
-<ul>
-<li>  网络分层概念，TCP 和 UDP 区别及使用场景。</li>
-<li>  TCP 头部结构，三次握手四次挥手，TCP 可靠性保证手段，滑动窗口，拥塞控制，流量控制。</li>
-<li>  HTTP 和 HTTPS 区别？Cookie 和 Session 区别？</li>
-<li>  HTTP 请求报文，浏览器输入网址后发生的事情，GET 和 POST 的区别？</li>
-</ul>
-<p>推荐资料：书籍可以看入门的《图解 TCP/IP 协议》，阅读起来不吃力，适合入门。计算机网络神书书籍《计算机网络：自顶向下》，比国内谢老师的书强太多了！可以看视频哈工大的**<a href="https://link.zhihu.com/?target=https://www.bilibili.com/video/BV1Up411Z7hC">计算机网络</a>**</p>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a><strong>操作系统</strong></h3><p>重点掌握：</p>
-<ul>
-<li>  进程和线程的区别；进程的通信方式，线程的通信方式</li>
-<li>  内存管理和 IO 管理</li>
-<li>  Linux 常用命令，僵尸进程和孤儿进程，Linux 中 swap 的作用?</li>
-</ul>
-<p>推荐看《深入理解计算机系统》，在线视频可以看哈工大的操作系统。</p>
-<h2 id="项目"><a href="#项目" class="headerlink" title="项目"></a><strong>项目</strong></h2><p>项目这个非常关键，我汇总了几个经典的 Java 项目，面试足够了，看这篇文章：</p>
-<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/427212878/answer/1720297297">去哪里找 JAVA 项目练手？​www.zhihu.com<img src="https://pic1.zhimg.com/v2-4a0448f84032636804b48010caa20af0_180x120.jpg"></a></p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a><strong>最后</strong></h2><p>阅读经典的书籍，也是不错的学习方法，汇总了一些经典的计算机类书籍，方便同学学习：</p>
-<p><a href="https://link.zhihu.com/?target=https://github.com/cosen1024/awesome-cs-books">https://github.com/cosen1024/awesome-cs-books​github.com</a><img src="https://pic1.zhimg.com/v2-ac0f6d7e0afff54fcfc775da826ef30b_r.jpg?source=1940ef5c"></p>
-<p><strong>如有收获，顺手点个赞呗，god 说，点赞的都能拿到 offer</strong>~</p>
-<p><img src="https://pic2.zhimg.com/v2-dbca4c222559daa2cedf8c37dd8870db_xs.jpg?source=1940ef5c">Sept</p>
-<p>本人前两年也是相同的境遇，计算机科学与技术专业，学校 985 下游，无竞赛与项目经验，好在大三经过一段时间准备成功找到了一家较好的企业实习。在这里，我以过来人的经验从以下两方面给出建议。</p>
-<p><strong>第一，提升信心，发掘自身优势。</strong>首先，能够考进 985 学校说明你个人的学习能力和勤奋程度还是有一定优势的，同样，985 学校的本科背景也是一个比较好的敲门砖。可能大公司 985 毕业生普遍一些，但往下走一点，是很有竞争优势的，至少简历不会被卡在学历关。其次，再看一下自身还有哪些优势，比如学科成绩是否比较优秀，有什么能力特长，以及学生会、班干部等学生工作，这些看似不起眼，但都是可以在简历和面试上加分的。</p>
-<p><strong>第二，充分准备，提升应试能力。</strong>其实，找工作跟考试一样，平时的积累固然重要，临近的准备更加关键。建议预留一段较长的时间好好准备面试，可从以下方面入手:</p>
-<p><strong>1. 复习学科知识，强化语言能力。</strong>事实上，目前我国的本科培养以学术为主，因此大部分本科毕业生的就业能力并不强。所以，对于校招和实习招聘而言，面试中基础知识的积累是很重要的一部分，既包括计算机核心课程，如数据结构与算法，计算机网络，操作系统等课程知识，也会有 c++ 等具体的编程语言知识提问。准备好这一块的内容，能够给面试官留下很好的印象。</p>
-<p><strong>2. 针对刷题训练，丰富面试经验。</strong>简历入选后，绝大部分互联网公司的下一大考就是机试。进行充分的刷题训练，让自己能够通过机试进入面试就非常重要。刷题最好有针对性的进行，找准重点，如一些常见字符串处理，树图数据结构应用和贪心、动规等算法，刷题网站像牛客，力扣都是没问题的。另外，可以根据面试的公司去网上找找相关经验和攻略，以便于熟悉面试流程，根据公司的侧重点对症下药。</p>
-<p><strong>总而言之，相信自己，好好准备。找工作的确不容易，但也没有你想象的那么难啦。加油！</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">设计模式</span><br><span class="line">部署模式，</span><br><span class="line">当我们提到哪种模式，知道解决的是什么问题，比如性能问题，还是安全问题，兼容问题。</span><br></pre></td></tr></table></figure>
 
           
         
@@ -342,7 +213,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/02/%E6%80%8E%E4%B9%88%E6%89%BE%E6%9A%91%E5%81%87%E5%AE%9E%E4%B9%A0/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/03/javaee%E8%80%83%E8%AF%95/">展开全文 >></a>
         </p>
       
 
@@ -374,7 +245,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/8/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="extend next" rel="next" href="/page/10/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/8/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/10/">Next &amp;raquo;</a>
     </nav>
   
 
