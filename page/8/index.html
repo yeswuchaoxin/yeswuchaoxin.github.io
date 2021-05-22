@@ -164,19 +164,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-springboot框架目录结构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-dddd" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/springboot%E6%A1%86%E6%9E%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">springboot 框架-目录结构</a>
+      <a class="article-title" href="/2021/05/04/dddd/">dddd</a>
     </h1>
   
 
         
-        <a href="/2021/05/04/springboot%E6%A1%86%E6%9E%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/" class="archive-article-date">
+        <a href="/2021/05/04/dddd/" class="archive-article-date">
   	<time datetime="2021-05-03T17:08:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-04</time>
 </a>
         
@@ -186,66 +186,7 @@
       
         
           
-            <blockquote>
-<p>本文由 <a target="_blank" rel="noopener" href="http://ksria.com/simpread/">简悦 SimpRead</a> 转码， 原文地址 <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39593985/article/details/88851320">blog.csdn.net</a></p>
-</blockquote>
-<p>目录结构</p>
-<p><img src="https://img-blog.csdn.net/20180529215240885?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z4YmluMTIz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"><img src="https://img-blog.csdn.net/20180609140628681?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3l1bnlpc2hhbmcxMjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70"></p>
-<p>src/main/java：主程序入口 Application，可以通过直接运行该类来 启动 Spring Boot 应用<br>src/main/resources：配置目录，该目录用来存放应用的一些配置信息，比如应用名、服务端口、数据库配置等。由于我们应用了 Web 模块，因此产生了 static 目录与 templates 目录，前者用于存放静态资源，如图片、CSS、JavaScript 等；后者用于存放 Web 页面的模板文件。<br>src/test：单元测试目录，生成的 ApplicationTests 通过 JUnit4 实现，可以直接用运行 Spring Boot 应用的测试。<br>application.properties/application.yml 用于存放程序的各种依赖模块的配置信息，比如 服务端口，数据库连接配置等。。。<br>——————— </p>
-<p>1）代码层的结构</p>
-<p>　　根目录：com.springboot</p>
-<p>　　　　1. 工程启动类 (ApplicationServer.java) 置于 com.springboot.build 包下</p>
-<p>　　　　2. 实体类 (domain) 置于 com.springboot.domain</p>
-<p>　　　　3. 数据访问层 (Dao) 置于 com.springboot.repository</p>
-<p>　　　　4. 数据服务层 (Service) 置于 com,springboot.service, 数据服务的实现接口 (serviceImpl) 至于 com.springboot.service.impl</p>
-<p>　　　　5. 前端控制器 (Controller) 置于 com.springboot.controller</p>
-<p>　　　　6. 工具类 (utils) 置于 com.springboot.utils</p>
-<p>　　　　7. 常量接口类 (constant) 置于 com.springboot.constant</p>
-<p>　　　　8. 配置信息类 (config) 置于 com.springboot.config</p>
-<p>　　　　9. 数据传输类 (vo) 置于 com.springboot.vo</p>
-<p>（2）资源文件的结构</p>
-<p>　　根目录: src/main/resources</p>
-<p>　　　　1. 配置文件 (.properties/.json 等) 置于 config 文件夹下</p>
-<p>　　　　2. 国际化 (i18n)) 置于 i18n 文件夹下</p>
-<p>　　　　3.spring.xml 置于 META-INF/spring 文件夹下</p>
-<p>　　　　4. 页面以及 js/css/image 等置于 static 文件夹下的各自文件下</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/yunyishang123/article/details/80632644">https://blog.csdn.net/yunyishang123/article/details/80632644</a></p>
-<p>根目录：src.main.java  </p>
-<ol>
-<li><p>工程启动类 (Application.java)：置于 com.cy.project 包下或者 com.cy.project.app 包下</p>
-</li>
-<li><p>实体类 (domain)：置于 com.cy.project.domain</p>
-</li>
-<li><p>数据访问层 (Dao)：置于 com.cy.project.repository（dao）</p>
-</li>
-<li><p>数据服务层 (Service)：置于 com.cy.project.service   </p>
-</li>
-<li><p>数据服务接口的实现 (serviceImpl)：同样置于 com.cy.project.service 或者置于 com.cy.project.service.impl</p>
-</li>
-<li><p>前端控制器 (Controller)：置于 com.cy.project.controller</p>
-</li>
-<li><p>工具类 (utils)：置于 com.cy.project.utils</p>
-</li>
-<li><p>常量接口类 (constant)：置于 com.cy.project.constant</p>
-</li>
-<li><p>配置信息类 (config)：置于 com.cy.project.config</p>
-</li>
-</ol>
-<p>资源文件：src.main.resources  </p>
-<ol>
-<li><p>页面以及 js/css/image 等置于 static 文件夹下的各自文件下</p>
-</li>
-<li><p>使用模版相关页面等置于 templates 文件夹下的各自文件下  </p>
-</li>
-</ol>
-<p>——————— <br>命名包名目录的方式 :com. 公司名的简写. 项目的名字. 业务模块名</p>
-<p>springboot 提供了一个解决方案吧，可以先不关心如何配置，可以快速的启动开发，进行业务逻辑编写，各种需要的技术，加入 starter 就配置好了，直接使用，可以说追求开箱即用的效果吧</p>
-<p>AJAX 是与服务器交换数据并更新部分网页的艺术，在不重新加载整个页面的情况下。</p>
-<p>Node.js <a target="_blank" rel="noopener" href="http://www.runoob.com/nodejs/node-js-get-post.html">http://www.runoob.com/nodejs/node-js-get-post.html</a></p>
-<p><img src="https://img-blog.csdnimg.cn/20190619212112836.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTU5Mzk4NQ==,size_16,color_FFFFFF,t_70"></p>
-<p>参考 <a target="_blank" rel="noopener" href="https://blog.csdn.net/linabc123000/article/details/68954236">https://blog.csdn.net/linabc123000/article/details/68954236</a>  eclipse 下创建第一个 spring boot 项目</p>
-<p>参考 <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/HTUNwizViOqNc1YInO7otQ">https://mp.weixin.qq.com/s/HTUNwizViOqNc1YInO7otQ</a> Spring Boot 配置文件中的花样，看这一篇足矣！</p>
-
+            
           
         
     </div>
@@ -256,7 +197,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/04/springboot%E6%A1%86%E6%9E%B6%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/04/dddd/">展开全文 >></a>
         </p>
       
 
@@ -288,7 +229,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/7/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/9/">Next &amp;raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/7/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/9/">Next &amp;raquo;</a>
     </nav>
   
 
